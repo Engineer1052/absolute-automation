@@ -6,6 +6,11 @@ import { Modal } from './components/Modal.js';
 initNavigation();
 new Modal();
 
+// Reveal body after styles/logic are ready
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.style.opacity = '1';
+});
+
 // Interactive Shader Canvas Background
 const canvas = document.getElementById('shader-canvas');
 const ctx = canvas.getContext('2d');
@@ -20,11 +25,11 @@ class Particle {
     reset() {
         this.x = Math.random() * width;
         this.y = Math.random() * height;
-        this.size = Math.random() * 2 + 0.5;
+        this.size = Math.random() * 3 + 1; // Larger particles
         this.vx = (Math.random() - 0.5) * 0.5;
         this.vy = (Math.random() - 0.5) * 0.5;
         this.life = Math.random() * 100 + 100;
-        this.alpha = Math.random() * 0.3;
+        this.alpha = Math.random() * 0.3; // Max 30% opacity
     }
     update() {
         this.x += this.vx;
@@ -69,10 +74,10 @@ function animate() {
     // Dynamic Color Shift based on Scroll
     const scrollPercent = Math.min(window.scrollY / (document.body.scrollHeight - window.innerHeight), 1);
 
-    // Interpolate from Red (255, 30, 30) to White (255, 255, 255)
-    // Target White: 255, 255, 255
-    const startR = 255, startG = 30, startB = 30;
-    const endR = 255, endG = 255, endB = 255;
+    // Interpolate from Blue (0, 100, 255) to Lighter Blue (0, 180, 255)
+    // Target Lighter Blue
+    const startR = 0, startG = 100, startB = 255;
+    const endR = 0, endG = 180, endB = 255;
 
     const currentR = startR + (endR - startR) * scrollPercent;
     const currentG = startG + (endG - startG) * scrollPercent;

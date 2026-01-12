@@ -4,15 +4,15 @@
 
 @layer base {
   :root {
-    /* Initial Red: 255, 30, 30 */
-    --primary-r: 255;
-    --primary-g: 30;
-    --primary-b: 30;
+    /* Initial Blue: 0, 100, 255 */
+    --primary-r: 0;
+    --primary-g: 100;
+    --primary-b: 255;
   }
 
   body {
-    background-color: #030305;
-    color: #fff;
+    background-color: #ffffff;
+    color: #0f172a;
     overflow-x: hidden;
     font-family: "Inter", sans-serif;
   }
@@ -20,20 +20,20 @@
 
 @layer components {
   .glass {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .neon-border {
-    border: 1px solid rgba(255, 30, 30, 0.3);
-    box-shadow: 0 0 15px rgba(255, 30, 30, 0.1);
+    border: 1px solid rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.3);
+    box-shadow: 0 0 15px rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.1);
     transition: all 0.3s ease;
   }
 
   .neon-border:hover {
-    border-color: rgba(255, 30, 30, 0.8);
-    box-shadow: 0 0 25px rgba(255, 30, 30, 0.25);
+    border-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.8);
+    box-shadow: 0 0 25px rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.25);
   }
 
   .bento-item {
@@ -47,15 +47,22 @@
   }
 
   .gradient-text {
-    background: linear-gradient(to right, #fff, rgb(var(--primary-r), var(--primary-g), var(--primary-b)));
+    background: linear-gradient(to right, #000, rgb(var(--primary-r), var(--primary-g), var(--primary-b)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-right: 0.2em;
   }
 
   .gradient-text-bottom {
-    background: linear-gradient(to bottom, #fff 30%, rgb(var(--primary-r), var(--primary-g), var(--primary-b)));
+    background: linear-gradient(to bottom, #000 30%, rgb(var(--primary-r), var(--primary-g), var(--primary-b)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-right: 0.2em;
+  }
+
+
+  .bg-blush {
+    background: radial-gradient(circle, rgba(203, 213, 225, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
   }
 }
 

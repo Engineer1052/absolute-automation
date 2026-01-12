@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="dark" lang="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -11,6 +11,13 @@
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&amp;family=Inter:wght@300;400;600;800&amp;display=swap"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+        }
+    </style>
 </head>
 
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white">
@@ -21,19 +28,19 @@
         <nav class="glass flex items-center justify-between px-8 py-4 rounded-full border border-white/10">
             <a href="#" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
                 <div class="w-8 h-8 bg-primary rounded-sm rotate-45 flex items-center justify-center">
-                    <span class="material-icons-round text-white text-sm -rotate-45">bolt</span>
+                    <span class="font-bold text-white text-xs -rotate-45 font-mono">A<sup>2</sup></span>
                 </div>
-                <span class="font-mono font-bold tracking-tighter text-lg">ROBOTIQ_</span>
+                <span class="font-mono font-bold tracking-tighter text-lg">ABSOLUTE AUTOMATION</span>
             </a>
             <div class="hidden md:flex items-center gap-8 text-sm font-mono tracking-widest uppercase">
-                <a class="hover:text-primary transition-colors" href="#shift">About Us</a>
+                <a class="hover:text-primary transition-colors" href="#shift">About</a>
                 <a class="hover:text-primary transition-colors" href="#systems">Services</a>
                 <a class="hover:text-primary transition-colors" href="#videos">Videos</a>
                 <a class="hover:text-primary transition-colors" href="#case-studies">Case Studies</a>
             </div>
             <a href="#contact"
                 class="bg-white text-black text-xs font-bold px-6 py-2 rounded-full uppercase tracking-widest hover:bg-primary hover:text-white transition-all">
-                Contact Us
+                Contact
             </a>
         </nav>
     </header>
@@ -42,47 +49,41 @@
         <section
             class="relative min-h-[100vh] pt-48 pb-20 px-6 flex flex-col items-center justify-center overflow-hidden">
             <div class="text-center z-10 max-w-6xl mx-auto">
+
                 <div
-                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-[10px] font-mono mb-8 animate-pulse-slow">
-                    <span class="w-2 h-2 rounded-full bg-primary"></span>
-                    SYSTEMS_ONLINE // v2.0.4
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-blush blur-3xl -z-10 pointer-events-none">
                 </div>
-                <h1 class="text-6xl md:text-9xl font-extrabold tracking-tighter mb-6 leading-none">
+                <h1 class="relative text-6xl md:text-9xl font-extrabold tracking-tighter mb-6 leading-none">
                     <span class="gradient-text">AUTOMATED</span> <br />
                     <span class="gradient-text">FUTURE</span>
                 </h1>
-                <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-12 font-light">
+                <p class="text-lg md:text-xl text-slate-700 max-w-2xl mx-auto mb-12 font-light">
                     Premier robotics and system integration for North Carolina manufacturers. We have over ten years
                     engineering custom control systems to make your processes better, faster, and more repeatable.
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
                     <button class="group relative px-10 py-5 bg-primary overflow-hidden transition-all duration-300"
                         data-trigger="modal">
-                        <span class="relative z-10 font-bold tracking-widest uppercase text-sm">Start Automating</span>
+                        <span class="relative z-10 font-bold tracking-widest uppercase text-sm">Contact</span>
                         <div
                             class="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                         </div>
                         <span
-                            class="absolute inset-0 z-20 flex items-center justify-center group-hover:text-black transition-colors duration-300 font-bold tracking-widest uppercase text-sm pointer-events-none">Start
-                            Automating</span>
+                            class="absolute inset-0 z-20 flex items-center justify-center group-hover:text-black transition-colors duration-300 font-bold tracking-widest uppercase text-sm pointer-events-none">Contact</span>
                     </button>
-                    <button
-                        class="flex items-center gap-3 font-mono text-sm tracking-widest uppercase py-4 px-8 border border-white/10 hover:border-primary/50 transition-colors rounded-sm"
-                        aria-label="System View">
+                    <a href="#videos"
+                        class="flex items-center gap-3 font-mono text-sm tracking-widest uppercase py-4 px-8 border border-white/10 hover:border-primary/50 transition-colors rounded-sm">
                         <span class="material-icons-round text-primary">play_circle</span>
-                        System View
-                    </button>
+                        View Our Systems
+                    </a>
                 </div>
             </div>
-            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-30">
-                <span class="text-[10px] font-mono uppercase tracking-[0.3em]">Vertical Drift</span>
-                <div class="w-px h-16 bg-gradient-to-b from-primary to-transparent"></div>
-            </div>
+
         </section>
 
         <section id="systems" class="py-32 px-6 max-w-7xl mx-auto">
             <div class="mb-16">
-                <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">Modules</h2>
+                <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">ABSOLUTE AUTOMATION</h2>
                 <h3 class="text-4xl md:text-5xl font-bold tracking-tight">SYSTEMS &amp; SOLUTIONS</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-12 gap-4 auto-rows-[300px]">
@@ -92,7 +93,7 @@
                     </div>
                     <div class="space-y-4">
                         <h4 class="text-3xl font-bold">Custom Robotic Cells</h4>
-                        <p class="text-slate-400 max-w-md">Turnkey robotic integration for assembly, palletizing, and
+                        <p class="text-slate-700 max-w-md">Turnkey robotic integration for assembly, palletizing, and
                             material handling designed for your specific throughput needs.</p>
                     </div>
                 </div>
@@ -101,8 +102,8 @@
                         <span class="material-icons-round text-4xl">memory</span>
                     </div>
                     <div>
-                        <h4 class="text-2xl font-bold text-white mb-2">PLC Programming</h4>
-                        <p class="text-white/80 text-sm">Rockwell, Siemens, and custom control architectures for robust
+                        <h4 class="text-2xl font-bold text-slate-900 mb-2">PLC Programming</h4>
+                        <p class="text-slate-700 text-sm">Rockwell, Siemens, and custom control architectures for robust
                             machine logic.</p>
                     </div>
                 </div>
@@ -110,7 +111,7 @@
                     <div>
                         <span class="material-icons-round text-3xl mb-4 text-primary">settings_input_component</span>
                         <h4 class="text-2xl font-bold mb-2">HMI & Controls</h4>
-                        <p class="text-slate-400 text-sm">Intuitive operator interfaces and SCADA systems for real-time
+                        <p class="text-slate-700 text-sm">Intuitive operator interfaces and SCADA systems for real-time
                             process visibility.</p>
                     </div>
                 </div>
@@ -118,16 +119,16 @@
                     <div>
                         <span class="material-icons-round text-3xl mb-4 text-primary">build_circle</span>
                         <h4 class="text-2xl font-bold mb-2">Machine Retrofits</h4>
-                        <p class="text-slate-400 text-sm">Modernizing legacy equipment with current-gen controls to
+                        <p class="text-slate-700 text-sm">Modernizing legacy equipment with current-gen controls to
                             extend machine life/safety.</p>
                     </div>
                 </div>
                 <div
                     class="md:col-span-4 bento-item glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent">
                     <div>
-                        <span class="material-icons-round text-3xl mb-4 text-white/50">handyman</span>
+                        <span class="material-icons-round text-3xl mb-4 text-slate-900/50">handyman</span>
                         <h4 class="text-2xl font-bold mb-2">Service & Repair</h4>
-                        <p class="text-slate-400 text-sm">24/7 emergency support and preventive maintenance to minimize
+                        <p class="text-slate-700 text-sm">24/7 emergency support and preventive maintenance to minimize
                             costly downtime.</p>
                     </div>
                 </div>
@@ -138,10 +139,10 @@
             <div class="max-w-7xl mx-auto">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 class="text-5xl font-extrabold mb-8 tracking-tighter">THE SHIFT_</h2>
-                        <p class="text-slate-400 text-lg mb-8 leading-relaxed">
-                            Manual processes are the bottleneck of modern manufacturing. We transition your facility
-                            from unpredictable manual labor to highly repeatable, automated precision.
+                        <h2 class="text-5xl font-extrabold mb-8 tracking-tighter uppercase">Absolute Automation</h2>
+                        <p class="text-slate-700 text-lg mb-8 leading-relaxed">
+                            Absolute Automation designs, fabricates, and integrates industrial systems in the greater
+                            Piedmont Triad area.
                         </p>
                         <div class="space-y-4">
                             <div class="flex items-center gap-4 group cursor-default">
@@ -151,7 +152,7 @@
                                 </div>
                                 <div>
                                     <h5 class="font-bold">Better. Faster. Repeatable.</h5>
-                                    <p class="text-xs text-slate-500">The core pillars of our integration philosophy.
+                                    <p class="text-xs text-slate-600">The core pillars of our integration philosophy.
                                     </p>
                                 </div>
                             </div>
@@ -159,26 +160,26 @@
                     </div>
                     <div class="grid grid-cols-2 gap-4">
                         <div class="glass p-8 rounded-2xl border-l-4 border-l-slate-700">
-                            <span class="text-slate-500 text-xs font-mono uppercase tracking-[0.2em] block mb-4">Current
+                            <span class="text-slate-600 text-xs font-mono uppercase tracking-[0.2em] block mb-4">Current
                                 State</span>
                             <h4 class="text-xl font-bold mb-4">Manual Labor</h4>
-                            <ul class="text-sm text-slate-500 space-y-3">
+                            <ul class="text-sm text-slate-600 space-y-3">
                                 <li class="flex items-center gap-2"><span
-                                        class="material-icons-round text-red-900 text-xs">close</span> High Variability
+                                        class="material-icons-round text-primary text-xs">close</span> High Variability
                                 </li>
                                 <li class="flex items-center gap-2"><span
-                                        class="material-icons-round text-red-900 text-xs">close</span> Labor Shortages
+                                        class="material-icons-round text-primary text-xs">close</span> Labor Shortages
                                 </li>
                                 <li class="flex items-center gap-2"><span
-                                        class="material-icons-round text-red-900 text-xs">close</span> Injury Risk</li>
+                                        class="material-icons-round text-primary text-xs">close</span> Injury Risk</li>
                             </ul>
                         </div>
                         <div
-                            class="glass p-8 rounded-2xl border-l-4 border-l-primary shadow-[0_0_40px_rgba(255,30,30,0.1)]">
+                            class="glass p-8 rounded-2xl border-l-4 border-l-primary shadow-[0_0_40px_rgba(0,100,255,0.1)]">
                             <span class="text-primary text-xs font-mono uppercase tracking-[0.2em] block mb-4">Future
                                 State</span>
                             <h4 class="text-xl font-bold mb-4">Integrated Systems</h4>
-                            <ul class="text-sm text-slate-200 space-y-3">
+                            <ul class="text-sm text-slate-700 space-y-3">
                                 <li class="flex items-center gap-2"><span
                                         class="material-icons-round text-primary text-xs">check</span> 100%
                                     Repeatability</li>
@@ -200,10 +201,7 @@
                         <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">Visual Uplink</h2>
                         <h3 class="text-4xl md:text-5xl font-bold tracking-tight">SYSTEMS IN MOTION</h3>
                     </div>
-                    <div class="hidden md:flex items-center gap-2 text-xs font-mono text-primary animate-pulse">
-                        <span class="w-2 h-2 rounded-full bg-primary"></span>
-                        LIVE_FEED_ACTIVE
-                    </div>
+
                 </div>
 
                 <!-- Video Container -->
@@ -241,7 +239,7 @@
                             class="material-icons-round text-white/20 group-hover:text-primary transition-colors">arrow_outward</span>
                     </div>
                     <h4 class="text-xl font-bold mb-3">Assembly Cycle Time Reduction</h4>
-                    <p class="text-slate-400 text-sm mb-6">Optimized PLC logic and robot motion paths for a
+                    <p class="text-slate-700 text-sm mb-6">Optimized PLC logic and robot motion paths for a
                         Charlotte-based automotive supplier.</p>
                     <div
                         class="inline-block px-3 py-1 bg-primary/10 rounded-full border border-primary/20 text-primary text-xs font-bold">
@@ -258,7 +256,7 @@
                             class="material-icons-round text-white/20 group-hover:text-primary transition-colors">arrow_outward</span>
                     </div>
                     <h4 class="text-xl font-bold mb-3">Zero-Error Vision Inspection</h4>
-                    <p class="text-slate-400 text-sm mb-6">Implemented high-speed camera systems for label verification
+                    <p class="text-slate-700 text-sm mb-6">Implemented high-speed camera systems for label verification
                         in a Raleigh pharmaceutical facility.</p>
                     <div
                         class="inline-block px-3 py-1 bg-primary/10 rounded-full border border-primary/20 text-primary text-xs font-bold">
@@ -275,7 +273,7 @@
                             class="material-icons-round text-white/20 group-hover:text-primary transition-colors">arrow_outward</span>
                     </div>
                     <h4 class="text-xl font-bold mb-3">SLC-500 to CompactLogix</h4>
-                    <p class="text-slate-400 text-sm mb-6">Complete control system retrofit for a textile manufacturer
+                    <p class="text-slate-700 text-sm mb-6">Complete control system retrofit for a textile manufacturer
                         with zero unplanned downtime during switchover.</p>
                     <div
                         class="inline-block px-3 py-1 bg-primary/10 rounded-full border border-primary/20 text-primary text-xs font-bold">
@@ -288,13 +286,9 @@
 
     <section id="contact" class="py-32 px-6 relative border-t border-white/5">
         <div class="max-w-4xl mx-auto text-center">
-            <div
-                class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-[10px] font-mono mb-8">
-                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-                COMMUNICATION_UPLINK
-            </div>
+
             <h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter mb-12">
-                CONTACT <span class="gradient-text">US</span>
+                <span class="gradient-text">CONTACT</span>
             </h2>
 
             <div class="grid md:grid-cols-2 gap-6">
@@ -305,7 +299,7 @@
                         class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
                         <span class="material-icons-round text-primary">alternate_email</span>
                     </div>
-                    <h3 class="text-sm font-mono uppercase tracking-widest text-slate-500 mb-2">Digital Uplink</h3>
+
                     <a href="mailto:hello@stitchrobotics.com"
                         class="text-xl md:text-2xl font-bold hover:text-primary transition-colors">
                         hello@stitchrobotics.com
@@ -319,7 +313,7 @@
                         class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
                         <span class="material-icons-round text-primary">phone_iphone</span>
                     </div>
-                    <h3 class="text-sm font-mono uppercase tracking-widest text-slate-500 mb-2">Voice Comms</h3>
+
                     <a href="tel:+15550000000"
                         class="text-xl md:text-2xl font-bold hover:text-primary transition-colors">
                         (555) 000-0000
@@ -334,40 +328,55 @@
             <div class="flex whitespace-nowrap animate-marquee">
                 <span
                     class="text-[12vw] font-black tracking-tighter text-transparent stroke-text opacity-10 uppercase px-8"
-                    style="-webkit-text-stroke: 1px white;">BETTER. FASTER. REPEATABLE. //</span>
+                    style="-webkit-text-stroke: 1px #000;">BETTER. FASTER. REPEATABLE. //</span>
                 <span
                     class="text-[12vw] font-black tracking-tighter text-transparent stroke-text opacity-10 uppercase px-8"
-                    style="-webkit-text-stroke: 1px white;">BETTER. FASTER. REPEATABLE. //</span>
+                    style="-webkit-text-stroke: 1px #000;">BETTER. FASTER. REPEATABLE. //</span>
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
             <div>
                 <div class="flex items-center gap-2 mb-6">
-                    <div class="w-6 h-6 bg-primary rounded-sm rotate-45 flex items-center justify-center">
-                        <span class="material-icons-round text-white text-[10px] -rotate-45">bolt</span>
+                    <div class="w-8 h-8 bg-primary rounded-sm rotate-45 flex items-center justify-center">
+                        <span class="font-bold text-white text-xs -rotate-45 font-mono">A<sup>2</sup></span>
                     </div>
-                    <span class="font-mono font-bold tracking-tighter">ROBOTIQ_ENGINEERING</span>
+                    <span class="font-mono font-bold tracking-tighter text-lg">ABSOLUTE AUTOMATION</span>
                 </div>
-                <p class="text-slate-500 max-w-xs text-sm">
-                    Architecting the physical intelligence infrastructure for a world that never sleeps.
+                <p class="text-slate-600 max-w-sm text-sm leading-relaxed">
+                    Automating North Carolina’s Manufacturing Future. <br />
+                    Custom Robotics, PLC Control Systems, and Process Optimization for the Southeast.
                 </p>
             </div>
             <div class="flex flex-col md:flex-row gap-12 text-sm font-mono uppercase tracking-widest text-slate-500">
                 <div class="space-y-4">
-                    <p class="text-white">Social</p>
+                    <p class="text-slate-900">Social</p>
                     <a class="block hover:text-primary transition-colors" href="#">X / Twitter</a>
                     <a class="block hover:text-primary transition-colors" href="#">LinkedIn</a>
                 </div>
                 <div class="space-y-4">
-                    <p class="text-white">Access</p>
+                    <p class="text-slate-900">Access</p>
                     <a class="block hover:text-primary transition-colors" href="#">Documentation</a>
                     <a class="block hover:text-primary transition-colors" href="#">API Portal</a>
                 </div>
             </div>
         </div>
         <div
-            class="max-w-7xl mx-auto px-6 mt-20 pt-10 border-t border-white/5 flex justify-between items-center text-[10px] font-mono text-slate-600 tracking-widest uppercase">
-            <span>© 2024 ROBOTIQ_ SYSTEMS. ALL RIGHTS RESERVED.</span>
+            class="max-w-7xl mx-auto px-6 mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-mono text-slate-600 tracking-widest uppercase">
+            <div class="flex items-center gap-4">
+                <span>© 2024 ABSOLUTE AUTOMATION. ALL RIGHTS RESERVED.</span>
+                <div class="flex items-center gap-2">
+                    <div
+                        class="inline-flex items-center gap-2 px-2 py-0.5 rounded-full border border-primary/30 bg-primary/5 text-primary animate-pulse-slow">
+                        <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                        SYSTEMS_ONLINE // v2.0.4
+                    </div>
+                    <div
+                        class="inline-flex items-center gap-2 px-2 py-0.5 rounded-full border border-primary/30 bg-primary/5 text-primary">
+                        <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                        COMMUNICATION_UPLINK
+                    </div>
+                </div>
+            </div>
             <span>SECURE_ENCRYPTED_CONNECTION_NODE_04</span>
         </div>
     </footer>
