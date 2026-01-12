@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Initial Red: 255, 30, 30 */
+    --primary-r: 255;
+    --primary-g: 30;
+    --primary-b: 30;
+  }
+
+  body {
+    background-color: #030305;
+    color: #fff;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@layer components {
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .neon-border {
+    border: 1px solid rgba(255, 30, 30, 0.3);
+    box-shadow: 0 0 15px rgba(255, 30, 30, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .neon-border:hover {
+    border-color: rgba(255, 30, 30, 0.8);
+    box-shadow: 0 0 25px rgba(255, 30, 30, 0.25);
+  }
+
+  .bento-item {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .bento-item:hover {
+    transform: scale(1.02);
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, #fff, rgb(var(--primary-r), var(--primary-g), var(--primary-b)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-text-bottom {
+    background: linear-gradient(to bottom, #fff 30%, rgb(var(--primary-r), var(--primary-g), var(--primary-b)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@layer utilities {
+  .noise {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAlwsJs0G5egH_4ATlAXve_FHrEZuz2Ssy32FyIq-w1cIaAiIhfodzJOgrjHtKEexN5L5E1e64gS9m7htyfzXMxobKhg7-2vnKCaiBWM7lC6gFiEZUfeiEhbi2Owk3Dwgtrd6dTxdcO9RLBNJv-Z_UuGlK_98-89oL15FUZ6QsMFjwzngP8MyNeXpAVTMNXAM7RVm3f5GdhBdvlIXfOUG_PyKikt-GXtvkuOW_9v7N0rQJtSSX9fDc4nvTLHSB9r1DaOkdpbHnXGG4);
+    opacity: 0.04;
+    z-index: 50;
+  }
+
+  #shader-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+  }
+
+  /* Text Stroke Utility */
+  .stroke-text {
+    -webkit-text-stroke: 1px white;
+  }
+}
