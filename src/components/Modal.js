@@ -23,7 +23,7 @@ export class Modal {
                             <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                                 <span class="material-icons-round text-primary">contact_support</span>
                             </div>
-                            <h3 class="text-2xl font-bold mb-2 text-slate-900">Connect</h3>
+                            <h3 class="text-2xl font-bold mb-2 text-slate-900">Contact Us</h3>
                             <p class="text-slate-600 text-sm mb-8">
                                 Reach out today to discuss your project!
                             </p>
