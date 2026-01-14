@@ -49,21 +49,22 @@
     <main>
         <section
             class="relative min-h-[100vh] pt-48 pb-20 px-6 flex flex-col items-center justify-center overflow-hidden">
+            <!-- Background Video -->
+            <div class="absolute inset-0 w-full h-full -z-20 overflow-hidden bg-white">
+                <video class="w-full h-full object-cover opacity-40 scale-105 translate-y-12 border-none outline-none"
+                    autoplay muted loop playsinline>
+                    <source src="/nctriad.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <!-- Gradient Overlay -->
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-blush blur-3xl -z-10 pointer-events-none">
+            </div>
+
             <div class="relative text-center z-10 max-w-6xl mx-auto">
 
-                <!-- Background Video -->
-                <div class="absolute inset-0 w-full h-full -z-20 overflow-hidden bg-white">
-                    <video
-                        class="w-full h-full object-cover opacity-40 scale-105 translate-y-12 border-none outline-none"
-                        autoplay muted loop playsinline>
-                        <source src="/nctriad.mp4" type="video/mp4">
-                    </video>
-                </div>
 
-                <!-- Gradient Overlay -->
-                <div
-                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-blush blur-3xl -z-10 pointer-events-none">
-                </div>
                 <h1
                     class="relative text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter mb-6 leading-tight">
                     <span class="gradient-text">PROVEN RESULTS</span> <br class="hidden md:block" />
