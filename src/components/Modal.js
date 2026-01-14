@@ -25,7 +25,7 @@ export class Modal {
                             </div>
                             <h3 class="text-2xl font-bold mb-2 text-slate-900">Connect</h3>
                             <p class="text-slate-600 text-sm mb-8">
-                                Choose a channel to initiate contact.
+                                Reach out today to discuss your project!
                             </p>
                             
                             <div class="space-y-4">
