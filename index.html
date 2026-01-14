@@ -51,6 +51,15 @@
             class="relative min-h-[100vh] pt-48 pb-20 px-6 flex flex-col items-center justify-center overflow-hidden">
             <div class="text-center z-10 max-w-6xl mx-auto">
 
+                <!-- Background Video -->
+                <div class="absolute inset-0 w-full h-full -z-20 overflow-hidden">
+                    <video class="w-full h-full object-cover opacity-40" autoplay muted loop playsinline
+                        poster="/video-poster.jpg">
+                        <source src="/nctriad.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <!-- Gradient Overlay -->
                 <div
                     class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-blush blur-3xl -z-10 pointer-events-none">
                 </div>
