@@ -12,7 +12,7 @@ export class Modal {
                 
                 <!-- Modal Content -->
                 <div class="fixed inset-0 flex items-center justify-center p-4">
-                    <div class="bg-background-dark border border-white/10 rounded-2xl w-full max-w-md p-8 relative transform scale-95 transition-transform duration-300 shadow-[0_0_50px_rgba(0,180,255,0.15)]">
+                    <div class="bg-background-dark border border-white/10 rounded-2xl w-full max-w-sm p-8 relative transform scale-95 transition-transform duration-300 shadow-[0_0_50px_rgba(0,180,255,0.15)]">
                         <!-- Close Button -->
                         <button class="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors" data-action="close">
                             <span class="material-icons-round">close</span>
@@ -21,30 +21,36 @@ export class Modal {
                         <!-- Content -->
                         <div class="text-center">
                             <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <span class="material-icons-round text-primary">mail</span>
+                                <span class="material-icons-round text-primary">contact_support</span>
                             </div>
-                            <h3 class="text-2xl font-bold mb-2">Contact Us</h3>
-                            <p class="text-slate-400 text-sm mb-6">
-                                Ready to automate? Send us a message and our engineering team will respond within 24 hours.
+                            <h3 class="text-2xl font-bold mb-2">Connect</h3>
+                            <p class="text-slate-400 text-sm mb-8">
+                                Choose a channel to initiate contact.
                             </p>
                             
-                            <form class="space-y-4 text-left">
-                                <div>
-                                    <label class="block text-xs font-mono uppercase tracking-widest text-slate-500 mb-2">Name</label>
-                                    <input type="text" required class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary/50 transition-colors" placeholder="Jane Doe">
-                                </div>
-                                <div>
-                                    <label class="block text-xs font-mono uppercase tracking-widest text-slate-500 mb-2">Email</label>
-                                    <input type="email" required class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary/50 transition-colors" placeholder="jane@company.com">
-                                </div>
-                                <div>
-                                    <label class="block text-xs font-mono uppercase tracking-widest text-slate-500 mb-2">Message</label>
-                                    <textarea required rows="3" class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary/50 transition-colors" placeholder="Project details..."></textarea>
-                                </div>
-                                <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 rounded-lg transition-all hover:shadow-[0_0_20px_rgba(0,180,255,0.3)] uppercase tracking-widest text-sm">
-                                    Send Message
-                                </button>
-                            </form>
+                            <div class="space-y-4">
+                                <!-- Email Link -->
+                                <a href="mailto:AbsoluteAutomation@AA.com" class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-primary/20 hover:border-primary/50 transition-all group">
+                                    <div class="w-10 h-10 bg-black/50 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-colors">
+                                        <span class="material-icons-round text-sm">email</span>
+                                    </div>
+                                    <div class="text-left">
+                                        <div class="text-[10px] font-mono uppercase tracking-widest text-slate-500">Email</div>
+                                        <div class="font-bold text-sm">AbsoluteAutomation@AA.com</div>
+                                    </div>
+                                </a>
+
+                                <!-- Phone Link -->
+                                <a href="tel:+15550000000" class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-primary/20 hover:border-primary/50 transition-all group">
+                                    <div class="w-10 h-10 bg-black/50 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-colors">
+                                        <span class="material-icons-round text-sm">phone</span>
+                                    </div>
+                                    <div class="text-left">
+                                        <div class="text-[10px] font-mono uppercase tracking-widest text-slate-500">Phone</div>
+                                        <div class="font-bold text-sm">(555) 000-0000</div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -75,38 +81,6 @@ export class Modal {
             if (e.key === 'Escape' && !this.el.classList.contains('hidden')) {
                 this.close();
             }
-        });
-
-        // Form Submission
-        this.el.querySelector('form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = e.target.querySelector('button');
-            const originalText = btn.innerText;
-
-            btn.innerText = 'SENDING...';
-            btn.classList.add('opacity-75', 'cursor-not-allowed');
-
-            // Simulate Network Request
-            setTimeout(() => {
-                btn.innerText = 'MESSAGE SENT!';
-                btn.classList.replace('bg-primary', 'bg-green-600');
-                btn.classList.remove('hover:shadow-[0_0_20px_rgba(0,180,255,0.3)]'); // remove initial shadow
-
-                // Clear form
-                e.target.reset();
-
-                setTimeout(() => {
-                    this.close();
-
-                    // Reset button state after modal closes
-                    setTimeout(() => {
-                        btn.innerText = originalText;
-                        btn.classList.replace('bg-green-600', 'bg-primary');
-                        btn.classList.remove('opacity-75', 'cursor-not-allowed');
-                        btn.classList.add('hover:shadow-[0_0_20px_rgba(0,180,255,0.3)]');
-                    }, 300);
-                }, 1500);
-            }, 1000);
         });
     }
 
