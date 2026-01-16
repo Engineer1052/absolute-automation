@@ -36,7 +36,7 @@ export class Modal {
                                     </div>
                                     <div class="text-left">
                                         <div class="text-[10px] font-mono uppercase tracking-widest text-slate-500">Email</div>
-                                        <div class="font-bold text-sm text-slate-900">sales@absoluteautomationsolutions.com</div>
+                                        <div class="font-bold text-xl text-slate-900">sales@absoluteautomationsolutions.com</div>
                                     </div>
                                 </a>
                             </div>
