@@ -12,7 +12,7 @@ export class Modal {
                 
                 <!-- Modal Content -->
                 <div class="fixed inset-0 flex items-center justify-center p-4">
-                    <div class="bg-white border border-slate-200 rounded-2xl w-full max-w-lg p-8 relative transform scale-95 transition-transform duration-300 shadow-2xl">
+                    <div class="bg-white border border-slate-200 rounded-2xl w-full max-w-2xl p-8 relative transform scale-95 transition-transform duration-300 shadow-2xl">
                         <!-- Close Button -->
                         <button class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 transition-colors" data-action="close">
                             <span class="material-icons-round">close</span>
@@ -36,7 +36,7 @@ export class Modal {
                                     </div>
                                     <div class="text-left">
                                         <div class="text-[10px] font-mono uppercase tracking-widest text-slate-500">Email</div>
-                                        <div class="font-bold text-sm text-slate-900 break-all">sales@absoluteautomationsolutions.com</div>
+                                        <div class="font-bold text-sm text-slate-900">sales@absoluteautomationsolutions.com</div>
                                     </div>
                                 </a>
                             </div>
