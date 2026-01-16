@@ -12,7 +12,7 @@ export class Modal {
                 
                 <!-- Modal Content -->
                 <div class="fixed inset-0 flex items-center justify-center p-4">
-                    <div class="bg-white border border-slate-200 rounded-2xl w-full max-w-sm p-8 relative transform scale-95 transition-transform duration-300 shadow-2xl">
+                    <div class="bg-white border border-slate-200 rounded-2xl w-full max-w-lg p-8 relative transform scale-95 transition-transform duration-300 shadow-2xl">
                         <!-- Close Button -->
                         <button class="absolute top-4 right-4 text-slate-400 hover:text-slate-900 transition-colors" data-action="close">
                             <span class="material-icons-round">close</span>
