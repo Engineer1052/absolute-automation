@@ -1,4 +1,7 @@
+import { inject } from '@vercel/analytics';
 import './style.css'
+
+inject();
 import { initNavigation } from './logic/navigation.js';
 import { Modal } from './components/Modal.js';
 
