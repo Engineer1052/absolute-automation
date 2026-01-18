@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description"
+        content="Explore our custom robotic cells, PLC programming, HMI system design, and machine retrofit services for diverse manufacturing needs." />
+    <title>Services - Absolute Automation Solutions</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&amp;family=Inter:wght@300;400;600;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white">
+    <div class="noise"></div>
+    <canvas id="shader-canvas"></canvas>
+
+    <!-- Header will be injected by src/components/Header.js -->
+
+    <main>
+        <section id="services" class="py-32 px-6 max-w-7xl mx-auto pt-48">
+            <div class="mb-16">
+                <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">ABSOLUTE AUTOMATION</h2>
+                <h3 class="text-4xl md:text-5xl font-bold tracking-tight">SYSTEMS &amp; SOLUTIONS</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 auto-rows-[300px]">
+                <div class="md:col-span-8 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-end group">
+                    <img src="/endmill-icon.png" alt="End Mill"
+                        class="absolute top-6 right-8 w-16 h-16 object-contain opacity-50 group-hover:opacity-100 transition-opacity" />
+                    <div class="space-y-4">
+                        <h4 class="text-3xl font-bold">In house prototyping and fabrication</h4>
+                        <p class="text-slate-700 max-w-lg">Larger integrators often outsource their fabrication, passing
+                            those markups and delays on to you. We handle our prototyping and light fabrication in-house
+                            right here in NC. This keeps costs down for our partners and ensures that the person
+                            designing your logic is the same person overseeing the build of the hardware.</p>
+                    </div>
+                </div>
+                <div class="md:col-span-4 bento-item bg-primary p-8 rounded-3xl flex flex-col justify-between">
+                    <div class="flex justify-between items-start">
+                        <span class="material-icons-round text-4xl">memory</span>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-slate-900 mb-2">PLC Programming</h4>
+                        <p class="text-slate-700 text-sm">Rockwell, Siemens, and custom control architectures for robust
+                            machine logic.</p>
+                    </div>
+                </div>
+                <div class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between">
+                    <div>
+                        <span class="material-icons-round text-3xl mb-4 text-primary">settings_input_component</span>
+                        <h4 class="text-2xl font-bold mb-2">HMI & Controls</h4>
+                        <p class="text-slate-700 text-sm">Intuitive operator interfaces and SCADA systems for real-time
+                            process visibility.</p>
+                    </div>
+                </div>
+                <div class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between">
+                    <div>
+                        <span class="material-icons-round text-3xl mb-4 text-primary">build_circle</span>
+                        <h4 class="text-2xl font-bold mb-2">Machine Retrofits</h4>
+                        <p class="text-slate-700 text-sm">Modernizing legacy equipment with current-gen controls to
+                            extend machine life/safety.</p>
+                    </div>
+                </div>
+                <div
+                    class="md:col-span-4 bento-item glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent">
+                    <div>
+                        <span class="material-icons-round text-3xl mb-4 text-slate-900/50">handyman</span>
+                        <h4 class="text-2xl font-bold mb-2">Service & Repair</h4>
+                        <p class="text-slate-700 text-sm">24/7 emergency support and preventive maintenance to minimize
+                            costly downtime.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer will be injected by src/components/Footer.js -->
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

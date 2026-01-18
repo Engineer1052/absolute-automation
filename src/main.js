@@ -1,11 +1,15 @@
 import { inject } from '@vercel/analytics';
 import './style.css'
+import { loadHeader } from './components/Header.js';
+import { loadFooter } from './components/Footer.js';
 
 inject();
 import { initNavigation } from './logic/navigation.js';
 import { Modal } from './components/Modal.js';
 
 // Initialize Logic
+loadHeader();
+loadFooter();
 initNavigation();
 new Modal();
 
