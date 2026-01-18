@@ -9,12 +9,12 @@ export function loadHeader() {
                 <span class="font-mono font-bold tracking-tighter text-lg">ABSOLUTE AUTOMATION SOLUTIONS</span>
             </a>
             <div class="hidden md:flex items-center gap-8 text-sm font-mono tracking-widest uppercase">
-                <a class="hover:text-primary transition-colors nav-link" href="/about.html">About</a>
-                <a class="hover:text-primary transition-colors nav-link" href="/services.html">Services</a>
-                <a class="hover:text-primary transition-colors nav-link" href="/videos.html">Videos</a>
-                <a class="hover:text-primary transition-colors nav-link" href="/case-studies.html">Case Studies</a>
+                <a class="hover:text-primary transition-colors nav-link" href="/about">About</a>
+                <a class="hover:text-primary transition-colors nav-link" href="/services">Services</a>
+                <a class="hover:text-primary transition-colors nav-link" href="/videos">Videos</a>
+                <a class="hover:text-primary transition-colors nav-link" href="/case-studies">Case Studies</a>
             </div>
-            <a href="/contact.html"
+            <a href="/contact"
                 class="bg-white text-black text-xs font-bold px-6 py-2 rounded-full uppercase tracking-widest hover:bg-primary hover:text-white transition-all">
                 Contact
             </a>
