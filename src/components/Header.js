@@ -2,7 +2,7 @@ export function loadHeader() {
     const headerHTML = `
     <header class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-5xl">
         <nav class="glass flex items-center justify-between px-8 py-4 rounded-full border border-white/10">
-            <a href="/index.html" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <a href="/" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
                 <div class="w-8 h-8 bg-primary rounded-sm rotate-45 flex items-center justify-center">
                     <span class="font-bold text-white text-xs -rotate-45 font-mono">A<sup>2</sup></span>
                 </div>
