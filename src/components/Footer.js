@@ -13,10 +13,8 @@ export function loadFooter() {
         </div>
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
             <div>
-                <div class="flex items-center gap-2 mb-6">
-                    <div class="w-8 h-8 bg-primary rounded-sm rotate-45 flex items-center justify-center">
-                        <span class="font-bold text-white text-xs -rotate-45 font-mono">A<sup>2</sup></span>
-                    </div>
+                <div class="flex items-center gap-4 mb-6">
+                    <img src="/absolute-logo.png" alt="Absolute Automation Solutions" class="h-14 w-auto object-contain" />
                     <span class="font-mono font-bold tracking-tighter text-lg">ABSOLUTE AUTOMATION SOLUTIONS</span>
                 </div>
                 <p class="text-slate-600 max-w-sm text-sm leading-relaxed">
