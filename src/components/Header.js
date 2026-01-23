@@ -6,7 +6,7 @@ export function loadHeader() {
                 <img src="/absolute-logo.png" alt="Absolute Automation Solutions" class="h-16 w-auto object-contain" />
                 <span class="font-mono font-bold tracking-tighter text-base hidden lg:block">ABSOLUTE AUTOMATION SOLUTIONS</span>
             </a>
-            <div class="hidden md:flex items-center gap-6 text-xs font-bold font-mono tracking-widest uppercase text-slate-600">
+            <div class="hidden md:flex items-center gap-6 text-sm font-bold font-mono tracking-widest uppercase text-slate-600">
                 <a class="hover:text-black transition-colors nav-link" href="/about">About</a>
                 <a class="hover:text-black transition-colors nav-link" href="/services">Services</a>
                 <a class="hover:text-black transition-colors nav-link" href="/videos">Videos</a>
