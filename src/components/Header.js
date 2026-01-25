@@ -51,13 +51,13 @@ export function loadHeader() {
             
             <!-- Phone Number (Hidden on Mobile) -->
             <div class="hidden md:flex items-center gap-4">
-                <a href="tel:3364628375" class="flex items-center gap-2 px-6 py-2 rounded-full bg-slate-900 text-[10px] md:text-xs font-bold text-white uppercase tracking-widest hover:bg-primary hover:text-white transition-all">
+                <a href="tel:3364628375" class="flex items-center justify-center gap-2 px-6 h-10 rounded-full bg-slate-900 text-[10px] md:text-xs font-bold text-white uppercase tracking-widest hover:bg-primary hover:text-white transition-all">
                     <span class="material-icons-round text-sm">phone</span>
                     (336) 462-8375
                 </a>
                 
                 <button data-trigger="modal"
-                    class="bg-slate-900 text-white text-xs font-bold px-6 py-2 rounded-full uppercase tracking-widest hover:bg-primary hover:text-white transition-all">
+                    class="bg-slate-900 text-white text-xs font-bold px-6 h-10 rounded-full uppercase tracking-widest hover:bg-primary hover:text-white transition-all flex items-center justify-center">
                     Contact
                 </button>
             </div>
