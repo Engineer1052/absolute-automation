@@ -139,7 +139,37 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.bento-item').forEach(el => {
-    el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
-    observer.observe(el);
+el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+observer.observe(el);
 });
+
+// Service Carousel Auto-Rotation
+const carousel = document.getElementById('service-carousel');
+if (carousel) {
+    let scrollInterval;
+
+    const startRotation = () => {
+        scrollInterval = setInterval(() => {
+            if (!carousel.firstElementChild) return;
+
+            // Calculate width of one item + gap (gap-4 = 1rem = 16px)
+            const itemWidth = carousel.firstElementChild.offsetWidth + 16;
+            const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+
+            // If near the end, loop back; otherwise scroll next
+            if (carousel.scrollLeft >= maxScroll - 50) { // Tolerance
+                carousel.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                carousel.scrollBy({ left: itemWidth, behavior: 'smooth' });
+            }
+        }, 3000); // 3 seconds per rotation
+    };
+
+    startRotation();
+
+    // Pause on interaction
+    carousel.addEventListener('mouseenter', () => clearInterval(scrollInterval));
+    carousel.addEventListener('mouseleave', startRotation);
+    carousel.addEventListener('touchstart', () => clearInterval(scrollInterval));
+    carousel.addEventListener('touchend', startRotation);
+}
