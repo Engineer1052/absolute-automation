@@ -35,10 +35,67 @@
                 <h3 class="text-4xl md:text-5xl font-bold tracking-tight">FIELD SERVICE</h3>
             </div>
 
-            <div class="glass p-8 rounded-3xl border border-white/5">
-                <p class="text-lg text-slate-700 dark:text-slate-300">
-                    Rapid response support, troubleshooting, and preventive maintenance to keep your production running.
-                </p>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:auto-rows-[300px]">
+                <!-- 1. 24/7 Emergency Support -->
+                <div
+                    class="md:col-span-8 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between group h-min md:h-full">
+                    <div class="flex justify-end mb-4 md:mb-0 md:absolute md:top-6 md:right-8">
+                        <span
+                            class="material-icons-round text-5xl md:text-6xl text-slate-800/10 group-hover:text-primary/20 transition-colors">support_agent</span>
+                    </div>
+                    <div>
+                        <h4 class="text-3xl font-bold">24/7 Emergency Support</h4>
+                        <p class="text-slate-700 max-w-lg mt-4">Downtime is expensive. Our field service engineers are
+                            ready to deploy at a moment's notice to troubleshoot and repair your critical automation
+                            equipment, getting you back online as fast as possible.</p>
+                    </div>
+                </div>
+
+                <!-- 2. Preventive Maintenance (Primary Highlight) -->
+                <div
+                    class="md:col-span-4 bento-item bg-primary p-8 rounded-3xl flex flex-col justify-between hover:brightness-110 transition-all">
+                    <div class="flex justify-between items-start">
+                        <span class="material-icons-round text-4xl">calendar_today</span>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-slate-900 mb-2">Preventive Maintenance</h4>
+                        <p class="text-slate-700 text-sm">Scheduled service plans to identify wear and potential
+                            failures before they cause unexpected stops.</p>
+                    </div>
+                </div>
+
+                <!-- 3. Remote Troubleshooting -->
+                <div
+                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
+                    <div>
+                        <span class="material-icons-round text-3xl mb-4 text-primary">wifi_tethering</span>
+                        <h4 class="text-2xl font-bold mb-2">Remote Support</h4>
+                        <p class="text-slate-700 text-sm">Secure VPN access allows our engineers to diagnose logic and
+                            software issues instantly without travel costs.</p>
+                    </div>
+                </div>
+
+                <!-- 4. Training -->
+                <div
+                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
+                    <div>
+                        <span class="material-icons-round text-3xl mb-4 text-primary">school</span>
+                        <h4 class="text-2xl font-bold mb-2">Operator Training</h4>
+                        <p class="text-slate-700 text-sm">Hands-on training sessions for your operators and maintenance
+                            staff to ensure they are confident running the system.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Spare Parts -->
+                <div
+                    class="md:col-span-4 bento-item glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent hover:border-primary/50 transition-colors group">
+                    <div>
+                        <span class="material-icons-round text-3xl mb-4 text-slate-900/50">inventory</span>
+                        <h4 class="text-2xl font-bold mb-2">Spare Parts</h4>
+                        <p class="text-slate-700 text-sm">Critical spare parts analysis and procurement services to keep
+                            your stockroom ready for any failure.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
