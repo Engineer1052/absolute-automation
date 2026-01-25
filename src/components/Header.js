@@ -51,7 +51,7 @@ export function loadHeader() {
             
             <!-- Phone Number (Hidden on Mobile) -->
             <div class="hidden md:flex items-center gap-4">
-                <a href="tel:3364628375" class="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-900/10 text-[10px] md:text-xs font-bold text-slate-900 uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all backdrop-blur-sm">
+                <a href="tel:3364628375" class="flex items-center gap-2 px-6 py-2 rounded-full bg-slate-900 text-[10px] md:text-xs font-bold text-white uppercase tracking-widest hover:bg-primary hover:text-white transition-all">
                     <span class="material-icons-round text-sm">phone</span>
                     (336) 462-8375
                 </a>
