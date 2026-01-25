@@ -151,19 +151,20 @@ if (carousel) {
 
     const startRotation = () => {
         scrollInterval = setInterval(() => {
+            // Start Rotation
             if (!carousel.firstElementChild) return;
 
-            // Calculate width of one item + gap (gap-4 = 1rem = 16px)
-            const itemWidth = carousel.firstElementChild.offsetWidth + 16;
+            // Calculate width of one item (no gap now)
+            const itemWidth = carousel.firstElementChild.offsetWidth;
             const maxScroll = carousel.scrollWidth - carousel.clientWidth;
 
             // If near the end, loop back; otherwise scroll next
-            if (carousel.scrollLeft >= maxScroll - 50) { // Tolerance
+            if (carousel.scrollLeft >= maxScroll - 10) {
                 carousel.scrollTo({ left: 0, behavior: 'smooth' });
             } else {
                 carousel.scrollBy({ left: itemWidth, behavior: 'smooth' });
             }
-        }, 3000); // 3 seconds per rotation
+        }, 5000); // Slower: 5 seconds per slide
     };
 
     startRotation();
@@ -182,7 +183,7 @@ if (carousel) {
         prevBtn.addEventListener('click', () => {
             clearInterval(scrollInterval); // Stop auto-rotation temporarily
             if (!carousel.firstElementChild) return;
-            const itemWidth = carousel.firstElementChild.offsetWidth + 16;
+            const itemWidth = carousel.firstElementChild.offsetWidth;
             carousel.scrollBy({ left: -itemWidth, behavior: 'smooth' });
             startRotation(); // Restart auto-rotation
         });
@@ -190,7 +191,7 @@ if (carousel) {
         nextBtn.addEventListener('click', () => {
             clearInterval(scrollInterval);
             if (!carousel.firstElementChild) return;
-            const itemWidth = carousel.firstElementChild.offsetWidth + 16;
+            const itemWidth = carousel.firstElementChild.offsetWidth;
             carousel.scrollBy({ left: itemWidth, behavior: 'smooth' });
             startRotation();
         });
