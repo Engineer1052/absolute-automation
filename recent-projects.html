@@ -30,60 +30,82 @@
     <!-- Header will be injected by src/components/Header.js -->
 
     <main>
-        <section id="case-studies" class="py-32 px-6 max-w-7xl mx-auto pt-48">
+        <section id="recent-projects" class="py-32 px-6 max-w-7xl mx-auto pt-48">
             <div class="mb-16">
                 <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">Proven Results</h2>
-                <h3 class="text-4xl md:text-5xl font-bold tracking-tight">PROJECT ARCHIVES</h3>
+                <h3 class="text-4xl md:text-5xl font-bold tracking-tight">RECENT PROJECTS</h3>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Case Study 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
                 <div
-                    class="glass p-8 rounded-3xl border border-white/5 hover:border-primary/50 transition-colors group cursor-pointer">
-                    <div class="mb-6 flex justify-between items-start">
-                        <span class="text-xs font-mono text-primary tracking-widest">AUTO_TIER_1</span>
-                        <span
-                            class="material-icons-round text-white/20 group-hover:text-primary transition-colors">arrow_outward</span>
+                    class="glass rounded-3xl border border-white/5 hover:border-primary/50 transition-colors group cursor-pointer overflow-hidden flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="/factory-arm.png" alt="Automated Assembly Cell"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     </div>
-                    <h4 class="text-xl font-bold mb-3">Injection Molding Automation</h4>
-                    <p class="text-slate-700 text-sm mb-6">Designed and integrated a custom autodoor system and Fanuc
-                        robotic pick-and-place solution for high-volume automotive component production.</p>
-                    <div
-                        class="inline-block px-3 py-1 bg-primary/10 rounded-full border border-primary/20 text-primary text-xs font-bold">
-                        TURNKEY INTEGRATION
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="mb-4 flex justify-between items-start">
+                            <span class="text-xs font-mono text-primary tracking-widest">AUTO_TIER_1</span>
+                            <span
+                                class="material-icons-round text-white/20 group-hover:text-primary transition-colors">arrow_outward</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Injection Molding Automation</h4>
+                        <p class="text-slate-700 text-sm mb-6 flex-grow">Designed and integrated a custom autodoor
+                            system and Fanuc robotic pick-and-place solution for high-volume automotive component
+                            production.</p>
+                        <div
+                            class="inline-block px-3 py-1 bg-primary/10 rounded-full border border-primary/20 text-primary text-xs font-bold w-fit">
+                            TURNKEY INTEGRATION
+                        </div>
                     </div>
                 </div>
 
-                <!-- Case Study 2 -->
+                <!-- Project 2 -->
                 <div
-                    class="glass p-8 rounded-3xl border border-white/5 hover:border-primary/50 transition-colors group cursor-pointer">
-                    <div class="mb-6 flex justify-between items-start">
-                        <span class="text-xs font-mono text-primary tracking-widest">PHARMA_PKG</span>
-                        <span
-                            class="material-icons-round text-white/20 group-hover:text-primary transition-colors">arrow_outward</span>
+                    class="glass rounded-3xl border border-white/5 hover:border-primary/50 transition-colors group cursor-pointer overflow-hidden flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="/factory-vision.png" alt="Vision System"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     </div>
-                    <h4 class="text-xl font-bold mb-3">Zero-Error Vision Inspection</h4>
-                    <p class="text-slate-700 text-sm mb-6">Implemented high-speed camera systems for label verification
-                        in a Raleigh pharmaceutical facility.</p>
-                    <div
-                        class="inline-block px-3 py-1 bg-primary/10 rounded-full border border-primary/20 text-primary text-xs font-bold">
-                        100% QUALITY RATE
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="mb-4 flex justify-between items-start">
+                            <span class="text-xs font-mono text-primary tracking-widest">PHARMA_PKG</span>
+                            <span
+                                class="material-icons-round text-white/20 group-hover:text-primary transition-colors">arrow_outward</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Zero-Error Vision Inspection</h4>
+                        <p class="text-slate-700 text-sm mb-6 flex-grow">Implemented high-speed camera systems for label
+                            verification in a Raleigh pharmaceutical facility, achieving 100% quality rates.</p>
+                        <div
+                            class="inline-block px-3 py-1 bg-primary/10 rounded-full border border-primary/20 text-primary text-xs font-bold w-fit">
+                            100% QUALITY RATE
+                        </div>
                     </div>
                 </div>
 
-                <!-- Case Study 3 -->
+                <!-- Project 3 -->
                 <div
-                    class="glass p-8 rounded-3xl border border-white/5 hover:border-primary/50 transition-colors group cursor-pointer">
-                    <div class="mb-6 flex justify-between items-start">
-                        <span class="text-xs font-mono text-primary tracking-widest">LEGACY_MIGRATION</span>
-                        <span
-                            class="material-icons-round text-white/20 group-hover:text-primary transition-colors">arrow_outward</span>
+                    class="glass rounded-3xl border border-white/5 hover:border-primary/50 transition-colors group cursor-pointer overflow-hidden flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="/control-panel.png" alt="Control System Retrofit"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     </div>
-                    <h4 class="text-xl font-bold mb-3">SLC-500 to CompactLogix</h4>
-                    <p class="text-slate-700 text-sm mb-6">Complete control system retrofit for a textile manufacturer
-                        with zero unplanned downtime during switchover.</p>
-                    <div
-                        class="inline-block px-3 py-1 bg-primary/10 rounded-full border border-primary/20 text-primary text-xs font-bold">
-                        MODERNIZED
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="mb-4 flex justify-between items-start">
+                            <span class="text-xs font-mono text-primary tracking-widest">LEGACY_MIGRATION</span>
+                            <span
+                                class="material-icons-round text-white/20 group-hover:text-primary transition-colors">arrow_outward</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">SLC-500 to CompactLogix</h4>
+                        <p class="text-slate-700 text-sm mb-6 flex-grow">Complete control system retrofit for a textile
+                            manufacturer with zero unplanned downtime during the critical holiday switchover.</p>
+                        <div
+                            class="inline-block px-3 py-1 bg-primary/10 rounded-full border border-primary/20 text-primary text-xs font-bold w-fit">
+                            MODERNIZED
+                        </div>
                     </div>
                 </div>
             </div>
