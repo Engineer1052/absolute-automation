@@ -49,10 +49,18 @@ export function loadHeader() {
                 <a class="hover:text-primary transition-colors nav-link" href="/case-studies">Case Studies</a>
             </div>
             
-            <a href="/contact"
-                class="hidden md:block bg-white text-black text-xs font-bold px-6 py-2 rounded-full uppercase tracking-widest hover:bg-primary hover:text-white transition-all">
-                Contact
-            </a>
+            <!-- Phone Number (Hidden on Mobile) -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="tel:3364628375" class="flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 text-[10px] md:text-xs font-bold text-white uppercase tracking-widest hover:bg-white hover:text-black transition-all backdrop-blur-sm">
+                    <span class="material-icons-round text-sm">phone</span>
+                    (336) 462-8375
+                </a>
+                
+                <button data-trigger="modal"
+                    class="bg-white text-black text-xs font-bold px-6 py-2 rounded-full uppercase tracking-widest hover:bg-primary hover:text-white transition-all">
+                    Contact
+                </button>
+            </div>
 
             <!-- Mobile Hamburger Button -->
             <button id="mobile-menu-btn" class="md:hidden z-50 text-slate-800 relative w-10 h-10 flex items-center justify-center border border-slate-200/20 rounded-full bg-white/50 backdrop-blur-md active:scale-95 transition-all">
