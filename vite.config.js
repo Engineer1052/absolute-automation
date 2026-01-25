@@ -11,7 +11,12 @@ export default defineConfig({
                 services: resolve(__dirname, 'services.html'),
                 videos: resolve(__dirname, 'videos.html'),
                 'case-studies': resolve(__dirname, 'case-studies.html'),
-                contact: resolve(__dirname, 'contact.html')
+                contact: resolve(__dirname, 'contact.html'),
+                'factory-automation': resolve(__dirname, 'factory-automation.html'),
+                'compact-custom-machinery': resolve(__dirname, 'compact-custom-machinery.html'),
+                'control-panel-assembly': resolve(__dirname, 'control-panel-assembly.html'),
+                'systems-integration': resolve(__dirname, 'systems-integration.html'),
+                'field-service': resolve(__dirname, 'field-service.html')
             }
         }
     }
