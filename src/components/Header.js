@@ -62,14 +62,21 @@ export function loadHeader() {
         <div class="flex flex-col items-center gap-8 text-2xl font-mono font-bold uppercase tracking-widest text-slate-900">
             <a class="mobile-link hover:text-primary transition-colors" href="/">Home</a>
             <a class="mobile-link hover:text-primary transition-colors" href="/about">About</a>
-            <a class="mobile-link hover:text-primary transition-colors" href="/services">Services</a>
-            <!-- Mobile Sub-links -->
-            <div class="flex flex-col gap-4 text-sm text-slate-500 items-center -mt-2 mb-2">
-                <a class="mobile-link hover:text-white transition-colors" href="/factory-automation.html">Factory Automation</a>
-                <a class="mobile-link hover:text-white transition-colors" href="/compact-custom-machinery.html">Compact Custom Machinery</a>
-                <a class="mobile-link hover:text-white transition-colors" href="/control-panel-assembly.html">Panel Assembly</a>
-                <a class="mobile-link hover:text-white transition-colors" href="/systems-integration.html">Systems Integration</a>
-                <a class="mobile-link hover:text-white transition-colors" href="/field-service.html">Field Service</a>
+            <div class="flex flex-col items-center w-full">
+                <div class="flex items-center gap-4">
+                    <a class="mobile-link hover:text-primary transition-colors" href="/services">Services</a>
+                    <button id="mobile-services-toggle" class="p-2 border border-slate-300 rounded-full w-8 h-8 flex items-center justify-center">
+                        <span class="material-icons-round text-sm">expand_more</span>
+                    </button>
+                </div>
+                <!-- Mobile Sub-links (Hidden by default) -->
+                <div id="mobile-services-dropdown" class="hidden flex-col gap-4 text-sm text-slate-500 items-center mt-4 mb-4 bg-white/50 rounded-xl w-3/4 py-4 border border-white/20">
+                    <a class="mobile-link hover:text-primary transition-colors" href="/factory-automation.html">Factory Automation</a>
+                    <a class="mobile-link hover:text-primary transition-colors" href="/compact-custom-machinery.html">Compact Custom Machinery</a>
+                    <a class="mobile-link hover:text-primary transition-colors" href="/control-panel-assembly.html">Panel Assembly</a>
+                    <a class="mobile-link hover:text-primary transition-colors" href="/systems-integration.html">Systems Integration</a>
+                    <a class="mobile-link hover:text-primary transition-colors" href="/field-service.html">Field Service</a>
+                </div>
             </div>
             <a class="mobile-link hover:text-primary transition-colors" href="/videos">Videos</a>
             <a class="mobile-link hover:text-primary transition-colors" href="/case-studies">Case Studies</a>
@@ -126,4 +133,30 @@ export function loadHeader() {
             if (isMenuOpen) toggleMenu();
         });
     });
+
+    // Mobile Services Sub-menu Toggle
+    const servicesToggle = document.getElementById('mobile-services-toggle');
+    const servicesMenu = document.getElementById('mobile-services-dropdown');
+
+    if (servicesToggle && servicesMenu) {
+        servicesToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation(); // Prevent menu from closing if it bubbles up
+
+            servicesMenu.classList.toggle('hidden');
+            servicesMenu.classList.toggle('flex');
+
+            // Rotate icon
+            const icon = servicesToggle.querySelector('.material-icons-round');
+            if (servicesMenu.classList.contains('hidden')) {
+                icon.textContent = 'expand_more';
+                servicesToggle.classList.remove('bg-primary', 'text-white', 'border-transparent');
+                servicesToggle.classList.add('border-slate-300');
+            } else {
+                icon.textContent = 'expand_less';
+                servicesToggle.classList.add('bg-primary', 'text-white', 'border-transparent');
+                servicesToggle.classList.remove('border-slate-300');
+            }
+        });
+    }
 }
