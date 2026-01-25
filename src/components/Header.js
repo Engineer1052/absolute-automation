@@ -58,8 +58,8 @@ export function loadHeader() {
     </header>
 
     <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu-overlay" class="fixed inset-0 z-[90] bg-gradient-to-b from-white to-blue-100/90 backdrop-blur-xl transform translate-x-full transition-transform duration-500 ease-in-out md:hidden flex items-center justify-center opacity-0 pointer-events-none">
-        <div class="flex flex-col items-center gap-8 text-2xl font-mono font-bold uppercase tracking-widest text-slate-900">
+    <div id="mobile-menu-overlay" class="fixed inset-0 z-[90] bg-gradient-to-b from-white to-blue-100/90 backdrop-blur-xl transform translate-x-full transition-transform duration-500 ease-in-out md:hidden flex flex-col items-center justify-start pt-32 overflow-y-auto opacity-0 pointer-events-none">
+        <div class="flex flex-col items-center gap-8 text-2xl font-mono font-bold uppercase tracking-widest text-slate-900 w-full pb-10">
             <a class="mobile-link hover:text-primary transition-colors" href="/">Home</a>
             <a class="mobile-link hover:text-primary transition-colors" href="/about">About</a>
             <div class="flex flex-col items-center w-full">
@@ -70,7 +70,7 @@ export function loadHeader() {
                     </button>
                 </div>
                 <!-- Mobile Sub-links (Hidden by default) -->
-                <div id="mobile-services-dropdown" style="display: none;" class="hidden flex-col gap-4 text-sm text-slate-500 items-start pl-6 mt-4 mb-4 bg-white/50 rounded-xl w-3/4 py-4 border border-white/20 max-h-64 overflow-y-auto">
+                <div id="mobile-services-dropdown" style="display: none;" class="hidden flex-col gap-4 text-sm text-slate-500 items-start pl-6 mt-4 mb-4 bg-white/50 rounded-xl w-3/4 py-4 border border-white/20">
                     <a class="mobile-link hover:text-primary transition-colors" href="/factory-automation.html">Factory Automation</a>
                     <a class="mobile-link hover:text-primary transition-colors" href="/compact-custom-machinery.html">Compact Custom Machinery</a>
                     <a class="mobile-link hover:text-primary transition-colors" href="/control-panel-assembly.html">Panel Assembly</a>
