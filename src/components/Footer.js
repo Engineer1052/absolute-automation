@@ -13,9 +13,13 @@ export function loadFooter() {
         </div>
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
             <div>
-                <div class="flex items-center gap-4 mb-6">
-                    <img src="/absolute-logo.png" alt="Absolute Automation Solutions" class="h-14 w-auto object-contain" />
-                    <span class="font-mono font-bold tracking-tighter text-lg">ABSOLUTE AUTOMATION SOLUTIONS</span>
+                <div class="flex items-center gap-3 mb-6">
+                    <img src="/absolute-logo.png" alt="Absolute Automation Solutions" class="h-16 w-auto object-contain" />
+                    <div class="flex flex-col font-mono font-bold tracking-tighter leading-[0.8] text-sm text-slate-800 justify-center translate-y-[2px]">
+                        <span>ABSOLUTE</span>
+                        <span>AUTOMATION</span>
+                        <span>SOLUTIONS</span>
+                    </div>
                 </div>
                 <p class="text-slate-600 max-w-sm text-sm leading-relaxed">
                     Automating North Carolina’s Manufacturing Future. <br />
