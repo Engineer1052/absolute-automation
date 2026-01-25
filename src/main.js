@@ -139,8 +139,9 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
-observer.observe(el);
+document.querySelectorAll('.bento-item').forEach(el => {
+    el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+    observer.observe(el);
 });
 
 // Service Carousel Auto-Rotation
