@@ -18,23 +18,23 @@ export function loadHeader() {
                         <span class="material-icons-round text-sm">expand_more</span>
                     </button>
                     <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 hidden group-hover:block min-w-[300px]">
-                        <div class="glass border border-white/10 rounded-2xl overflow-hidden p-2 flex flex-col gap-1 shadow-2xl">
-                            <a href="/services" class="block px-4 py-3 rounded-xl hover:bg-white/10 hover:text-primary transition-colors font-bold border-b border-white/5 mx-2">
+                        <div class="bg-white/95 backdrop-blur-xl border border-white/10 rounded-2xl overflow-hidden p-2 flex flex-col gap-1 shadow-2xl">
+                            <a href="/services" class="block px-4 py-3 rounded-xl hover:bg-white/10 hover:text-primary transition-colors font-bold border-b border-black/5 mx-2">
                                 All Services
                             </a>
-                            <a href="/factory-automation.html" class="block px-4 py-2 rounded-xl hover:bg-white/10 hover:text-primary transition-colors text-xs">
+                            <a href="/factory-automation.html" class="block px-4 py-2 rounded-xl hover:bg-black/5 hover:text-primary transition-colors text-xs">
                                 Factory Automation
                             </a>
-                            <a href="/compact-custom-machinery.html" class="block px-4 py-2 rounded-xl hover:bg-white/10 hover:text-primary transition-colors text-xs">
+                            <a href="/compact-custom-machinery.html" class="block px-4 py-2 rounded-xl hover:bg-black/5 hover:text-primary transition-colors text-xs">
                                 Compact Custom Machinery
                             </a>
-                            <a href="/control-panel-assembly.html" class="block px-4 py-2 rounded-xl hover:bg-white/10 hover:text-primary transition-colors text-xs">
+                            <a href="/control-panel-assembly.html" class="block px-4 py-2 rounded-xl hover:bg-black/5 hover:text-primary transition-colors text-xs">
                                 Control Panel Assembly
                             </a>
-                            <a href="/systems-integration.html" class="block px-4 py-2 rounded-xl hover:bg-white/10 hover:text-primary transition-colors text-xs">
+                            <a href="/systems-integration.html" class="block px-4 py-2 rounded-xl hover:bg-black/5 hover:text-primary transition-colors text-xs">
                                 Control Systems Integration
                             </a>
-                            <a href="/field-service.html" class="block px-4 py-2 rounded-xl hover:bg-white/10 hover:text-primary transition-colors text-xs">
+                            <a href="/field-service.html" class="block px-4 py-2 rounded-xl hover:bg-black/5 hover:text-primary transition-colors text-xs">
                                 Field Service
                             </a>
                         </div>
@@ -70,7 +70,7 @@ export function loadHeader() {
                     </button>
                 </div>
                 <!-- Mobile Sub-links (Hidden by default) -->
-                <div id="mobile-services-dropdown" style="display: none;" class="hidden flex-col gap-4 text-sm text-slate-500 items-start pl-6 mt-4 mb-4 bg-white/50 rounded-xl w-3/4 py-4 border border-white/20">
+                <div id="mobile-services-dropdown" style="display: none;" class="hidden flex-col gap-4 text-sm text-slate-500 items-start pl-6 mt-4 mb-4 bg-white/95 rounded-xl w-3/4 py-4 border border-white/20">
                     <a class="mobile-link hover:text-primary transition-colors" href="/factory-automation.html">Factory Automation</a>
                     <a class="mobile-link hover:text-primary transition-colors" href="/compact-custom-machinery.html">Compact Custom Machinery</a>
                     <a class="mobile-link hover:text-primary transition-colors" href="/control-panel-assembly.html">Panel Assembly</a>
