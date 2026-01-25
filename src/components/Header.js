@@ -51,13 +51,13 @@ export function loadHeader() {
             
             <!-- Phone Number (Hidden on Mobile) -->
             <div class="hidden md:flex items-center gap-4">
-                <a href="tel:3364628375" class="flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 text-[10px] md:text-xs font-bold text-white uppercase tracking-widest hover:bg-white hover:text-black transition-all backdrop-blur-sm">
+                <a href="tel:3364628375" class="flex items-center gap-2 px-4 py-2 rounded-full border border-slate-900/10 text-[10px] md:text-xs font-bold text-slate-900 uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all backdrop-blur-sm">
                     <span class="material-icons-round text-sm">phone</span>
                     (336) 462-8375
                 </a>
                 
                 <button data-trigger="modal"
-                    class="bg-white text-black text-xs font-bold px-6 py-2 rounded-full uppercase tracking-widest hover:bg-primary hover:text-white transition-all">
+                    class="bg-slate-900 text-white text-xs font-bold px-6 py-2 rounded-full uppercase tracking-widest hover:bg-primary hover:text-white transition-all">
                     Contact
                 </button>
             </div>
@@ -92,7 +92,15 @@ export function loadHeader() {
             </div>
             <a class="mobile-link hover:text-primary transition-colors" href="/videos">Videos</a>
             <a class="mobile-link hover:text-primary transition-colors" href="/case-studies">Case Studies</a>
-            <a class="mobile-link text-primary border border-primary/30 px-8 py-3 rounded-full mt-8 bg-white/50" href="/contact">Contact</a>
+            
+            <!-- Mobile Phone & Contact -->
+            <a href="tel:3364628375" class="flex items-center gap-2 text-slate-500 hover:text-primary transition-colors text-sm font-bold tracking-widest uppercase">
+                <span class="material-icons-round">phone</span>
+                (336) 462-8375
+            </a>
+            <button data-trigger="modal" class="mobile-link text-white border border-transparent px-8 py-3 rounded-full mt-4 bg-slate-900 shadow-lg active:scale-95 transition-all">
+                Contact
+            </button>
         </div>
     </div>
     `;
