@@ -156,8 +156,10 @@ if (track && prevBtn && nextBtn) {
     let autoSlideInterval;
 
     const updateSlide = () => {
-        const translateX = -(currentIndex * 100);
-        track.style.transform = `translateX(${translateX}%)`;
+        // Use pixel width of the first slide to be precise
+        const slideWidth = slides[0].clientWidth;
+        const translatePx = -(currentIndex * slideWidth);
+        track.style.transform = `translateX(${translatePx}px)`;
     };
 
     const nextSlide = () => {
@@ -171,8 +173,12 @@ if (track && prevBtn && nextBtn) {
     };
 
     const startAutoSlide = () => {
+        clearInterval(autoSlideInterval); // Clear existing to avoid overlap
         autoSlideInterval = setInterval(nextSlide, 5000);
     };
+
+    // Handle Resize to keep alignment
+    window.addEventListener('resize', updateSlide);
 
     const stopAutoSlide = () => {
         clearInterval(autoSlideInterval);
