@@ -94,11 +94,11 @@ export function loadHeader() {
             <a class="mobile-link hover:text-primary transition-colors" href="/case-studies">Case Studies</a>
             
             <!-- Mobile Phone & Contact -->
-            <a href="tel:3364628375" class="flex items-center justify-center gap-2 text-white bg-slate-900 border border-slate-800 px-8 py-3 rounded-full mt-4 w-64 shadow-lg active:scale-95 transition-all text-sm font-bold tracking-widest uppercase">
+            <a href="tel:3364628375" class="flex items-center justify-center gap-2 text-white bg-slate-900 border border-slate-800 px-8 h-12 rounded-full mt-4 w-64 shadow-lg active:scale-95 transition-all text-sm font-bold tracking-widest uppercase">
                 <span class="material-icons-round">phone</span>
                 (336) 462-8375
             </a>
-            <button data-trigger="modal" class="mobile-link text-white border border-transparent px-8 py-3 rounded-full mt-4 bg-slate-900 shadow-lg active:scale-95 transition-all w-64">
+            <button data-trigger="modal" class="mobile-link flex items-center justify-center text-white border border-transparent px-8 h-12 rounded-full mt-4 bg-slate-900 shadow-lg active:scale-95 transition-all w-64 text-sm font-bold tracking-widest uppercase">
                 Contact
             </button>
         </div>
