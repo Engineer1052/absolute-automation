@@ -173,4 +173,26 @@ if (carousel) {
     carousel.addEventListener('mouseleave', startRotation);
     carousel.addEventListener('touchstart', () => clearInterval(scrollInterval));
     carousel.addEventListener('touchend', startRotation);
+
+    // Manual Navigation Buttons
+    const prevBtn = document.getElementById('carousel-prev');
+    const nextBtn = document.getElementById('carousel-next');
+
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+            clearInterval(scrollInterval); // Stop auto-rotation temporarily
+            if (!carousel.firstElementChild) return;
+            const itemWidth = carousel.firstElementChild.offsetWidth + 16;
+            carousel.scrollBy({ left: -itemWidth, behavior: 'smooth' });
+            startRotation(); // Restart auto-rotation
+        });
+
+        nextBtn.addEventListener('click', () => {
+            clearInterval(scrollInterval);
+            if (!carousel.firstElementChild) return;
+            const itemWidth = carousel.firstElementChild.offsetWidth + 16;
+            carousel.scrollBy({ left: itemWidth, behavior: 'smooth' });
+            startRotation();
+        });
+    }
 }

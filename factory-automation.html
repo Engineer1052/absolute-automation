@@ -36,19 +36,35 @@
             </div>
 
             <!-- Image Gallery Carousel -->
-            <div id="service-carousel"
-                class="mb-12 -mx-6 px-6 md:mx-0 md:px-0 overflow-x-auto flex gap-4 pb-4 snap-x snap-mandatory scroll-smooth hide-scrollbar">
-                <img src="/factory-arm.png" alt="Robotic Arm Assembly"
-                    class="snap-center shrink-0 w-[80vw] md:w-[400px] h-[250px] object-cover rounded-2xl border border-white/10 shadow-lg" />
-                <img src="/factory-conveyor.png" alt="Automated Conveyor"
-                    class="snap-center shrink-0 w-[80vw] md:w-[400px] h-[250px] object-cover rounded-2xl border border-white/10 shadow-lg" />
-                <img src="/factory-vision.png" alt="Vision System Inspection"
-                    class="snap-center shrink-0 w-[80vw] md:w-[400px] h-[250px] object-cover rounded-2xl border border-white/10 shadow-lg" />
-                <!-- Duplicates for loop illusion -->
-                <img src="/factory-arm.png" alt="Robotic Cell"
-                    class="snap-center shrink-0 w-[80vw] md:w-[400px] h-[250px] object-cover rounded-2xl border border-white/10 shadow-lg" />
-                <img src="/factory-conveyor.png" alt="Material Handling"
-                    class="snap-center shrink-0 w-[80vw] md:w-[400px] h-[250px] object-cover rounded-2xl border border-white/10 shadow-lg" />
+            <!-- Image Gallery Carousel Wrapper -->
+            <div class="relative mb-12 group">
+                <!-- Prev Button -->
+                <button id="carousel-prev"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-r-xl backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100 -ml-4 md:-ml-0">
+                    <span class="material-icons-round text-3xl">chevron_left</span>
+                </button>
+
+                <!-- Carousel -->
+                <div id="service-carousel"
+                    class="px-6 md:px-0 overflow-x-auto flex gap-4 pb-4 snap-x snap-mandatory scroll-smooth hide-scrollbar">
+                    <img src="/factory-arm.png" alt="Robotic Arm Assembly"
+                        class="snap-center shrink-0 w-[80vw] md:w-[400px] h-[250px] object-cover rounded-2xl border border-white/10 shadow-lg" />
+                    <img src="/factory-conveyor.png" alt="Automated Conveyor"
+                        class="snap-center shrink-0 w-[80vw] md:w-[400px] h-[250px] object-cover rounded-2xl border border-white/10 shadow-lg" />
+                    <img src="/factory-vision.png" alt="Vision System Inspection"
+                        class="snap-center shrink-0 w-[80vw] md:w-[400px] h-[250px] object-cover rounded-2xl border border-white/10 shadow-lg" />
+                    <!-- Duplicates for loop illusion -->
+                    <img src="/factory-arm.png" alt="Robotic Cell"
+                        class="snap-center shrink-0 w-[80vw] md:w-[400px] h-[250px] object-cover rounded-2xl border border-white/10 shadow-lg" />
+                    <img src="/factory-conveyor.png" alt="Material Handling"
+                        class="snap-center shrink-0 w-[80vw] md:w-[400px] h-[250px] object-cover rounded-2xl border border-white/10 shadow-lg" />
+                </div>
+
+                <!-- Next Button -->
+                <button id="carousel-next"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-l-xl backdrop-blur-sm transition-all opacity-0 group-hover:opacity-100 -mr-4 md:-mr-0">
+                    <span class="material-icons-round text-3xl">chevron_right</span>
+                </button>
             </div>
 
             <!-- Detailed SEO Content -->
