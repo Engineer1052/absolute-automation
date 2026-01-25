@@ -143,19 +143,31 @@ export function loadHeader() {
             e.preventDefault();
             e.stopPropagation(); // Prevent menu from closing if it bubbles up
 
-            servicesMenu.classList.toggle('hidden');
-            servicesMenu.classList.toggle('flex');
+            // Check if currently hidden (checking inline style OR class)
+            const isHidden = servicesMenu.style.display === 'none' || servicesMenu.classList.contains('hidden');
 
-            // Rotate icon
-            const icon = servicesToggle.querySelector('.material-icons-round');
-            if (servicesMenu.classList.contains('hidden')) {
-                icon.textContent = 'expand_more';
-                servicesToggle.classList.remove('bg-primary', 'text-white', 'border-transparent');
-                servicesToggle.classList.add('border-slate-300');
-            } else {
+            if (isHidden) {
+                // Show it
+                servicesMenu.style.display = 'flex';
+                servicesMenu.classList.remove('hidden');
+                servicesMenu.classList.add('flex');
+
+                // Icon up
+                const icon = servicesToggle.querySelector('.material-icons-round');
                 icon.textContent = 'expand_less';
                 servicesToggle.classList.add('bg-primary', 'text-white', 'border-transparent');
                 servicesToggle.classList.remove('border-slate-300');
+            } else {
+                // Hide it
+                servicesMenu.style.display = 'none';
+                servicesMenu.classList.add('hidden');
+                servicesMenu.classList.remove('flex');
+
+                // Icon down
+                const icon = servicesToggle.querySelector('.material-icons-round');
+                icon.textContent = 'expand_more';
+                servicesToggle.classList.remove('bg-primary', 'text-white', 'border-transparent');
+                servicesToggle.classList.add('border-slate-300');
             }
         });
     }
