@@ -76,13 +76,16 @@ export function loadHeader() {
             <a class="mobile-link hover:text-primary transition-colors" href="/about">About</a>
             <div class="flex flex-col items-center w-full">
                 <div class="flex items-center gap-4">
+                    <!-- Spacer to balance button width for perfect centering -->
+                    <div class="w-8"></div>
                     <a class="mobile-link hover:text-primary transition-colors" href="/services">Services</a>
                     <button id="mobile-services-toggle" class="p-2 border border-slate-300 rounded-full w-8 h-8 flex items-center justify-center">
                         <span class="material-icons-round text-sm">expand_more</span>
                     </button>
+                    <!-- Button occupies w-8 space on right -->
                 </div>
                 <!-- Mobile Sub-links (Hidden by default) -->
-                <div id="mobile-services-dropdown" style="display: none;" class="hidden flex-col gap-4 text-sm text-slate-500 items-start pl-6 mt-4 mb-4 bg-white/[0.98] rounded-xl w-3/4 py-4 border border-white/20">
+                <div id="mobile-services-dropdown" style="display: none;" class="hidden flex-col gap-4 text-sm text-slate-500 items-center text-center mt-4 mb-4 bg-white/[0.98] rounded-xl w-3/4 py-4 border border-white/20">
                     <a class="mobile-link hover:text-primary transition-colors" href="/factory-automation.html">Factory Automation</a>
                     <a class="mobile-link hover:text-primary transition-colors" href="/compact-custom-machinery.html">Compact Custom Machinery</a>
                     <a class="mobile-link hover:text-primary transition-colors" href="/control-panel-assembly.html">Panel Assembly</a>
