@@ -1,3 +1,10 @@
 {
-    "cleanUrls": true
+    "cleanUrls": true,
+    "redirects": [
+        {
+            "source": "/project-archive",
+            "destination": "/projects",
+            "permanent": true
+        }
+    ]
 }
