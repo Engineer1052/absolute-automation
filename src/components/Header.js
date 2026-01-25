@@ -46,7 +46,7 @@ export function loadHeader() {
                 </div>
 
                 <a class="hover:text-primary transition-colors nav-link" href="/videos">Videos</a>
-                <a class="hover:text-primary transition-colors nav-link" href="/case-studies">Case Studies</a>
+                <a class="hover:text-primary transition-colors nav-link" href="/recent-projects">Recent Projects</a>
             </div>
             
             <!-- Phone Number (Hidden on Mobile) -->
@@ -94,7 +94,7 @@ export function loadHeader() {
                 </div>
             </div>
             <a class="mobile-link hover:text-primary transition-colors" href="/videos">Videos</a>
-            <a class="mobile-link hover:text-primary transition-colors" href="/case-studies">Case Studies</a>
+            <a class="mobile-link hover:text-primary transition-colors" href="/recent-projects">Recent Projects</a>
             
             <!-- Mobile Phone & Contact -->
             <a href="tel:3364628375" class="flex items-center justify-center gap-2 text-white bg-slate-900 border border-slate-800 px-8 h-12 rounded-full mt-4 w-64 shadow-lg active:scale-95 transition-all text-sm font-bold tracking-widest uppercase">
