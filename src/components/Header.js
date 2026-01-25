@@ -3,8 +3,8 @@ export function loadHeader() {
     <header class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-5xl">
         <nav class="glass flex items-center justify-between px-6 py-4 rounded-full border border-white/10 relative">
             <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity z-50 relative">
-                <img src="/absolute-logo.png" alt="Absolute Automation Solutions" class="h-16 w-auto object-contain" />
-                <div class="flex flex-col font-mono font-bold tracking-tighter leading-[0.8] text-[10px] md:text-xs text-slate-800 dark:text-white justify-center translate-y-[2px]">
+                <img src="/absolute-logo.png" alt="Absolute Automation Solutions" class="h-12 md:h-16 w-auto object-contain" />
+                <div class="flex flex-col font-mono font-bold tracking-tighter leading-[0.8] text-[11px] md:text-xs text-slate-800 dark:text-white justify-center translate-y-[2px]">
                     <span>ABSOLUTE</span>
                     <span>AUTOMATION</span>
                     <span>SOLUTIONS</span>
