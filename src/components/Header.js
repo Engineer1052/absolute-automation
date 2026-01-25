@@ -2,9 +2,13 @@ export function loadHeader() {
     const headerHTML = `
     <header class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-5xl">
         <nav class="glass flex items-center justify-between px-6 py-4 rounded-full border border-white/10 relative">
-            <a href="/" class="flex items-center gap-4 hover:opacity-80 transition-opacity z-50 relative">
-                <img src="/absolute-logo.png" alt="Absolute Automation Solutions" class="h-12 w-auto object-contain" />
-                <span class="font-mono font-bold tracking-tighter text-sm md:text-lg hidden xs:block">ABSOLUTE AUTOMATION SOLUTIONS</span>
+            <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity z-50 relative">
+                <img src="/absolute-logo.png" alt="Absolute Automation Solutions" class="h-14 w-auto object-contain" />
+                <div class="flex flex-col font-mono font-bold tracking-tighter leading-[0.85] hidden xs:flex text-xs md:text-sm text-slate-800 dark:text-white">
+                    <span>ABSOLUTE</span>
+                    <span>AUTOMATION</span>
+                    <span>SOLUTIONS</span>
+                </div>
             </a>
             
             <!-- Desktop Menu -->
