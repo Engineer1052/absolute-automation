@@ -35,65 +35,128 @@
                 <h3 class="text-4xl md:text-5xl font-bold tracking-tight">CONTROL PANEL ASSEMBLY</h3>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:auto-rows-[300px]">
-                <!-- 1. UL 508A Certified -->
-                <div
-                    class="md:col-span-8 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between group h-min md:h-full">
-                    <div class="flex justify-end mb-4 md:mb-0 md:absolute md:top-6 md:right-8">
-                        <span
-                            class="material-icons-round text-5xl md:text-6xl text-slate-800/10 group-hover:text-primary/20 transition-colors">verified_user</span>
-                    </div>
-                    <div>
-                        <h4 class="text-3xl font-bold">UL 508A Certified Shop</h4>
-                        <p class="text-slate-700 max-w-lg mt-4">We are a fully certified UL 508A panel shop. This means
-                            every control panel we build meets the highest safety standards and inspection requirements
-                            for industrial control panels in the US and Canada.</p>
-                    </div>
+            <!-- Image Gallery Carousel Wrapper -->
+            <!-- Carousel Window -->
+            <div
+                class="relative mb-12 group max-w-2xl mx-auto rounded-2xl shadow-2xl border border-white/10 overflow-hidden aspect-video">
+                <!-- Inner Track (Moves via CSS Transform) -->
+                <div id="carousel-track" class="flex h-full transition-transform duration-500 ease-in-out">
+                    <img src="/panel-wiring.png" alt="Control Panel Wiring"
+                        class="w-full h-full object-cover flex-shrink-0" />
+                    <img src="/panel-ul.png" alt="UL Certification" class="w-full h-full object-cover flex-shrink-0" />
+                    <img src="/panel-wiring.png" alt="Custom Enclosure"
+                        class="w-full h-full object-cover flex-shrink-0" />
+                    <img src="/panel-ul.png" alt="Testing and QC" class="w-full h-full object-cover flex-shrink-0" />
+                    <img src="/panel-wiring.png" alt="Schematic Design"
+                        class="w-full h-full object-cover flex-shrink-0" />
                 </div>
 
-                <!-- 2. High Volume (Primary Highlight) -->
-                <div
-                    class="md:col-span-4 bento-item bg-primary p-8 rounded-3xl flex flex-col justify-between hover:brightness-110 transition-all">
-                    <div class="flex justify-between items-start">
-                        <span class="material-icons-round text-4xl">inventory_2</span>
-                    </div>
-                    <div>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-2">High Volume Capacity</h4>
-                        <p class="text-slate-700 text-sm">Efficient workflow processes allowing for scalable production
-                            of identical panels for OEM equipment.</p>
-                    </div>
+                <!-- Prev Button -->
+                <button id="carousel-prev"
+                    class="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95">
+                    <span class="material-icons-round text-3xl">chevron_left</span>
+                </button>
+
+                <!-- Next Button -->
+                <button id="carousel-next"
+                    class="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95">
+                    <span class="material-icons-round text-3xl">chevron_right</span>
+                </button>
+            </div>
+
+            <!-- Detailed SEO Content -->
+            <article class="max-w-3xl mx-auto mb-24 text-slate-700 dark:text-slate-300 space-y-8 leading-relaxed">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Certified Excellence in Power &
+                        Control</h3>
+                    <p>
+                        A reliable machine starts with a reliable brain. **Absolute Automation Solutions** operates a
+                        state-of-the-art UL 508A certified panel shop. We design and build control enclosures that are
+                        not only compliant but are works of art—cleanly wired, properly labeled, and thermally managed.
+                    </p>
                 </div>
 
-                <!-- 3. Custom Enclosures -->
-                <div
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
-                    <div>
-                        <span class="material-icons-round text-3xl mb-4 text-primary">dashboard_customize</span>
-                        <h4 class="text-2xl font-bold mb-2">Custom Enclosures</h4>
-                        <p class="text-slate-700 text-sm">Stainless steel, sanitary, and explosion-proof enclosure
-                            modifications for harsh environments.</p>
-                    </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Scalable Production</h3>
+                    <p>
+                        From one-off custom prototypes to high-volume OEM panel production, our team scales to meet your
+                        needs. We utilize automated wire processing and strict QC checklists to ensure every terminal is
+                        torqued to spec and every I/O point is verified before it leaves our floor.
+                    </p>
                 </div>
 
-                <!-- 4. Testing & QC -->
-                <div
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
-                    <div>
-                        <span class="material-icons-round text-3xl mb-4 text-primary">fact_check</span>
-                        <h4 class="text-2xl font-bold mb-2">Testing & QC</h4>
-                        <p class="text-slate-700 text-sm">Every panel undergoes rigorous point-to-point testing and
-                            power-up validation before shipping.</p>
-                    </div>
-                </div>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>UL 508A Certified:</strong> Guaranteed code compliance for inspections.</li>
+                    <li><strong>Custom Enclosures:</strong> Modified backplates and door cutouts.</li>
+                    <li><strong>Complete Documentation:</strong> Full schematics and BOMs provided.</li>
+                </ul>
+            </article>
 
-                <!-- 5. Schematic Design -->
-                <div
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent hover:border-primary/50 transition-colors group">
-                    <div>
-                        <span class="material-icons-round text-3xl mb-4 text-slate-900/50">description</span>
-                        <h4 class="text-2xl font-bold mb-2">Schematic Design</h4>
-                        <p class="text-slate-700 text-sm">Professional electrical drafting in AutoCAD Electrical
-                            ensuring accurate and maintainable documentation.</p>
+            <!-- Key Features Grid (Previously Bento) -->
+            <div class="mb-12">
+                <h3 class="font-mono text-primary text-sm mb-8 tracking-[0.2em] uppercase text-center md:text-left">CORE
+                    CAPABILITIES</h3>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:auto-rows-[300px]">
+                    <!-- 1. UL 508A Certified Shop -->
+                    <div
+                        class="md:col-span-8 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between group h-min md:h-full">
+                        <div class="flex justify-end mb-4 md:mb-0 md:absolute md:top-6 md:right-8">
+                            <span
+                                class="material-icons-round text-5xl md:text-6xl text-slate-800/10 group-hover:text-primary/20 transition-colors">verified</span>
+                        </div>
+                        <div>
+                            <h4 class="text-3xl font-bold">UL 508A Certified Shop</h4>
+                            <p class="text-slate-700 max-w-lg mt-4">We are a fully UL-certified panel shop, ensuring
+                                your control panels meet the highest safety and regulatory standards for acceptance in
+                                the US and Canada.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. High Volume -->
+                    <div
+                        class="md:col-span-4 bento-item bg-primary p-8 rounded-3xl flex flex-col justify-between hover:brightness-110 transition-all">
+                        <div class="flex justify-between items-start">
+                            <span class="material-icons-round text-4xl">all_inclusive</span>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-900 mb-2">High Volume</h4>
+                            <p class="text-slate-700 text-sm">Scalable production capacity for OEM repetition orders
+                                with consistent quality.</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. Custom Enclosures -->
+                    <div
+                        class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
+                        <div>
+                            <span class="material-icons-round text-3xl mb-4 text-primary">inbox</span>
+                            <h4 class="text-2xl font-bold mb-2">Custom Enclosures</h4>
+                            <p class="text-slate-700 text-sm">Modifying NEMA 4/4X/12 enclosures with precise cutouts and
+                                custom backplates.</p>
+                        </div>
+                    </div>
+
+                    <!-- 4. Testing & QC -->
+                    <div
+                        class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
+                        <div>
+                            <span class="material-icons-round text-3xl mb-4 text-primary">fact_check</span>
+                            <h4 class="text-2xl font-bold mb-2">Testing & QC</h4>
+                            <p class="text-slate-700 text-sm">100% point-to-point continuity testing and power-up
+                                verification before shipping.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5. Schematic Design -->
+                    <div
+                        class="md:col-span-4 bento-item glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent hover:border-primary/50 transition-colors group">
+                        <div>
+                            <span
+                                class="material-icons-round text-3xl mb-4 text-slate-900/50">electrical_services</span>
+                            <h4 class="text-2xl font-bold mb-2">Schematic Design</h4>
+                            <p class="text-slate-700 text-sm">Professional electrical drafting using AutoCAD Electrical
+                                or EPLAN.</p>
+                        </div>
                     </div>
                 </div>
             </div>

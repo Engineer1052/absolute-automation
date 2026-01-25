@@ -35,65 +35,130 @@
                 <h3 class="text-4xl md:text-5xl font-bold tracking-tight">COMPACT CUSTOM MACHINERY</h3>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:auto-rows-[300px]">
-                <!-- 1. Small Footprint Design -->
-                <div
-                    class="md:col-span-8 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between group h-min md:h-full">
-                    <div class="flex justify-end mb-4 md:mb-0 md:absolute md:top-6 md:right-8">
-                        <span
-                            class="material-icons-round text-5xl md:text-6xl text-slate-800/10 group-hover:text-primary/20 transition-colors">aspect_ratio</span>
-                    </div>
-                    <div>
-                        <h4 class="text-3xl font-bold">Small Footprint Design</h4>
-                        <p class="text-slate-700 max-w-lg mt-4">We specialize in designing high-density machinery that
-                            maximizes performance per square foot. Our compact solutions fit into tight factory layouts
-                            without compromising on accessibility or throughput.</p>
-                    </div>
+            <!-- Image Gallery Carousel Wrapper -->
+            <!-- Carousel Window -->
+            <div
+                class="relative mb-12 group max-w-2xl mx-auto rounded-2xl shadow-2xl border border-white/10 overflow-hidden aspect-video">
+                <!-- Inner Track (Moves via CSS Transform) -->
+                <div id="carousel-track" class="flex h-full transition-transform duration-500 ease-in-out">
+                    <img src="/machinery-frame.png" alt="Custom Machine Frame"
+                        class="w-full h-full object-cover flex-shrink-0" />
+                    <img src="/machinery-hmi.png" alt="HMI Interface"
+                        class="w-full h-full object-cover flex-shrink-0" />
+                    <img src="/machinery-safety.png" alt="Safety Enclosure"
+                        class="w-full h-full object-cover flex-shrink-0" />
+                    <img src="/machinery-frame.png" alt="Compact Design"
+                        class="w-full h-full object-cover flex-shrink-0" />
+                    <img src="/machinery-hmi.png" alt="Operator Controls"
+                        class="w-full h-full object-cover flex-shrink-0" />
                 </div>
 
-                <!-- 2. Precision Mechanics (Primary Highlight) -->
-                <div
-                    class="md:col-span-4 bento-item bg-primary p-8 rounded-3xl flex flex-col justify-between hover:brightness-110 transition-all">
-                    <div class="flex justify-between items-start">
-                        <span class="material-icons-round text-4xl">build</span>
-                    </div>
-                    <div>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-2">Precision Mechanics</h4>
-                        <p class="text-slate-700 text-sm">Tight-tolerance machining and assembly for reliable,
-                            repeatable operation in critical applications.</p>
-                    </div>
+                <!-- Prev Button -->
+                <button id="carousel-prev"
+                    class="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95">
+                    <span class="material-icons-round text-3xl">chevron_left</span>
+                </button>
+
+                <!-- Next Button -->
+                <button id="carousel-next"
+                    class="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95">
+                    <span class="material-icons-round text-3xl">chevron_right</span>
+                </button>
+            </div>
+
+            <!-- Detailed SEO Content -->
+            <article class="max-w-3xl mx-auto mb-24 text-slate-700 dark:text-slate-300 space-y-8 leading-relaxed">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Space-Saving Innovation</h3>
+                    <p>
+                        Real estate on your factory floor is valuable. **Absolute Automation Solutions** specializes in
+                        high-density, compact machinery that delivers maximum output in minimal footprint. We don't just
+                        shrink standard designs; we rethink the mechanical architecture to nest components efficiently
+                        without sacrificing accessibility for maintenance.
+                    </p>
                 </div>
 
-                <!-- 3. Safety Integration -->
-                <div
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
-                    <div>
-                        <span class="material-icons-round text-3xl mb-4 text-primary">gpp_good</span>
-                        <h4 class="text-2xl font-bold mb-2">Safety Integration</h4>
-                        <p class="text-slate-700 text-sm">Full guarding, light curtains, and safety interlocks compliant
-                            with OSHA and ISO standards.</p>
-                    </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Precision & Safety</h3>
+                    <p>
+                        Every machine we build meets rigorous safety standards (OSHA/ANSI) while maintaining
+                        micron-level precision. Our custom solutions utilize rigid aluminum extrusion or welded steel
+                        frames, integrated safety light curtains, and ergonomic operator stations designed for long-term
+                        usability.
+                    </p>
                 </div>
 
-                <!-- 4. Custom HMI -->
-                <div
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
-                    <div>
-                        <span class="material-icons-round text-3xl mb-4 text-primary">touch_app</span>
-                        <h4 class="text-2xl font-bold mb-2">User-Centric HMI</h4>
-                        <p class="text-slate-700 text-sm">Intuitive touch interfaces designed for operators, reducing
-                            training time and errors.</p>
-                    </div>
-                </div>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Small Footprint:</strong> Optimized vertical integration to save floor space.</li>
+                    <li><strong>Modular Design:</strong> Future-proof frames that allow for easy upgrades.</li>
+                    <li><strong>Rapid Deployment:</strong> Pre-tested and skid-mounted for quick installation.</li>
+                </ul>
+            </article>
 
-                <!-- 5. Rapid Deployment -->
-                <div
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent hover:border-primary/50 transition-colors group">
-                    <div>
-                        <span class="material-icons-round text-3xl mb-4 text-slate-900/50">rocket_launch</span>
-                        <h4 class="text-2xl font-bold mb-2">Rapid Deployment</h4>
-                        <p class="text-slate-700 text-sm">Modular design philosophy allows for faster build times and
-                            quicker installation at your facility.</p>
+            <!-- Key Features Grid (Previously Bento) -->
+            <div class="mb-12">
+                <h3 class="font-mono text-primary text-sm mb-8 tracking-[0.2em] uppercase text-center md:text-left">CORE
+                    CAPABILITIES</h3>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:auto-rows-[300px]">
+                    <!-- 1. Small Footprint Design -->
+                    <div
+                        class="md:col-span-8 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between group h-min md:h-full">
+                        <div class="flex justify-end mb-4 md:mb-0 md:absolute md:top-6 md:right-8">
+                            <span
+                                class="material-icons-round text-5xl md:text-6xl text-slate-800/10 group-hover:text-primary/20 transition-colors">aspect_ratio</span>
+                        </div>
+                        <div>
+                            <h4 class="text-3xl font-bold">Small Footprint Design</h4>
+                            <p class="text-slate-700 max-w-lg mt-4">High-density performance engineering. We utilize
+                                vertical space and clever mechanical nesting to deliver full-scale production
+                                capabilities in a fraction of the floor space.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. Precision Mechanics -->
+                    <div
+                        class="md:col-span-4 bento-item bg-primary p-8 rounded-3xl flex flex-col justify-between hover:brightness-110 transition-all">
+                        <div class="flex justify-between items-start">
+                            <span class="material-icons-round text-4xl">architecture</span>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-900 mb-2">Precision Mechanics</h4>
+                            <p class="text-slate-700 text-sm">Linear actuators and servo stages capable of micron-level
+                                positioning accuracy.</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. Safety Integration -->
+                    <div
+                        class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
+                        <div>
+                            <span class="material-icons-round text-3xl mb-4 text-primary">health_and_safety</span>
+                            <h4 class="text-2xl font-bold mb-2">Safety Integration</h4>
+                            <p class="text-slate-700 text-sm">Light curtains, interlocked doors, and safety PLCs
+                                ensuring full OSHA/ANSI compliance.</p>
+                        </div>
+                    </div>
+
+                    <!-- 4. Custom HMI -->
+                    <div
+                        class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
+                        <div>
+                            <span class="material-icons-round text-3xl mb-4 text-primary">touch_app</span>
+                            <h4 class="text-2xl font-bold mb-2">Custom HMI</h4>
+                            <p class="text-slate-700 text-sm">Intuitive, user-friendly touch interfaces designed for
+                                easy operator training and control.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5. Rapid Deployment -->
+                    <div
+                        class="md:col-span-4 bento-item glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent hover:border-primary/50 transition-colors group">
+                        <div>
+                            <span class="material-icons-round text-3xl mb-4 text-slate-900/50">rocket_launch</span>
+                            <h4 class="text-2xl font-bold mb-2">Rapid Deployment</h4>
+                            <p class="text-slate-700 text-sm">Modular, skid-mounted designs that allow for plug-and-play
+                                installation and fast startup.</p>
+                        </div>
                     </div>
                 </div>
             </div>

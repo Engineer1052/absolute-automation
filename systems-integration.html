@@ -36,65 +36,130 @@
                 <h3 class="text-4xl md:text-5xl font-bold tracking-tight">CONTROL SYSTEMS INTEGRATION & RETROFITS</h3>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:auto-rows-[300px]">
-                <!-- 1. PLC Programming -->
-                <div
-                    class="md:col-span-8 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between group h-min md:h-full">
-                    <div class="flex justify-end mb-4 md:mb-0 md:absolute md:top-6 md:right-8">
-                        <span
-                            class="material-icons-round text-5xl md:text-6xl text-slate-800/10 group-hover:text-primary/20 transition-colors">code</span>
-                    </div>
-                    <div>
-                        <h4 class="text-3xl font-bold">PLC Programming</h4>
-                        <p class="text-slate-700 max-w-lg mt-4">We are experts in Allen Bradley (Rockwell), Siemens, and
-                            Omron ecosystems. From scratch programming to complex logic troubleshooting, we write clean,
-                            well-commented code that your maintenance team can actually support.</p>
-                    </div>
+            <!-- Image Gallery Carousel Wrapper -->
+            <!-- Carousel Window -->
+            <div
+                class="relative mb-12 group max-w-2xl mx-auto rounded-2xl shadow-2xl border border-white/10 overflow-hidden aspect-video">
+                <!-- Inner Track (Moves via CSS Transform) -->
+                <div id="carousel-track" class="flex h-full transition-transform duration-500 ease-in-out">
+                    <img src="/integration-code.png" alt="PLC Logic Programming"
+                        class="w-full h-full object-cover flex-shrink-0" />
+                    <img src="/integration-servo.png" alt="Servo Motion Control"
+                        class="w-full h-full object-cover flex-shrink-0" />
+                    <img src="/integration-code.png" alt="SCADA System"
+                        class="w-full h-full object-cover flex-shrink-0" />
+                    <img src="/integration-servo.png" alt="HMI Screen"
+                        class="w-full h-full object-cover flex-shrink-0" />
+                    <img src="/integration-code.png" alt="Network Integration"
+                        class="w-full h-full object-cover flex-shrink-0" />
                 </div>
 
-                <!-- 2. HMI/SCADA (Primary Highlight) -->
-                <div
-                    class="md:col-span-4 bento-item bg-primary p-8 rounded-3xl flex flex-col justify-between hover:brightness-110 transition-all">
-                    <div class="flex justify-between items-start">
-                        <span class="material-icons-round text-4xl">monitor</span>
-                    </div>
-                    <div>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-2">HMI & SCADA</h4>
-                        <p class="text-slate-700 text-sm">Designing modern, high-performance dashboards (Ignition,
-                            FactoryTalk) for real-time process visibility.</p>
-                    </div>
+                <!-- Prev Button -->
+                <button id="carousel-prev"
+                    class="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95">
+                    <span class="material-icons-round text-3xl">chevron_left</span>
+                </button>
+
+                <!-- Next Button -->
+                <button id="carousel-next"
+                    class="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95">
+                    <span class="material-icons-round text-3xl">chevron_right</span>
+                </button>
+            </div>
+
+            <!-- Detailed SEO Content -->
+            <article class="max-w-3xl mx-auto mb-24 text-slate-700 dark:text-slate-300 space-y-8 leading-relaxed">
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Intelligent Control for Modern
+                        Industry</h3>
+                    <p>
+                        Hardware is nothing without the intelligence to drive it. **Absolute Automation Solutions**
+                        provides comprehensive systems integration services, bridging the gap between mechanical systems
+                        and digital control. We specialize in breathing new life into old machines and programming new
+                        systems from scratch.
+                    </p>
                 </div>
 
-                <!-- 3. Servo Motion -->
-                <div
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
-                    <div>
-                        <span class="material-icons-round text-3xl mb-4 text-primary">motion_photos_on</span>
-                        <h4 class="text-2xl font-bold mb-2">Servo Motion Control</h4>
-                        <p class="text-slate-700 text-sm">High-speed multi-axis coordination for packaging, printing,
-                            and material handling applications.</p>
-                    </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Seamless Connectivity</h3>
+                    <p>
+                        Our expertise spans all major platforms—Allen Bradley (Rockwell), Siemens, Omron, and
+                        Mitsubishi. We integrate complex motion control, safety bridging, and plant-wide SCADA networks
+                        to give you real-time visibility and control over your production data.
+                    </p>
                 </div>
 
-                <!-- 4. Safety Upgrades -->
-                <div
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
-                    <div>
-                        <span class="material-icons-round text-3xl mb-4 text-primary">health_and_safety</span>
-                        <h4 class="text-2xl font-bold mb-2">Safety Upgrades</h4>
-                        <p class="text-slate-700 text-sm">Retrofitting legacy machines with modern safety PLCs and Zone
-                            control to meet current ISO standards.</p>
-                    </div>
-                </div>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Cross-Platform Expertise:</strong> We speak every major industrial language.</li>
+                    <li><strong>Legacy Retrofits:</strong> Upgrading SLC 500/PLC-5 to ControlLogix/CompactLogix.</li>
+                    <li><strong>Data Visibility:</strong> Connecting shop floor actions to top floor analytics.</li>
+                </ul>
+            </article>
 
-                <!-- 5. Networking -->
-                <div
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent hover:border-primary/50 transition-colors group">
-                    <div>
-                        <span class="material-icons-round text-3xl mb-4 text-slate-900/50">hub</span>
-                        <h4 class="text-2xl font-bold mb-2">Industrial Networking</h4>
-                        <p class="text-slate-700 text-sm">EtherNet/IP & PROFINET architecture design, ensuring robust
-                            communication between all plant floor assets.</p>
+            <!-- Key Features Grid (Previously Bento) -->
+            <div class="mb-12">
+                <h3 class="font-mono text-primary text-sm mb-8 tracking-[0.2em] uppercase text-center md:text-left">CORE
+                    CAPABILITIES</h3>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:auto-rows-[300px]">
+                    <!-- 1. PLC Programming -->
+                    <div
+                        class="md:col-span-8 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between group h-min md:h-full">
+                        <div class="flex justify-end mb-4 md:mb-0 md:absolute md:top-6 md:right-8">
+                            <span
+                                class="material-icons-round text-5xl md:text-6xl text-slate-800/10 group-hover:text-primary/20 transition-colors">code</span>
+                        </div>
+                        <div>
+                            <h4 class="text-3xl font-bold">PLC Programming</h4>
+                            <p class="text-slate-700 max-w-lg mt-4">Expert logic development for Allen Bradley, Siemens,
+                                and Omron platforms. We write structured, commented, and maintainable code that your
+                                maintenance team can actually understand.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. HMI/SCADA -->
+                    <div
+                        class="md:col-span-4 bento-item bg-primary p-8 rounded-3xl flex flex-col justify-between hover:brightness-110 transition-all">
+                        <div class="flex justify-between items-start">
+                            <span class="material-icons-round text-4xl">desktop_windows</span>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-bold text-slate-900 mb-2">HMI/SCADA</h4>
+                            <p class="text-slate-700 text-sm">Designing intuitive operator interfaces and plant-wide
+                                data visualization systems (Ignition, FactoryTalk).</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. Servo Motion -->
+                    <div
+                        class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
+                        <div>
+                            <span class="material-icons-round text-3xl mb-4 text-primary">speed</span>
+                            <h4 class="text-2xl font-bold mb-2">Servo Motion</h4>
+                            <p class="text-slate-700 text-sm">High-speed, multi-axis motion control including camming,
+                                gearing, and coordinated motion profiles.</p>
+                        </div>
+                    </div>
+
+                    <!-- 4. Safety Upgrades -->
+                    <div
+                        class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
+                        <div>
+                            <span class="material-icons-round text-3xl mb-4 text-primary">security_update</span>
+                            <h4 class="text-2xl font-bold mb-2">Safety Upgrades</h4>
+                            <p class="text-slate-700 text-sm">Retrofitting older machines with modern safety PLCs and
+                                risk-assessment compliant architectures.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5. Networking -->
+                    <div
+                        class="md:col-span-4 bento-item glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent hover:border-primary/50 transition-colors group">
+                        <div>
+                            <span class="material-icons-round text-3xl mb-4 text-slate-900/50">hub</span>
+                            <h4 class="text-2xl font-bold mb-2">Networking</h4>
+                            <p class="text-slate-700 text-sm">Industrial Ethernet (EtherNet/IP, Profinet) configuration
+                                and OT network segmentation.</p>
+                        </div>
                     </div>
                 </div>
             </div>
