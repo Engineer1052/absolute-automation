@@ -10,7 +10,37 @@ export function loadHeader() {
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-8 text-sm font-mono tracking-widest uppercase">
                 <a class="hover:text-primary transition-colors nav-link" href="/about">About</a>
-                <a class="hover:text-primary transition-colors nav-link" href="/services">Services</a>
+                
+                <!-- Services Dropdown -->
+                <div class="relative group">
+                    <button class="hover:text-primary transition-colors flex items-center gap-1 uppercase tracking-widest">
+                        Services
+                        <span class="material-icons-round text-sm">expand_more</span>
+                    </button>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-4 hidden group-hover:block min-w-[300px]">
+                        <div class="glass border border-white/10 rounded-2xl overflow-hidden p-2 flex flex-col gap-1 shadow-2xl">
+                            <a href="/services" class="block px-4 py-3 rounded-xl hover:bg-white/10 hover:text-primary transition-colors font-bold border-b border-white/5 mx-2">
+                                All Services
+                            </a>
+                            <a href="/factory-automation.html" class="block px-4 py-2 rounded-xl hover:bg-white/10 hover:text-primary transition-colors text-xs">
+                                Factory Automation
+                            </a>
+                            <a href="/compact-custom-machinery.html" class="block px-4 py-2 rounded-xl hover:bg-white/10 hover:text-primary transition-colors text-xs">
+                                Compact Custom Machinery
+                            </a>
+                            <a href="/control-panel-assembly.html" class="block px-4 py-2 rounded-xl hover:bg-white/10 hover:text-primary transition-colors text-xs">
+                                Control Panel Assembly
+                            </a>
+                            <a href="/systems-integration.html" class="block px-4 py-2 rounded-xl hover:bg-white/10 hover:text-primary transition-colors text-xs">
+                                Control Systems Integration
+                            </a>
+                            <a href="/field-service.html" class="block px-4 py-2 rounded-xl hover:bg-white/10 hover:text-primary transition-colors text-xs">
+                                Field Service
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <a class="hover:text-primary transition-colors nav-link" href="/videos">Videos</a>
                 <a class="hover:text-primary transition-colors nav-link" href="/case-studies">Case Studies</a>
             </div>
