@@ -39,6 +39,17 @@ export class Modal {
                                         <div class="font-bold text-xl text-slate-900">sales@absoluteautomationsolutions.com</div>
                                     </div>
                                 </a>
+
+                                <!-- Phone Link -->
+                                <a href="tel:3364628375" class="flex items-center gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200 hover:bg-white hover:border-primary/50 hover:shadow-lg transition-all group">
+                                    <div class="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-colors">
+                                        <span class="material-icons-round text-sm text-slate-600 group-hover:text-black">phone</span>
+                                    </div>
+                                    <div class="text-left">
+                                        <div class="text-[10px] font-mono uppercase tracking-widest text-slate-500">Phone</div>
+                                        <div class="font-bold text-xl text-slate-900">(336) 462-8375</div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
