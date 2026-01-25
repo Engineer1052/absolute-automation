@@ -70,7 +70,7 @@ export function loadHeader() {
                     </button>
                 </div>
                 <!-- Mobile Sub-links (Hidden by default) -->
-                <div id="mobile-services-dropdown" style="display: none;" class="hidden flex-col gap-4 text-sm text-slate-500 items-center mt-4 mb-4 bg-white/50 rounded-xl w-full px-4 py-4 border border-white/20 text-center">
+                <div id="mobile-services-dropdown" style="display: none;" class="hidden flex-col gap-4 text-sm text-slate-500 items-center mt-4 mb-4 bg-white/50 rounded-xl w-3/4 py-4 border border-white/20">
                     <a class="mobile-link hover:text-primary transition-colors" href="/factory-automation.html">Factory Automation</a>
                     <a class="mobile-link hover:text-primary transition-colors" href="/compact-custom-machinery.html">Compact Custom Machinery</a>
                     <a class="mobile-link hover:text-primary transition-colors" href="/control-panel-assembly.html">Panel Assembly</a>
