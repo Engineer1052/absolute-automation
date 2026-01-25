@@ -10,7 +10,7 @@ export default defineConfig({
                 about: resolve(__dirname, 'about.html'),
                 services: resolve(__dirname, 'services.html'),
                 videos: resolve(__dirname, 'videos.html'),
-                'recent-projects': resolve(__dirname, 'recent-projects.html'),
+                'projects': resolve(__dirname, 'projects.html'),
                 contact: resolve(__dirname, 'contact.html'),
                 'factory-automation': resolve(__dirname, 'factory-automation.html'),
                 'compact-custom-machinery': resolve(__dirname, 'compact-custom-machinery.html'),
