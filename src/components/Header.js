@@ -4,7 +4,7 @@ export function loadHeader() {
         <nav class="glass flex items-center justify-between px-6 py-4 rounded-full border border-white/10 relative">
             <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity z-50 relative">
                 <img src="/absolute-logo.png" alt="Absolute Automation Solutions" class="h-12 md:h-16 w-auto object-contain" />
-                <div class="flex flex-col font-mono font-bold tracking-tighter leading-[0.8] text-[11px] md:text-xs text-slate-800 dark:text-white justify-center translate-y-[2px]">
+                <div class="flex flex-col font-mono font-bold tracking-tighter leading-none text-[11px] md:text-xs text-slate-800 dark:text-white justify-center translate-y-[2px]">
                     <span>ABSOLUTE</span>
                     <span>AUTOMATION</span>
                     <span>SOLUTIONS</span>
