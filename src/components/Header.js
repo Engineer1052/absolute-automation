@@ -63,6 +63,14 @@ export function loadHeader() {
             <a class="mobile-link hover:text-primary transition-colors" href="/">Home</a>
             <a class="mobile-link hover:text-primary transition-colors" href="/about">About</a>
             <a class="mobile-link hover:text-primary transition-colors" href="/services">Services</a>
+            <!-- Mobile Sub-links -->
+            <div class="flex flex-col gap-4 text-sm text-slate-500 items-center -mt-2 mb-2">
+                <a class="mobile-link hover:text-white transition-colors" href="/factory-automation.html">Factory Automation</a>
+                <a class="mobile-link hover:text-white transition-colors" href="/compact-custom-machinery.html">Compact Custom Machinery</a>
+                <a class="mobile-link hover:text-white transition-colors" href="/control-panel-assembly.html">Panel Assembly</a>
+                <a class="mobile-link hover:text-white transition-colors" href="/systems-integration.html">Systems Integration</a>
+                <a class="mobile-link hover:text-white transition-colors" href="/field-service.html">Field Service</a>
+            </div>
             <a class="mobile-link hover:text-primary transition-colors" href="/videos">Videos</a>
             <a class="mobile-link hover:text-primary transition-colors" href="/case-studies">Case Studies</a>
             <a class="mobile-link text-primary border border-primary/30 px-8 py-3 rounded-full mt-8 bg-white/50" href="/contact">Contact</a>
