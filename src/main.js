@@ -144,53 +144,67 @@ document.querySelectorAll('.bento-item').forEach(el => {
     observer.observe(el);
 });
 
-// Service Carousel Auto-Rotation
-const carousel = document.getElementById('service-carousel');
-if (carousel) {
-    let scrollInterval;
+// Service Carousel Auto-Rotation (Transform Based)
+const track = document.getElementById('carousel-track');
+const prevBtn = document.getElementById('carousel-prev');
+const nextBtn = document.getElementById('carousel-next');
 
-    const startRotation = () => {
-        scrollInterval = setInterval(() => {
-            // Start Rotation
+if (track && prevBtn && nextBtn) {
+    let currentIndex = 0;
+    const slides = track.children;
+    const totalSlides = slides.length;
+    let autoSlideInterval;
 
-            // Calculate width of one item (view width)
-            const itemWidth = carousel.clientWidth;
-            const maxScroll = carousel.scrollWidth - carousel.clientWidth;
-
-            // If near the end, loop back; otherwise scroll next
-            if (carousel.scrollLeft >= maxScroll - 10) {
-                carousel.scrollTo({ left: 0, behavior: 'smooth' });
-            } else {
-                carousel.scrollBy({ left: itemWidth, behavior: 'smooth' });
-            }
-        }, 5000); // 5 seconds per slide
+    const updateSlide = () => {
+        const translateX = -(currentIndex * 100);
+        track.style.transform = `translateX(${translateX}%)`;
     };
 
-    startRotation();
+    const nextSlide = () => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlide();
+    };
 
-    // Pause on interaction
-    carousel.addEventListener('mouseenter', () => clearInterval(scrollInterval));
-    carousel.addEventListener('mouseleave', startRotation);
-    carousel.addEventListener('touchstart', () => clearInterval(scrollInterval));
-    carousel.addEventListener('touchend', startRotation);
+    const prevSlide = () => {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlide();
+    };
 
-    // Manual Navigation Buttons
-    const prevBtn = document.getElementById('carousel-prev');
-    const nextBtn = document.getElementById('carousel-next');
+    const startAutoSlide = () => {
+        autoSlideInterval = setInterval(nextSlide, 5000);
+    };
 
-    if (prevBtn && nextBtn) {
-        prevBtn.addEventListener('click', () => {
-            clearInterval(scrollInterval); // Stop auto-rotation temporarily
-            const itemWidth = carousel.clientWidth; // Scroll one full view
-            carousel.scrollBy({ left: -itemWidth, behavior: 'smooth' });
-            startRotation(); // Restart auto-rotation
-        });
+    const stopAutoSlide = () => {
+        clearInterval(autoSlideInterval);
+    };
 
-        nextBtn.addEventListener('click', () => {
-            clearInterval(scrollInterval);
-            const itemWidth = carousel.clientWidth; // Scroll one full view
-            carousel.scrollBy({ left: itemWidth, behavior: 'smooth' });
-            startRotation();
-        });
-    }
+    // Event Listeners
+    nextBtn.addEventListener('click', () => {
+        stopAutoSlide();
+        nextSlide();
+        startAutoSlide();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        stopAutoSlide();
+        prevSlide();
+        startAutoSlide();
+    });
+
+    // Touch Support (Simple Swipe)
+    let touchStartX = 0;
+    track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        stopAutoSlide();
+    });
+
+    track.addEventListener('touchend', (e) => {
+        const touchEndX = e.changedTouches[0].screenX;
+        if (touchStartX - touchEndX > 50) nextSlide(); // Swipe Left
+        if (touchEndX - touchStartX > 50) prevSlide(); // Swipe Right
+        startAutoSlide();
+    });
+
+    // Start
+    startAutoSlide();
 }
