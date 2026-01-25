@@ -21,21 +21,21 @@ export function loadHeader() {
             </a>
 
             <!-- Mobile Hamburger Button -->
-            <button id="mobile-menu-btn" class="md:hidden z-50 text-white relative w-10 h-10 flex items-center justify-center border border-white/10 rounded-full bg-black/20 backdrop-blur-md active:scale-95 transition-all">
+            <button id="mobile-menu-btn" class="md:hidden z-50 text-slate-800 relative w-10 h-10 flex items-center justify-center border border-slate-200/20 rounded-full bg-white/50 backdrop-blur-md active:scale-95 transition-all">
                 <span class="material-icons-round text-2xl">menu</span>
             </button>
         </nav>
     </header>
 
     <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu-overlay" class="fixed inset-0 z-[90] bg-background-dark/95 backdrop-blur-xl transform translate-x-full transition-transform duration-500 ease-in-out md:hidden flex items-center justify-center opacity-0 pointer-events-none">
-        <div class="flex flex-col items-center gap-8 text-2xl font-mono font-bold uppercase tracking-widest text-white">
+    <div id="mobile-menu-overlay" class="fixed inset-0 z-[90] bg-gradient-to-b from-white to-blue-100/90 backdrop-blur-xl transform translate-x-full transition-transform duration-500 ease-in-out md:hidden flex items-center justify-center opacity-0 pointer-events-none">
+        <div class="flex flex-col items-center gap-8 text-2xl font-mono font-bold uppercase tracking-widest text-slate-900">
             <a class="mobile-link hover:text-primary transition-colors" href="/">Home</a>
             <a class="mobile-link hover:text-primary transition-colors" href="/about">About</a>
             <a class="mobile-link hover:text-primary transition-colors" href="/services">Services</a>
             <a class="mobile-link hover:text-primary transition-colors" href="/videos">Videos</a>
             <a class="mobile-link hover:text-primary transition-colors" href="/case-studies">Case Studies</a>
-            <a class="mobile-link text-primary border border-primary/30 px-8 py-3 rounded-full mt-8 bg-primary/10" href="/contact">Contact</a>
+            <a class="mobile-link text-primary border border-primary/30 px-8 py-3 rounded-full mt-8 bg-white/50" href="/contact">Contact</a>
         </div>
     </div>
     `;
@@ -65,10 +65,16 @@ export function loadHeader() {
             mobileOverlay.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
             menuIcon.textContent = 'close';
             document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            // Ensure button is visible on light background
+            mobileBtn.classList.add('bg-white', 'text-black');
+            mobileBtn.classList.remove('bg-white/50', 'text-slate-800');
         } else {
             mobileOverlay.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
             menuIcon.textContent = 'menu';
             document.body.style.overflow = '';
+            // Reset button style
+            mobileBtn.classList.remove('bg-white', 'text-black');
+            mobileBtn.classList.add('bg-white/50', 'text-slate-800');
         }
     }
 
