@@ -28,31 +28,13 @@ export function loadFooter() {
                     <a class="block hover:text-primary transition-colors" href="#">X / Twitter</a>
                     <a class="block hover:text-primary transition-colors" href="#">LinkedIn</a>
                 </div>
-                <div class="space-y-4">
-                    <p class="text-slate-900">Access</p>
-                    <a class="block hover:text-primary transition-colors" href="#">Documentation</a>
-                    <a class="block hover:text-primary transition-colors" href="#">API Portal</a>
-                </div>
             </div>
         </div>
         <div
             class="max-w-7xl mx-auto px-6 mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-mono text-slate-600 tracking-widest uppercase">
             <div class="flex items-center gap-4">
-                <span>© 2024 ABSOLUTE AUTOMATION. ALL RIGHTS RESERVED.</span>
-                <div class="flex items-center gap-2">
-                    <div
-                        class="inline-flex items-center gap-2 px-2 py-0.5 rounded-full border border-primary/30 bg-primary/5 text-primary animate-pulse-slow">
-                        <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                        SYSTEMS_ONLINE // v2.0.4
-                    </div>
-                    <div
-                        class="inline-flex items-center gap-2 px-2 py-0.5 rounded-full border border-primary/30 bg-primary/5 text-primary">
-                        <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
-                        COMMUNICATION_UPLINK
-                    </div>
-                </div>
+                <span>© 2024 ABSOLUTE AUTOMATION SOLUTIONS. ALL RIGHTS RESERVED.</span>
             </div>
-            <span>SECURE_ENCRYPTED_CONNECTION_NODE_04</span>
         </div>
     </footer>
     `;
