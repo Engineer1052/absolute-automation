@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Engineered Intelligence | Robotics Automation</title>
+    <meta name="description"
+        content="Ten years of custom automation excellence in North Carolina. We design, fabricate and integrate robotics, PLC controls, and manufacturing systems in the Piedmont Triad." />
+    <title>Absolute Automation Solutions</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
 
     <!-- Fonts -->
     <link
@@ -18,53 +21,58 @@
             transition: opacity 0.4s ease-in-out;
         }
     </style>
-  <script type="module" crossorigin src="/absolute-automation/assets/index-NcHaAC7Y.js"></script>
-  <link rel="stylesheet" crossorigin href="/absolute-automation/assets/index-C7X3DK5J.css">
+  <script type="module" crossorigin src="/assets/main-D9pYOf-n.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-B82Mywzq.css">
 </head>
 
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white">
     <div class="noise"></div>
     <canvas id="shader-canvas"></canvas>
 
-    <header class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-5xl">
-        <nav class="glass flex items-center justify-between px-8 py-4 rounded-full border border-white/10">
-            <a href="#" class="flex items-center gap-2 hover:opacity-80 transition-opacity">
-                <div class="w-8 h-8 bg-primary rounded-sm rotate-45 flex items-center justify-center">
-                    <span class="font-bold text-white text-xs -rotate-45 font-mono">A<sup>2</sup></span>
-                </div>
-                <span class="font-mono font-bold tracking-tighter text-lg">ABSOLUTE AUTOMATION</span>
-            </a>
-            <div class="hidden md:flex items-center gap-8 text-sm font-mono tracking-widest uppercase">
-                <a class="hover:text-primary transition-colors" href="#shift">About</a>
-                <a class="hover:text-primary transition-colors" href="#systems">Services</a>
-                <a class="hover:text-primary transition-colors" href="#videos">Videos</a>
-                <a class="hover:text-primary transition-colors" href="#case-studies">Case Studies</a>
-            </div>
-            <a href="#contact"
-                class="bg-white text-black text-xs font-bold px-6 py-2 rounded-full uppercase tracking-widest hover:bg-primary hover:text-white transition-all">
-                Contact
-            </a>
-        </nav>
-    </header>
+    <!-- Header will be injected by src/components/Header.js -->
 
     <main>
         <section
-            class="relative min-h-[100vh] pt-48 pb-20 px-6 flex flex-col items-center justify-center overflow-hidden">
-            <div class="text-center z-10 max-w-6xl mx-auto">
+            class="relative min-h-[60vh] md:min-h-[100vh] pt-32 md:pt-48 pb-10 md:pb-20 px-6 flex flex-col items-center justify-center overflow-hidden">
+            <!-- Background Video -->
+            <div class="absolute inset-0 w-full h-full -z-20 overflow-hidden bg-white">
+                <!-- Mobile Video (Vertical) -->
+                <video class="md:hidden w-full h-full object-cover opacity-40 border-none outline-none" autoplay muted
+                    loop playsinline>
+                    <source src="/hero-background.mp4" type="video/mp4">
+                </video>
 
-                <div
-                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-blush blur-3xl -z-10 pointer-events-none">
-                </div>
-                <h1 class="relative text-6xl md:text-9xl font-extrabold tracking-tighter mb-6 leading-none">
-                    <span class="gradient-text">AUTOMATED</span> <br />
-                    <span class="gradient-text">FUTURE</span>
+                <!-- Desktop Video (Vertical usage) -->
+                <video
+                    class="hidden md:block w-full h-full object-cover object-[50%_46%] opacity-40 border-none outline-none"
+                    autoplay muted loop playsinline>
+                    <source src="/hero-background.mp4" type="video/mp4">
+                </video>
+
+                <!-- Top Gap Mask -->
+                <div class="absolute top-0 left-0 w-full h-[65px] bg-white z-10"></div>
+            </div>
+
+            <!-- Gradient Overlay -->
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-blush blur-3xl -z-10 pointer-events-none">
+            </div>
+
+            <div class="relative text-center z-10 max-w-6xl mx-auto">
+
+
+                <h1
+                    class="relative text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter mb-6 leading-tight">
+                    <span class="gradient-text block sm:inline whitespace-nowrap">PROVEN RESULTS</span>
+                    <span class="gradient-text block sm:inline whitespace-nowrap">REGIONALLY FOCUSED</span>
                 </h1>
-                <p class="text-lg md:text-xl text-slate-700 max-w-2xl mx-auto mb-12 font-light">
-                    Premier robotics and system integration for North Carolina manufacturers. We have over ten years
-                    engineering custom control systems to make your processes better, faster, and more repeatable.
+                <p class="text-lg md:text-xl text-slate-900 max-w-2xl mx-auto mb-12 font-light">
+                    Ten years of custom automation excellence, rooted in North Carolina. We design, fabricate and
+                    integrate value manufacturing solutions in the heart of the piedmont triad.
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-                    <button class="group relative px-10 py-5 bg-primary overflow-hidden transition-all duration-300"
+                    <button
+                        class="group relative px-10 py-5 bg-primary rounded-full overflow-hidden transition-all duration-300"
                         data-trigger="modal">
                         <span class="relative z-10 font-bold tracking-widest uppercase text-sm">Contact</span>
                         <div
@@ -74,13 +82,18 @@
                             class="absolute inset-0 z-20 flex items-center justify-center group-hover:text-black transition-colors duration-300 font-bold tracking-widest uppercase text-sm pointer-events-none">Contact</span>
                     </button>
                     <a href="#videos"
-                        class="flex items-center gap-3 font-mono text-sm tracking-widest uppercase py-4 px-8 border border-white/10 hover:border-primary/50 transition-colors rounded-sm">
+                        class="flex items-center gap-3 font-mono text-sm tracking-widest uppercase py-4 px-8 border border-white/10 hover:border-primary/50 transition-colors rounded-full">
                         <span class="material-icons-round text-primary">play_circle</span>
                         View Our Systems
                     </a>
                 </div>
             </div>
+            </div>
 
+            <!-- Bottom Fade to White -->
+            <div
+                class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent z-0 pointer-events-none">
+            </div>
         </section>
 
         <section id="systems" class="py-32 px-6 max-w-7xl mx-auto">
@@ -89,51 +102,62 @@
                 <h3 class="text-4xl md:text-5xl font-bold tracking-tight">SYSTEMS &amp; SOLUTIONS</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-12 gap-4 auto-rows-[300px]">
-                <div class="md:col-span-8 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-end group">
-                    <div class="absolute top-8 right-8 text-primary/50 group-hover:text-primary transition-colors">
-                        <span class="material-icons-round text-5xl">precision_manufacturing</span>
-                    </div>
+                <!-- 1. Factory Automation -->
+                <a href="/factory-automation.html"
+                    class="md:col-span-8 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-end group hover:border-primary/50 transition-colors">
+                    <img src="/endmill-icon.png" alt="End Mill"
+                        class="absolute top-6 right-8 w-16 h-16 object-contain opacity-50 group-hover:opacity-100 transition-opacity" />
                     <div class="space-y-4">
-                        <h4 class="text-3xl font-bold">Custom Robotic Cells</h4>
-                        <p class="text-slate-700 max-w-md">Turnkey robotic integration for assembly, palletizing, and
-                            material handling designed for your specific throughput needs.</p>
+                        <h4 class="text-3xl font-bold">Factory Automation</h4>
+                        <p class="text-slate-700 max-w-lg">Comprehensive factory automation solutions designed to
+                            increase throughput, improve quality, and reduce operational costs.</p>
                     </div>
-                </div>
-                <div class="md:col-span-4 bento-item bg-primary p-8 rounded-3xl flex flex-col justify-between">
+                </a>
+
+                <!-- 2. Compact Custom Machinery -->
+                <a href="/compact-custom-machinery.html"
+                    class="md:col-span-4 bento-item bg-primary p-8 rounded-3xl flex flex-col justify-between hover:brightness-110 transition-all">
                     <div class="flex justify-between items-start">
-                        <span class="material-icons-round text-4xl">memory</span>
+                        <span class="material-icons-round text-4xl">precision_manufacturing</span>
                     </div>
                     <div>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-2">PLC Programming</h4>
-                        <p class="text-slate-700 text-sm">Rockwell, Siemens, and custom control architectures for robust
-                            machine logic.</p>
+                        <h4 class="text-2xl font-bold text-slate-900 mb-2">Compact Custom Machinery</h4>
+                        <p class="text-slate-700 text-sm">Specialized build-to-print or custom designed machinery
+                            optimized for small footprints.</p>
                     </div>
-                </div>
-                <div class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between">
+                </a>
+
+                <!-- 3. Control Panel Assembly -->
+                <a href="/control-panel-assembly.html"
+                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
                     <div>
                         <span class="material-icons-round text-3xl mb-4 text-primary">settings_input_component</span>
-                        <h4 class="text-2xl font-bold mb-2">HMI & Controls</h4>
-                        <p class="text-slate-700 text-sm">Intuitive operator interfaces and SCADA systems for real-time
-                            process visibility.</p>
+                        <h4 class="text-2xl font-bold mb-2">Control Panel Assembly</h4>
+                        <p class="text-slate-700 text-sm">UL-listed control panel fabrication ensuring safety and
+                            compliance.</p>
                     </div>
-                </div>
-                <div class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between">
+                </a>
+
+                <!-- 4. Control Systems Integration -->
+                <a href="/systems-integration.html"
+                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
                     <div>
-                        <span class="material-icons-round text-3xl mb-4 text-primary">build_circle</span>
-                        <h4 class="text-2xl font-bold mb-2">Machine Retrofits</h4>
-                        <p class="text-slate-700 text-sm">Modernizing legacy equipment with current-gen controls to
-                            extend machine life/safety.</p>
+                        <span class="material-icons-round text-3xl mb-4 text-primary">memory</span>
+                        <h4 class="text-2xl font-bold mb-2">Control Systems Integration</h4>
+                        <p class="text-slate-700 text-sm">Expert integration and retrofitting of modern control
+                            architectures.</p>
                     </div>
-                </div>
-                <div
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent">
+                </a>
+
+                <!-- 5. Field Service -->
+                <a href="/field-service.html"
+                    class="md:col-span-4 bento-item glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent hover:border-primary/50 transition-colors group">
                     <div>
                         <span class="material-icons-round text-3xl mb-4 text-slate-900/50">handyman</span>
-                        <h4 class="text-2xl font-bold mb-2">Service & Repair</h4>
-                        <p class="text-slate-700 text-sm">24/7 emergency support and preventive maintenance to minimize
-                            costly downtime.</p>
+                        <h4 class="text-2xl font-bold mb-2">Field Service</h4>
+                        <p class="text-slate-700 text-sm">Rapid response support and preventive maintenance.</p>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
 
@@ -141,20 +165,23 @@
             <div class="max-w-7xl mx-auto">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 class="text-5xl font-extrabold mb-8 tracking-tighter uppercase">Absolute Automation</h2>
+                        <h2 class="text-5xl font-extrabold mb-8 tracking-tighter uppercase">Absolute Automation
+                            Solutions</h2>
                         <p class="text-slate-700 text-lg mb-8 leading-relaxed">
-                            Absolute Automation designs, fabricates, and integrates industrial systems in the greater
+                            Absolute Automation Solutions designs, fabricates, and integrates industrial systems in the
+                            greater
                             Piedmont Triad area.
                         </p>
                         <div class="space-y-4">
                             <div class="flex items-center gap-4 group cursor-default">
                                 <div
                                     class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
-                                    <span class="material-icons-round text-primary">speed</span>
+                                    <span class="material-icons-round text-primary">precision_manufacturing</span>
                                 </div>
                                 <div>
-                                    <h5 class="font-bold">Better. Faster. Repeatable.</h5>
-                                    <p class="text-xs text-slate-600">The core pillars of our integration philosophy.
+                                    <h5 class="font-bold">DESIGN. FABRICATE. INTEGRATE.</h5>
+                                    <p class="text-xs text-slate-600">Our end-to-end approach to world-class industrial
+                                        automation.
                                     </p>
                                 </div>
                             </div>
@@ -189,7 +216,8 @@
                                         class="material-icons-round text-primary text-xs">check</span> Higher Throughput
                                 </li>
                                 <li class="flex items-center gap-2"><span
-                                        class="material-icons-round text-primary text-xs">check</span> 24/7 Uptime</li>
+                                        class="material-icons-round text-primary text-xs">check</span> Increased Uptime
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -200,7 +228,7 @@
             <div class="max-w-6xl mx-auto">
                 <div class="flex items-end justify-between mb-12">
                     <div>
-                        <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">Visual Uplink</h2>
+                        <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">Videos</h2>
                         <h3 class="text-4xl md:text-5xl font-bold tracking-tight">SYSTEMS IN MOTION</h3>
                     </div>
 
@@ -208,20 +236,12 @@
 
                 <!-- Video Container -->
                 <div
-                    class="relative w-full aspect-video glass rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
-                    <!-- Placeholder / Overlay -->
-                    <div
-                        class="absolute inset-0 flex flex-col items-center justify-center bg-black/60 z-10 group-hover:bg-black/40 transition-colors cursor-pointer">
-                        <div
-                            class="w-20 h-20 rounded-full border-2 border-primary flex items-center justify-center pl-1 mb-4 group-hover:scale-110 group-hover:bg-primary group-hover:text-black transition-all duration-300">
-                            <span class="material-icons-round text-4xl">play_arrow</span>
-                        </div>
-                        <p class="font-mono text-xs tracking-widest uppercase">Initiate Playback</p>
-                    </div>
-                    <!-- Background Image (for placeholder aesthetic) -->
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2670&auto=format&fit=crop"
-                        alt="Robotic Arm Background"
-                        class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay pointer-events-none">
+                    class="relative w-full aspect-video glass rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                    <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/_ORJRX6F3k4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </section>
@@ -240,12 +260,12 @@
                         <span
                             class="material-icons-round text-white/20 group-hover:text-primary transition-colors">arrow_outward</span>
                     </div>
-                    <h4 class="text-xl font-bold mb-3">Assembly Cycle Time Reduction</h4>
-                    <p class="text-slate-700 text-sm mb-6">Optimized PLC logic and robot motion paths for a
-                        Charlotte-based automotive supplier.</p>
+                    <h4 class="text-xl font-bold mb-3">Injection Molding Automation</h4>
+                    <p class="text-slate-700 text-sm mb-6">Designed and integrated a custom autodoor system and Fanuc
+                        robotic pick-and-place solution for high-volume automotive component production.</p>
                     <div
                         class="inline-block px-3 py-1 bg-primary/10 rounded-full border border-primary/20 text-primary text-xs font-bold">
-                        30% SPEED INCREASE
+                        TURNKEY INTEGRATION
                     </div>
                 </div>
 
@@ -293,95 +313,25 @@
                 <span class="gradient-text">CONTACT</span>
             </h2>
 
-            <div class="grid md:grid-cols-2 gap-6">
+            <div class="flex justify-center w-full">
                 <!-- Email Card -->
                 <div
-                    class="glass p-8 rounded-2xl neon-border group hover:-translate-y-2 transition-transform duration-300">
+                    class="glass p-8 rounded-2xl neon-border group hover:-translate-y-2 transition-transform duration-300 w-full max-w-2xl">
                     <div
                         class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
                         <span class="material-icons-round text-primary">alternate_email</span>
                     </div>
 
-                    <a href="mailto:hello@stitchrobotics.com"
-                        class="text-xl md:text-2xl font-bold hover:text-primary transition-colors">
-                        hello@stitchrobotics.com
-                    </a>
-                </div>
-
-                <!-- Phone Card -->
-                <div
-                    class="glass p-8 rounded-2xl neon-border group hover:-translate-y-2 transition-transform duration-300">
-                    <div
-                        class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
-                        <span class="material-icons-round text-primary">phone_iphone</span>
-                    </div>
-
-                    <a href="tel:+15550000000"
-                        class="text-xl md:text-2xl font-bold hover:text-primary transition-colors">
-                        (555) 000-0000
+                    <a href="mailto:sales@absoluteautomationsolutions.com"
+                        class="text-xl md:text-2xl font-bold hover:text-primary transition-colors block whitespace-nowrap overflow-hidden text-ellipsis">
+                        sales@absoluteautomationsolutions.com
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="pt-20 pb-10 border-t border-white/5 overflow-hidden">
-        <div class="mb-20">
-            <div class="flex whitespace-nowrap animate-marquee">
-                <span
-                    class="text-[12vw] font-black tracking-tighter text-transparent stroke-text opacity-10 uppercase px-8"
-                    style="-webkit-text-stroke: 1px #000;">BETTER. FASTER. REPEATABLE. //</span>
-                <span
-                    class="text-[12vw] font-black tracking-tighter text-transparent stroke-text opacity-10 uppercase px-8"
-                    style="-webkit-text-stroke: 1px #000;">BETTER. FASTER. REPEATABLE. //</span>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
-            <div>
-                <div class="flex items-center gap-2 mb-6">
-                    <div class="w-8 h-8 bg-primary rounded-sm rotate-45 flex items-center justify-center">
-                        <span class="font-bold text-white text-xs -rotate-45 font-mono">A<sup>2</sup></span>
-                    </div>
-                    <span class="font-mono font-bold tracking-tighter text-lg">ABSOLUTE AUTOMATION</span>
-                </div>
-                <p class="text-slate-600 max-w-sm text-sm leading-relaxed">
-                    Automating North Carolina’s Manufacturing Future. <br />
-                    Custom Robotics, PLC Control Systems, and Process Optimization for the Southeast.
-                </p>
-            </div>
-            <div class="flex flex-col md:flex-row gap-12 text-sm font-mono uppercase tracking-widest text-slate-500">
-                <div class="space-y-4">
-                    <p class="text-slate-900">Social</p>
-                    <a class="block hover:text-primary transition-colors" href="#">X / Twitter</a>
-                    <a class="block hover:text-primary transition-colors" href="#">LinkedIn</a>
-                </div>
-                <div class="space-y-4">
-                    <p class="text-slate-900">Access</p>
-                    <a class="block hover:text-primary transition-colors" href="#">Documentation</a>
-                    <a class="block hover:text-primary transition-colors" href="#">API Portal</a>
-                </div>
-            </div>
-        </div>
-        <div
-            class="max-w-7xl mx-auto px-6 mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-mono text-slate-600 tracking-widest uppercase">
-            <div class="flex items-center gap-4">
-                <span>© 2024 ABSOLUTE AUTOMATION. ALL RIGHTS RESERVED.</span>
-                <div class="flex items-center gap-2">
-                    <div
-                        class="inline-flex items-center gap-2 px-2 py-0.5 rounded-full border border-primary/30 bg-primary/5 text-primary animate-pulse-slow">
-                        <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                        SYSTEMS_ONLINE // v2.0.4
-                    </div>
-                    <div
-                        class="inline-flex items-center gap-2 px-2 py-0.5 rounded-full border border-primary/30 bg-primary/5 text-primary">
-                        <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
-                        COMMUNICATION_UPLINK
-                    </div>
-                </div>
-            </div>
-            <span>SECURE_ENCRYPTED_CONNECTION_NODE_04</span>
-        </div>
-    </footer>
+    <!-- Footer will be injected by src/components/Footer.js -->
 
 </body>
 

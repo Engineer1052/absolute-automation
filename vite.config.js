@@ -3,13 +3,29 @@ import { resolve } from 'path'
 
 export default defineConfig({
     clearScreen: false,
+    plugins: [
+        {
+            name: 'html-ext-fallback',
+            configureServer(server) {
+                server.middlewares.use((req, res, next) => {
+                    // Ignore API calls, static assets (with dots), or root
+                    if (req.url === '/' || req.url.startsWith('/@') || req.url.includes('.')) {
+                        return next();
+                    }
+                    // Rewrite to .html
+                    req.url += '.html';
+                    next();
+                });
+            }
+        }
+    ],
     build: {
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
                 about: resolve(__dirname, 'about.html'),
                 services: resolve(__dirname, 'services.html'),
-                videos: resolve(__dirname, 'videos.html'),
+                gallery: resolve(__dirname, 'gallery.html'),
                 'projects': resolve(__dirname, 'projects.html'),
                 contact: resolve(__dirname, 'contact.html'),
                 'factory-automation': resolve(__dirname, 'factory-automation.html'),

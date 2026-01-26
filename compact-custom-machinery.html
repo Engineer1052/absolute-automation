@@ -30,70 +30,76 @@
 
     <main>
         <section class="py-32 px-6 max-w-7xl mx-auto pt-48">
-            <div class="mb-16">
-                <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">SERVICES</h2>
-                <h3 class="text-4xl md:text-5xl font-bold tracking-tight">COMPACT CUSTOM MACHINERY</h3>
+            <!-- Split Layout: Text Left, Carousel Right -->
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center mb-24">
+
+                <!-- Left Column: Content -->
+                <div class="lg:col-span-2 pl-4">
+                    <div class="mb-8">
+                        <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">SERVICES</h2>
+                        <h3 class="text-4xl md:text-5xl font-extrabold tracking-tighter uppercase leading-[0.9]">
+                            COMPACT CUSTOM<br>MACHINERY
+                        </h3>
+                    </div>
+
+                    <div class="prose prose-slate dark:prose-invert leading-relaxed text-slate-700 dark:text-slate-300">
+                        <p class="font-bold text-lg">
+                            Precision Assembly in a Small Footprint.
+                        </p>
+                        <p>
+                            Real estate on your factory floor is valuable. **Absolute Automation Solutions** specializes
+                            in high-density, **compact custom machinery** that delivers maximum output in a minimal
+                            footprint. Our turnkey assembly cells are engineered for complex tasks like **precision
+                            electric screw driving**, ultrasonic welding, and micro-component assembly.
+                        </p>
+                        <p>
+                            We don't just shrink standard designs; we rethink mechanical architecture. By utilizing
+                            **rotary indexing tables** and vertical servo integration, we create workstations that are
+                            ergonomic for operators yet fully automated for critical quality steps.
+                        </p>
+                        <ul class="list-disc pl-4 space-y-1">
+                            <li><strong>Automated Fastening:</strong> Intelligent servo screwdriving with torque/angle
+                                monitoring.</li>
+                            <li><strong>Vision Guided:</strong> Integrated cameras for part alignment and final
+                                inspection.</li>
+                            <li><strong>Rapid Deployment:</strong> Skid-mounted, pre-validated systems ready for
+                                plug-and-play.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column: Carousel -->
+                <div class="lg:col-span-3">
+                    <div
+                        class="relative group w-full rounded-2xl shadow-2xl border border-white/10 overflow-hidden h-[500px] -translate-y-24">
+                        <!-- Inner Track (Moves via CSS Transform) -->
+                        <div id="carousel-track" class="flex h-full transition-transform duration-500 ease-in-out">
+                            <img src="/images/compact-machinery.webp" alt="Custom Machine Frame" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                            <img src="/images/gallery-robotic-gantry.webp" alt="Robotic Gantry Automated Assembly"
+                                style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover object-[50%_75%]" />
+                            <img src="/images/compact-machinery.webp" alt="Safety Enclosure" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                            <img src="/images/gallery-robotic-gantry.webp" alt="Compact Design" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                            <img src="/images/compact-machinery.webp" alt="Operator Controls" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                        </div>
+
+                        <!-- Prev Button -->
+                        <button id="carousel-prev"
+                            class="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95 opacity-0 group-hover:opacity-100">
+                            <span class="material-icons-round text-3xl">chevron_left</span>
+                        </button>
+
+                        <!-- Next Button -->
+                        <button id="carousel-next"
+                            class="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95 opacity-0 group-hover:opacity-100">
+                            <span class="material-icons-round text-3xl">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-
-            <!-- Image Gallery Carousel Wrapper -->
-            <!-- Carousel Window -->
-            <div
-                class="relative mb-12 group max-w-2xl mx-auto rounded-2xl shadow-2xl border border-white/10 overflow-hidden aspect-video">
-                <!-- Inner Track (Moves via CSS Transform) -->
-                <div id="carousel-track" class="flex h-full transition-transform duration-500 ease-in-out">
-                    <img src="/machinery-frame.png" alt="Custom Machine Frame"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                    <img src="/machinery-hmi.png" alt="HMI Interface"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                    <img src="/machinery-safety.png" alt="Safety Enclosure"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                    <img src="/machinery-frame.png" alt="Compact Design"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                    <img src="/machinery-hmi.png" alt="Operator Controls"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                </div>
-
-                <!-- Prev Button -->
-                <button id="carousel-prev"
-                    class="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95">
-                    <span class="material-icons-round text-3xl">chevron_left</span>
-                </button>
-
-                <!-- Next Button -->
-                <button id="carousel-next"
-                    class="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95">
-                    <span class="material-icons-round text-3xl">chevron_right</span>
-                </button>
-            </div>
-
-            <!-- Detailed SEO Content -->
-            <article class="max-w-3xl mx-auto mb-24 text-slate-700 dark:text-slate-300 space-y-8 leading-relaxed">
-                <div>
-                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Space-Saving Innovation</h3>
-                    <p>
-                        Real estate on your factory floor is valuable. **Absolute Automation Solutions** specializes in
-                        high-density, compact machinery that delivers maximum output in minimal footprint. We don't just
-                        shrink standard designs; we rethink the mechanical architecture to nest components efficiently
-                        without sacrificing accessibility for maintenance.
-                    </p>
-                </div>
-
-                <div>
-                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Precision & Safety</h3>
-                    <p>
-                        Every machine we build meets rigorous safety standards (OSHA/ANSI) while maintaining
-                        micron-level precision. Our custom solutions utilize rigid aluminum extrusion or welded steel
-                        frames, integrated safety light curtains, and ergonomic operator stations designed for long-term
-                        usability.
-                    </p>
-                </div>
-
-                <ul class="list-disc pl-6 space-y-2">
-                    <li><strong>Small Footprint:</strong> Optimized vertical integration to save floor space.</li>
-                    <li><strong>Modular Design:</strong> Future-proof frames that allow for easy upgrades.</li>
-                    <li><strong>Rapid Deployment:</strong> Pre-tested and skid-mounted for quick installation.</li>
-                </ul>
-            </article>
 
             <!-- Key Features Grid (Previously Bento) -->
             <div class="mb-12">

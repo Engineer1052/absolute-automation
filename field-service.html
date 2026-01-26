@@ -30,67 +30,76 @@
 
     <main>
         <section class="py-32 px-6 max-w-7xl mx-auto pt-48">
-            <div class="mb-16">
-                <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">SERVICES</h2>
-                <h3 class="text-4xl md:text-5xl font-bold tracking-tight">FIELD SERVICE</h3>
+            <!-- Split Layout: Text Left, Carousel Right -->
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center mb-24">
+
+                <!-- Left Column: Content -->
+                <div class="lg:col-span-2 pl-4">
+                    <div class="mb-8">
+                        <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">SERVICES</h2>
+                        <h3 class="text-4xl md:text-5xl font-extrabold tracking-tighter uppercase leading-[0.9]">
+                            FIELD<br>SERVICE
+                        </h3>
+                    </div>
+
+                    <div class="prose prose-slate dark:prose-invert leading-relaxed text-slate-700 dark:text-slate-300">
+                        <p class="font-bold text-lg">
+                            Maximized Uptime. Guaranteed.
+                        </p>
+                        <p>
+                            When a line goes down, every minute impacts your bottom line. **Absolute Automation
+                            Solutions** deploys **factory-trained technicians** equipped with advanced diagnostic tools
+                            to resolve issues rapidly. We don't just swap parts; we perform true **Root Cause Analysis**
+                            to ensure the problem doesn't return.
+                        </p>
+                        <p>
+                            From emergency breakdown support to scheduled **preventive maintenance (PM)** contracts, we
+                            are your partners in reliability. Our team also provides on-site training, empowering your
+                            internal staff to handle Tier 1 issues with confidence.
+                        </p>
+                        <ul class="list-disc pl-4 space-y-1">
+                            <li><strong>Rapid Response:</strong> 24/7 dispatched support for critical manufacturing.
+                            </li>
+                            <li><strong>Remote Connectivity:</strong> Secure VPN tunneling for instant code-level
+                                diagnosis.</li>
+                            <li><strong>Obsolescence Planning:</strong> Strategic roadmaps for aging component
+                                lifecycles.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column: Carousel -->
+                <div class="lg:col-span-3">
+                    <div
+                        class="relative group w-full rounded-2xl shadow-2xl border border-white/10 overflow-hidden h-[500px] -translate-y-24">
+                        <!-- Inner Track (Moves via CSS Transform) -->
+                        <div id="carousel-track" class="flex h-full transition-transform duration-500 ease-in-out">
+                            <img src="/images/field-service.png" alt="Technician on Site" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                            <img src="/images/field-service.png" alt="Service Fleet" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                            <img src="/images/field-service.png" alt="Remote Support" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                            <img src="/images/field-service.png" alt="Parts and Tools" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                            <img src="/images/field-service.png" alt="Emergency Service" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                        </div>
+
+                        <!-- Prev Button -->
+                        <button id="carousel-prev"
+                            class="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95 opacity-0 group-hover:opacity-100">
+                            <span class="material-icons-round text-3xl">chevron_left</span>
+                        </button>
+
+                        <!-- Next Button -->
+                        <button id="carousel-next"
+                            class="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95 opacity-0 group-hover:opacity-100">
+                            <span class="material-icons-round text-3xl">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-
-            <!-- Image Gallery Carousel Wrapper -->
-            <!-- Carousel Window -->
-            <div
-                class="relative mb-12 group max-w-2xl mx-auto rounded-2xl shadow-2xl border border-white/10 overflow-hidden aspect-video">
-                <!-- Inner Track (Moves via CSS Transform) -->
-                <div id="carousel-track" class="flex h-full transition-transform duration-500 ease-in-out">
-                    <img src="/service-tech.png" alt="Technician on Site"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                    <img src="/service-van.png" alt="Service Fleet" style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                    <img src="/service-tech.png" alt="Remote Support"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                    <img src="/service-van.png" alt="Parts and Tools"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                    <img src="/service-tech.png" alt="Emergency Service"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                </div>
-
-                <!-- Prev Button -->
-                <button id="carousel-prev"
-                    class="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95">
-                    <span class="material-icons-round text-3xl">chevron_left</span>
-                </button>
-
-                <!-- Next Button -->
-                <button id="carousel-next"
-                    class="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95">
-                    <span class="material-icons-round text-3xl">chevron_right</span>
-                </button>
-            </div>
-
-            <!-- Detailed SEO Content -->
-            <article class="max-w-3xl mx-auto mb-24 text-slate-700 dark:text-slate-300 space-y-8 leading-relaxed">
-                <div>
-                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Uptime is Everything</h3>
-                    <p>
-                        When a line goes down, every minute costs money. **Absolute Automation Solutions** offers rapid
-                        response field service for all your automation assets. Our technicians are equipped with the
-                        tools, software, and expertise to diagnose complex electrical and mechanical issues on the spot.
-                    </p>
-                </div>
-
-                <div>
-                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Proactive Support</h3>
-                    <p>
-                        We don't just fix breakdowns; we prevent them. Our preventive maintenance programs are designed
-                        to catch wear and tear before it results in a failure. We also offer comprehensive training for
-                        your operators and maintenance staff to empower them to handle day-to-day issues independently.
-                    </p>
-                </div>
-
-                <ul class="list-disc pl-6 space-y-2">
-                    <li><strong>24/7 Availability:</strong> Emergency support when you need it most.</li>
-                    <li><strong>Remote Access:</strong> Secure VPN tunneling for instant troubleshooting.</li>
-                    <li><strong>Spare Parts:</strong> Critical component sourcing and inventory management.</li>
-                </ul>
-            </article>
 
             <!-- Key Features Grid (Previously Bento) -->
             <div class="mb-12">

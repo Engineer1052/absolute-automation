@@ -32,66 +32,110 @@
     <main>
         <section id="services" class="py-32 px-6 max-w-7xl mx-auto pt-48">
             <div class="mb-16">
-                <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">ABSOLUTE AUTOMATION</h2>
-                <h3 class="text-4xl md:text-5xl font-bold tracking-tight">SYSTEMS &amp; SOLUTIONS</h3>
+                <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">ALL SERVICES</h2>
+                <h3 class="text-4xl md:text-5xl font-bold tracking-tight">CAPABILITIES &amp; EXPERTISE</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:auto-rows-[300px]">
                 <!-- 1. Factory Automation -->
-                <a href="/factory-automation.html"
-                    class="md:col-span-8 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-start md:justify-between group h-min md:h-full hover:border-primary/50 transition-colors">
-                    <div class="flex justify-end mb-4 md:mb-0 md:absolute md:top-6 md:right-8">
-                        <img src="/endmill-icon.png" alt="End Mill"
-                            class="w-16 h-16 object-contain opacity-50 group-hover:opacity-100 transition-opacity" />
+                <a href="/factory-automation"
+                    class="md:col-span-8 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-start md:justify-between group h-min md:h-full hover:border-primary/50 transition-colors relative overflow-hidden">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 z-0">
+                        <img src="/images/factory-automation.webp" alt="Factory Automation Background" loading="lazy"
+                            class="w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-light/90 via-background-light/50 to-transparent dark:from-background-dark/90 dark:via-background-dark/50">
+                        </div>
                     </div>
+
+
                     <div class="space-y-4 relative z-10 mt-2 md:mt-0">
                         <h4 class="text-2xl md:text-3xl font-bold">Factory Automation</h4>
-                        <p class="text-slate-700 max-w-lg">Comprehensive factory automation solutions designed to
-                            increase throughput, improve quality, and reduce operational costs.</p>
+                        <p class="text-slate-700 dark:text-slate-200 max-w-lg">Turnkey robotic work cells and high-speed
+                            assembly lines. We integrate Fanuc, Yaskawa, and KUKA robotics to maximize production
+                            throughput across the Piedmont Triad.</p>
                     </div>
                 </a>
 
                 <!-- 2. Compact Custom Machinery -->
-                <a href="/compact-custom-machinery.html"
-                    class="md:col-span-4 bento-item bg-primary p-8 rounded-3xl flex flex-col justify-between hover:brightness-110 transition-all">
-                    <div class="flex justify-between items-start">
-                        <span class="material-icons-round text-4xl">precision_manufacturing</span>
+                <a href="/compact-custom-machinery"
+                    class="md:col-span-4 bento-item bg-primary p-8 rounded-3xl flex flex-col justify-between hover:brightness-110 transition-all relative overflow-hidden group">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 z-0">
+                        <img src="/images/compact-machinery.webp" alt="Compact Machinery Background" loading="lazy"
+                            class="w-full h-full object-cover opacity-20 group-hover:scale-105 transition-transform duration-700" />
+                        <div class="absolute inset-0 bg-primary/80 mix-blend-multiply"></div>
                     </div>
-                    <div>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-2">Compact Custom Machinery</h4>
-                        <p class="text-slate-700 text-sm">Specialized build-to-print or custom designed machinery
-                            optimized for small footprints.</p>
+
+
+                    <div class="space-y-4 relative z-10">
+                        <h4 class="text-xl md:text-2xl font-bold text-slate-900">Compact Custom Machinery</h4>
+                        <p class="text-slate-900/80 text-sm font-medium">Space-saving, custom-engineered assembly
+                            stations using precision rotary indexers and electric actuators. Optimized for medical,
+                            automotive, and electronics manufacturing.</p>
                     </div>
                 </a>
 
                 <!-- 3. Control Panel Assembly -->
-                <a href="/control-panel-assembly.html"
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
-                    <div>
-                        <span class="material-icons-round text-3xl mb-4 text-primary">settings_input_component</span>
-                        <h4 class="text-2xl font-bold mb-2">Control Panel Assembly</h4>
-                        <p class="text-slate-700 text-sm">UL-listed control panel fabrication ensuring safety and
-                            compliance.</p>
+                <a href="/control-panel-assembly"
+                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors relative intitial group overflow-hidden">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 z-0">
+                        <img src="/images/control-panel.webp" alt="Control Panel Background" loading="lazy"
+                            class="w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-light/90 via-background-light/50 to-transparent dark:from-background-dark/90 dark:via-background-dark/50">
+                        </div>
+                    </div>
+
+                    <div class="relative z-10">
+
+                        <h4 class="text-xl md:text-2xl font-bold mb-2">Control Panel Assembly</h4>
+                        <p class="text-slate-700 dark:text-slate-200 text-sm">Precision-wired industrial control
+                            enclosures designed for reliability. Our dedicated panel shop ensures rigorous quality
+                            testing and organized wire management for every build.</p>
                     </div>
                 </a>
 
                 <!-- 4. Control Systems Integration -->
-                <a href="/systems-integration.html"
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
-                    <div>
-                        <span class="material-icons-round text-3xl mb-4 text-primary">memory</span>
-                        <h4 class="text-2xl font-bold mb-2">Control Systems Integration</h4>
-                        <p class="text-slate-700 text-sm">Expert integration and retrofitting of modern control
-                            architectures.</p>
+                <a href="/systems-integration"
+                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors relative group overflow-hidden">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 z-0">
+                        <img src="/images/systems-integration.webp" alt="Integration Background" loading="lazy"
+                            class="w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-light/90 via-background-light/50 to-transparent dark:from-background-dark/90 dark:via-background-dark/50">
+                        </div>
+                    </div>
+
+                    <div class="relative z-10">
+
+                        <h4 class="text-xl md:text-2xl font-bold mb-2">Control Systems Integration</h4>
+                        <p class="text-slate-700 dark:text-slate-200 text-sm">Modernize your legacy equipment with
+                            Allen-Bradley and Siemens PLC upgrades. Full-stack HMI design, SCADA integration, and servo
+                            motion control programming.</p>
                     </div>
                 </a>
 
                 <!-- 5. Field Service -->
-                <a href="/field-service.html"
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent hover:border-primary/50 transition-colors group">
-                    <div>
-                        <span class="material-icons-round text-3xl mb-4 text-slate-900/50">handyman</span>
-                        <h4 class="text-2xl font-bold mb-2">Field Service</h4>
-                        <p class="text-slate-700 text-sm">Rapid response support and preventive maintenance.</p>
+                <a href="/field-service"
+                    class="md:col-span-4 bento-item glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent hover:border-primary/50 transition-colors relative group overflow-hidden">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 z-0">
+                        <img src="/images/field-service.webp" alt="Field Service Background" loading="lazy"
+                            class="w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-light/90 via-background-light/50 to-transparent dark:from-background-dark/90 dark:via-background-dark/50">
+                        </div>
+                    </div>
+
+                    <div class="relative z-10">
+
+                        <h4 class="text-xl md:text-2xl font-bold mb-2">Field Service</h4>
+                        <p class="text-slate-700 dark:text-slate-200 text-sm">24/7 emergency troubleshooting and
+                            preventive maintenance for industrial machinery. Local North Carolina support for PLCs,
+                            drives, and automated systems.</p>
                     </div>
                 </a>
             </div>

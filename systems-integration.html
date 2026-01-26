@@ -31,70 +31,76 @@
 
     <main>
         <section class="py-32 px-6 max-w-7xl mx-auto pt-48">
-            <div class="mb-16">
-                <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">SERVICES</h2>
-                <h3 class="text-4xl md:text-5xl font-bold tracking-tight">CONTROL SYSTEMS INTEGRATION & RETROFITS</h3>
+            <!-- Split Layout: Text Left, Carousel Right -->
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center mb-24">
+
+                <!-- Left Column: Content -->
+                <div class="lg:col-span-2 pl-4">
+                    <div class="mb-8">
+                        <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">SERVICES</h2>
+                        <h3 class="text-4xl md:text-5xl font-extrabold tracking-tighter uppercase leading-[0.9]">
+                            CONTROL SYSTEMS<br>INTEGRATION
+                        </h3>
+                    </div>
+
+                    <div class="prose prose-slate dark:prose-invert leading-relaxed text-slate-700 dark:text-slate-300">
+                        <p class="font-bold text-lg">
+                            Bridging the Gap Between Hardware and Intelligence.
+                        </p>
+                        <p>
+                            Hardware is nothing without the intelligence to drive it. **Absolute Automation Solutions**
+                            delivers comprehensive **systems integration** that connects your shop floor to the top
+                            floor. Whether breathing new life into legacy machines with modern PLCs or architecting a
+                            brand-new **Industry 4.0** digital ecosystem, we provide the code that keeps you running.
+                        </p>
+                        <p>
+                            Our expertise spans all major platforms—Allen Bradley (Rockwell), Siemens TIA Portal, and
+                            Omron Sysmac. We integrate complex motion control, safety bridging, and **IIoT** data
+                            networks to give you real-time visibility into OEE and production metrics.
+                        </p>
+                        <ul class="list-disc pl-4 space-y-1">
+                            <li><strong>Cross-Platform Polyglots:</strong> We natively speak Rockwell, Siemens, and
+                                Mitsubishi.</li>
+                            <li><strong>Legacy Retrofits:</strong> Risk-free migration from PLC-5/SLC to ControlLogix.
+                            </li>
+                            <li><strong>Data Visibility:</strong> MQTT and SQL integration for real-time dashboards.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column: Carousel -->
+                <div class="lg:col-span-3">
+                    <div
+                        class="relative group w-full rounded-2xl shadow-2xl border border-white/10 overflow-hidden h-[500px] -translate-y-40">
+                        <!-- Inner Track (Moves via CSS Transform) -->
+                        <div id="carousel-track" class="flex h-full transition-transform duration-500 ease-in-out">
+                            <img src="/images/systems-integration.png" alt="PLC Logic Programming"
+                                style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
+                            <img src="/images/systems-integration.png" alt="Servo Motion Control" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                            <img src="/images/systems-integration.png" alt="SCADA System" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                            <img src="/images/systems-integration.png" alt="HMI Screen" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                            <img src="/images/systems-integration.png" alt="Network Integration" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                        </div>
+
+                        <!-- Prev Button -->
+                        <button id="carousel-prev"
+                            class="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95 opacity-0 group-hover:opacity-100">
+                            <span class="material-icons-round text-3xl">chevron_left</span>
+                        </button>
+
+                        <!-- Next Button -->
+                        <button id="carousel-next"
+                            class="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95 opacity-0 group-hover:opacity-100">
+                            <span class="material-icons-round text-3xl">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-
-            <!-- Image Gallery Carousel Wrapper -->
-            <!-- Carousel Window -->
-            <div
-                class="relative mb-12 group max-w-2xl mx-auto rounded-2xl shadow-2xl border border-white/10 overflow-hidden aspect-video">
-                <!-- Inner Track (Moves via CSS Transform) -->
-                <div id="carousel-track" class="flex h-full transition-transform duration-500 ease-in-out">
-                    <img src="/integration-code.png" alt="PLC Logic Programming"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                    <img src="/integration-servo.png" alt="Servo Motion Control"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                    <img src="/integration-code.png" alt="SCADA System"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                    <img src="/integration-servo.png" alt="HMI Screen"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                    <img src="/integration-code.png" alt="Network Integration"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                </div>
-
-                <!-- Prev Button -->
-                <button id="carousel-prev"
-                    class="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95">
-                    <span class="material-icons-round text-3xl">chevron_left</span>
-                </button>
-
-                <!-- Next Button -->
-                <button id="carousel-next"
-                    class="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95">
-                    <span class="material-icons-round text-3xl">chevron_right</span>
-                </button>
-            </div>
-
-            <!-- Detailed SEO Content -->
-            <article class="max-w-3xl mx-auto mb-24 text-slate-700 dark:text-slate-300 space-y-8 leading-relaxed">
-                <div>
-                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Intelligent Control for Modern
-                        Industry</h3>
-                    <p>
-                        Hardware is nothing without the intelligence to drive it. **Absolute Automation Solutions**
-                        provides comprehensive systems integration services, bridging the gap between mechanical systems
-                        and digital control. We specialize in breathing new life into old machines and programming new
-                        systems from scratch.
-                    </p>
-                </div>
-
-                <div>
-                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Seamless Connectivity</h3>
-                    <p>
-                        Our expertise spans all major platforms—Allen Bradley (Rockwell), Siemens, Omron, and
-                        Mitsubishi. We integrate complex motion control, safety bridging, and plant-wide SCADA networks
-                        to give you real-time visibility and control over your production data.
-                    </p>
-                </div>
-
-                <ul class="list-disc pl-6 space-y-2">
-                    <li><strong>Cross-Platform Expertise:</strong> We speak every major industrial language.</li>
-                    <li><strong>Legacy Retrofits:</strong> Upgrading SLC 500/PLC-5 to ControlLogix/CompactLogix.</li>
-                    <li><strong>Data Visibility:</strong> Connecting shop floor actions to top floor analytics.</li>
-                </ul>
-            </article>
 
             <!-- Key Features Grid (Previously Bento) -->
             <div class="mb-12">

@@ -114,10 +114,10 @@
                         <span
                             class="absolute inset-0 z-20 flex items-center justify-center group-hover:text-black transition-colors duration-300 font-bold tracking-widest uppercase text-sm pointer-events-none">Contact</span>
                     </button>
-                    <a href="#videos"
+                    <a href="#gallery-preview"
                         class="flex items-center gap-3 font-mono text-sm tracking-widest uppercase py-4 px-8 border border-white/10 hover:border-primary/50 transition-colors rounded-full">
                         <span class="material-icons-round text-primary">play_circle</span>
-                        View Our Systems
+                        View Our Projects
                     </a>
                 </div>
             </div>
@@ -131,64 +131,109 @@
 
         <section id="systems" class="py-32 px-6 max-w-7xl mx-auto">
             <div class="mb-16">
-                <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">ABSOLUTE AUTOMATION</h2>
-                <h3 class="text-4xl md:text-5xl font-bold tracking-tight">SYSTEMS &amp; SOLUTIONS</h3>
+                <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">ALL SERVICES</h2>
+                <h3 class="text-4xl md:text-5xl font-bold tracking-tight">CAPABILITIES &amp; EXPERTISE</h3>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-12 gap-4 auto-rows-[300px]">
                 <!-- 1. Factory Automation -->
                 <a href="/factory-automation.html"
-                    class="md:col-span-8 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-end group hover:border-primary/50 transition-colors">
-                    <img src="/endmill-icon.png" alt="End Mill"
-                        class="absolute top-6 right-8 w-16 h-16 object-contain opacity-50 group-hover:opacity-100 transition-opacity" />
-                    <div class="space-y-4">
+                    class="md:col-span-8 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-start md:justify-between group h-min md:h-full hover:border-primary/50 transition-colors relative overflow-hidden">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 z-0">
+                        <img src="/images/factory-automation.webp" alt="Factory Automation Background" loading="lazy"
+                            class="w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-light/90 via-background-light/50 to-transparent dark:from-background-dark/90 dark:via-background-dark/50">
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 relative z-10 mt-2 md:mt-0">
                         <h4 class="text-3xl font-bold">Factory Automation</h4>
-                        <p class="text-slate-700 max-w-lg">Comprehensive factory automation solutions designed to
-                            increase throughput, improve quality, and reduce operational costs.</p>
+                        <p class="text-slate-700 dark:text-slate-200 max-w-lg">Turnkey robotic work cells and high-speed
+                            assembly lines. We integrate Fanuc, Yaskawa, and KUKA robotics to maximize production
+                            throughput across the Piedmont Triad.</p>
                     </div>
                 </a>
 
                 <!-- 2. Compact Custom Machinery -->
                 <a href="/compact-custom-machinery.html"
-                    class="md:col-span-4 bento-item bg-primary p-8 rounded-3xl flex flex-col justify-between hover:brightness-110 transition-all">
-                    <div class="flex justify-between items-start">
-                        <span class="material-icons-round text-4xl">precision_manufacturing</span>
+                    class="md:col-span-4 bento-item bg-primary p-8 rounded-3xl flex flex-col justify-between hover:brightness-110 transition-all relative overflow-hidden group">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 z-0">
+                        <img src="/images/compact-machinery.webp" alt="Compact Machinery Background" loading="lazy"
+                            class="w-full h-full object-cover opacity-20 group-hover:scale-105 transition-transform duration-700" />
+                        <div class="absolute inset-0 bg-primary/80 mix-blend-multiply"></div>
                     </div>
-                    <div>
-                        <h4 class="text-2xl font-bold text-slate-900 mb-2">Compact Custom Machinery</h4>
-                        <p class="text-slate-700 text-sm">Specialized build-to-print or custom designed machinery
-                            optimized for small footprints.</p>
+
+
+                    <div class="relative z-10">
+                        <div class="relative z-10">
+                            <h4 class="text-2xl font-bold text-slate-900 mb-2">Compact Custom Machinery</h4>
+                            <p class="text-slate-900/80 text-sm font-medium">Space-saving, custom-engineered assembly
+                                stations using precision rotary indexers and electric actuators. Optimized for medical,
+                                automotive, and electronics manufacturing.</p>
+                        </div>
                     </div>
                 </a>
 
                 <!-- 3. Control Panel Assembly -->
                 <a href="/control-panel-assembly.html"
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
-                    <div>
-                        <span class="material-icons-round text-3xl mb-4 text-primary">settings_input_component</span>
+                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group relative overflow-hidden">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 z-0">
+                        <img src="/images/control-panel.webp" alt="Control Panel Background" loading="lazy"
+                            class="w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-light/90 via-background-light/50 to-transparent dark:from-background-dark/90 dark:via-background-dark/50">
+                        </div>
+                    </div>
+
+                    <div class="relative z-10">
                         <h4 class="text-2xl font-bold mb-2">Control Panel Assembly</h4>
-                        <p class="text-slate-700 text-sm">UL-listed control panel fabrication ensuring safety and
-                            compliance.</p>
+                        <p class="text-slate-700 dark:text-slate-200 text-sm">
+                            Precision-wired industrial control enclosures designed for reliability. Our dedicated panel
+                            shop ensures rigorous quality testing and organized wire management for every build.
+                        </p>
                     </div>
                 </a>
 
                 <!-- 4. Control Systems Integration -->
                 <a href="/systems-integration.html"
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group">
-                    <div>
-                        <span class="material-icons-round text-3xl mb-4 text-primary">memory</span>
+                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group relative overflow-hidden">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 z-0">
+                        <img src="/images/systems-integration.webp" alt="Integration Background" loading="lazy"
+                            class="w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-light/90 via-background-light/50 to-transparent dark:from-background-dark/90 dark:via-background-dark/50">
+                        </div>
+                    </div>
+
+                    <div class="relative z-10">
                         <h4 class="text-2xl font-bold mb-2">Control Systems Integration</h4>
-                        <p class="text-slate-700 text-sm">Expert integration and retrofitting of modern control
-                            architectures.</p>
+                        <p class="text-slate-700 dark:text-slate-200 text-sm">Modernize your legacy equipment with
+                            Allen-Bradley and Siemens PLC upgrades. Full-stack HMI design, SCADA integration, and servo
+                            motion control programming.</p>
                     </div>
                 </a>
 
                 <!-- 5. Field Service -->
                 <a href="/field-service.html"
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent hover:border-primary/50 transition-colors group">
-                    <div>
-                        <span class="material-icons-round text-3xl mb-4 text-slate-900/50">handyman</span>
+                    class="md:col-span-4 bento-item glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent hover:border-primary/50 transition-colors group relative overflow-hidden">
+                    <!-- Background Image -->
+                    <div class="absolute inset-0 z-0">
+                        <img src="/images/field-service.webp" alt="Field Service Background" loading="lazy"
+                            class="w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-background-light/90 via-background-light/50 to-transparent dark:from-background-dark/90 dark:via-background-dark/50">
+                        </div>
+                    </div>
+
+                    <div class="relative z-10">
                         <h4 class="text-2xl font-bold mb-2">Field Service</h4>
-                        <p class="text-slate-700 text-sm">Rapid response support and preventive maintenance.</p>
+                        <p class="text-slate-700 dark:text-slate-200 text-sm">24/7 emergency troubleshooting and
+                            preventive maintenance for industrial machinery. Local North Carolina support for PLCs,
+                            drives, and automated systems.</p>
                     </div>
                 </a>
             </div>
@@ -226,10 +271,6 @@
                         </div>
                         <div class="space-y-4">
                             <div class="flex items-center gap-4 group cursor-default">
-                                <div
-                                    class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
-                                    <span class="material-icons-round text-primary">precision_manufacturing</span>
-                                </div>
                                 <div>
                                     <h5 class="font-bold">DESIGN. FABRICATE. INTEGRATE.</h5>
                                     <p class="text-xs text-slate-600">Our end-to-end approach to world-class industrial
@@ -243,7 +284,8 @@
                         <!-- Business / Capabilities Image -->
                         <div class="group glass rounded-2xl overflow-hidden border border-white/10">
                             <div class="relative h-[28rem] bg-slate-800">
-                                <img src="/panel-wiring.png" alt="Precision Wiring & Panel Assembly"
+                                <img src="/images/control-panel.webp" alt="Precision Wiring & Panel Assembly"
+                                    loading="lazy"
                                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                             </div>
                             <div class="p-6">
@@ -257,7 +299,8 @@
                         <!-- Project Image -->
                         <div class="group glass rounded-2xl overflow-hidden border border-white/10">
                             <div class="relative h-[28rem] bg-slate-800">
-                                <img src="/factory-arm.png" alt="Robotic Integration Project"
+                                <img src="/images/factory-automation.webp" alt="Robotic Integration Project"
+                                    loading="lazy"
                                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                             </div>
                             <div class="p-6">
@@ -270,21 +313,93 @@
                     </div>
                 </div>
         </section>
-        <section id="videos" class="py-20 px-6 relative">
+        <section id="gallery-preview" class="py-20 px-6 relative border-t border-white/5">
             <div class="max-w-7xl mx-auto">
-                <div class="flex flex-col items-start mb-12 text-left">
-                    <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">Videos</h2>
-                    <h3 class="text-4xl md:text-5xl font-bold tracking-tight">SYSTEMS IN MOTION</h3>
+                <div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
+                    <div class="text-left">
+                        <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">PORTFOLIO</h2>
+                        <h3 class="text-4xl md:text-5xl font-bold tracking-tight uppercase">PROJECT GALLERY</h3>
+                    </div>
+                    <a href="/gallery"
+                        class="group flex items-center gap-2 text-sm font-mono tracking-widest uppercase hover:text-primary transition-colors pb-2 border-b border-transparent hover:border-primary">
+                        View Full Gallery
+                        <span
+                            class="material-icons-round text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
                 </div>
 
-                <!-- Video Container -->
-                <div
-                    class="relative w-full aspect-video glass rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-                    <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/_ORJRX6F3k4"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
+                <!-- Scrollable Gallery Container -->
+                <div class="relative w-full">
+                    <!-- Horizontal Scroll Track -->
+                    <div
+                        class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 -mx-6 px-6 md:mx-0 md:px-0 scrollbar-hide">
+
+                        <!-- Image 1 -->
+                        <div
+                            class="snap-center shrink-0 w-[85vw] md:w-[600px] h-[400px] glass rounded-3xl overflow-hidden border border-white/10 relative group">
+                            <img src="/images/factory-automation.webp" alt="Factory Automation" loading="lazy"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                            <div
+                                class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                                <h4 class="text-white font-bold text-xl">Robotic Cells</h4>
+                            </div>
+                        </div>
+
+                        <!-- Image 2 -->
+                        <div
+                            class="snap-center shrink-0 w-[85vw] md:w-[600px] h-[400px] glass rounded-3xl overflow-hidden border border-white/10 relative group">
+                            <img src="/images/gallery-robotic-gantry.webp" alt="Robotic Gantry" loading="lazy"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                            <div
+                                class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                                <h4 class="text-white font-bold text-xl">Custom Gantries</h4>
+                            </div>
+                        </div>
+
+                        <!-- Image 3 -->
+                        <div
+                            class="snap-center shrink-0 w-[85vw] md:w-[600px] h-[400px] glass rounded-3xl overflow-hidden border border-white/10 relative group">
+                            <img src="/images/gallery-hurco-mill.webp" alt="CNC Machining" loading="lazy"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                            <div
+                                class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                                <h4 class="text-white font-bold text-xl">CNC Machining</h4>
+                            </div>
+                        </div>
+
+                        <!-- Image 4 -->
+                        <div
+                            class="snap-center shrink-0 w-[85vw] md:w-[600px] h-[400px] glass rounded-3xl overflow-hidden border border-white/10 relative group">
+                            <img src="/images/control-panel.webp" alt="Control Panels" loading="lazy"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                            <div
+                                class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                                <h4 class="text-white font-bold text-xl">Industrial Enclosures</h4>
+                            </div>
+                        </div>
+
+                        <!-- Image 5 -->
+                        <div
+                            class="snap-center shrink-0 w-[85vw] md:w-[600px] h-[400px] glass rounded-3xl overflow-hidden border border-white/10 relative group">
+                            <img src="/images/gallery-3d-printing-lab.webp" alt="Additive Manufacturing" loading="lazy"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                            <div
+                                class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                                <h4 class="text-white font-bold text-xl">Additive Lab</h4>
+                            </div>
+                        </div>
+
+                        <!-- CTA Card -->
+                        <a href="/gallery"
+                            class="snap-center shrink-0 w-[85vw] md:w-[300px] h-[400px] glass rounded-3xl overflow-hidden border border-white/10 relative group flex flex-col items-center justify-center hover:bg-white/5 transition-colors cursor-pointer text-center p-8">
+                            <div
+                                class="w-16 h-16 rounded-full border border-primary/50 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all text-primary">
+                                <span class="material-icons-round text-3xl">arrow_forward</span>
+                            </div>
+                            <h4 class="text-lg font-bold">View All Projects</h4>
+                        </a>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -299,7 +414,7 @@
                 <div onclick="window.location.href='/projects'"
                     class="glass rounded-3xl border border-white/5 hover:border-primary/50 transition-colors group cursor-pointer overflow-hidden flex flex-col">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="/factory-arm.png" alt="Automated Assembly Cell"
+                        <img src="/images/project-injection-molding.webp" alt="Automated Assembly Cell" loading="lazy"
                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     </div>
@@ -324,7 +439,7 @@
                 <div onclick="window.location.href='/projects'"
                     class="glass rounded-3xl border border-white/5 hover:border-primary/50 transition-colors group cursor-pointer overflow-hidden flex flex-col">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="/factory-vision.png" alt="Vision System"
+                        <img src="/images/project-pharma-vision.webp" alt="Vision System" loading="lazy"
                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     </div>
@@ -348,7 +463,7 @@
                 <div onclick="window.location.href='/projects'"
                     class="glass rounded-3xl border border-white/5 hover:border-primary/50 transition-colors group cursor-pointer overflow-hidden flex flex-col">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="/panel-wiring.png" alt="Control System Retrofit"
+                        <img src="/images/control-panel.webp" alt="Control System Retrofit" loading="lazy"
                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     </div>

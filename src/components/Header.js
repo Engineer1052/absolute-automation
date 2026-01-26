@@ -26,26 +26,26 @@ export function loadHeader() {
                             <a href="/services" class="block px-4 py-3 rounded-xl hover:bg-white/10 hover:text-primary transition-colors font-bold border-b border-black/5 mx-2">
                                 All Services
                             </a>
-                            <a href="/factory-automation.html" class="block px-4 py-2 rounded-xl hover:bg-black/5 hover:text-primary transition-colors text-xs">
+                            <a href="/factory-automation" class="block px-4 py-2 rounded-xl hover:bg-black/5 hover:text-primary transition-colors text-xs">
                                 Factory Automation
                             </a>
-                            <a href="/compact-custom-machinery.html" class="block px-4 py-2 rounded-xl hover:bg-black/5 hover:text-primary transition-colors text-xs">
+                            <a href="/compact-custom-machinery" class="block px-4 py-2 rounded-xl hover:bg-black/5 hover:text-primary transition-colors text-xs">
                                 Compact Custom Machinery
                             </a>
-                            <a href="/control-panel-assembly.html" class="block px-4 py-2 rounded-xl hover:bg-black/5 hover:text-primary transition-colors text-xs">
+                            <a href="/control-panel-assembly" class="block px-4 py-2 rounded-xl hover:bg-black/5 hover:text-primary transition-colors text-xs">
                                 Control Panel Assembly
                             </a>
-                            <a href="/systems-integration.html" class="block px-4 py-2 rounded-xl hover:bg-black/5 hover:text-primary transition-colors text-xs">
+                            <a href="/systems-integration" class="block px-4 py-2 rounded-xl hover:bg-black/5 hover:text-primary transition-colors text-xs">
                                 Control Systems Integration
                             </a>
-                            <a href="/field-service.html" class="block px-4 py-2 rounded-xl hover:bg-black/5 hover:text-primary transition-colors text-xs">
+                            <a href="/field-service" class="block px-4 py-2 rounded-xl hover:bg-black/5 hover:text-primary transition-colors text-xs">
                                 Field Service
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <a class="hover:text-primary transition-colors nav-link" href="/videos">Videos</a>
+                <a class="hover:text-primary transition-colors nav-link" href="/gallery">Gallery</a>
                 <a class="hover:text-primary transition-colors nav-link" href="/projects">Projects</a>
             </div>
             
@@ -86,14 +86,14 @@ export function loadHeader() {
                 </div>
                 <!-- Mobile Sub-links (Hidden by default) -->
                 <div id="mobile-services-dropdown" style="display: none;" class="hidden flex-col gap-4 text-sm text-slate-500 items-center text-center mt-4 mb-4 bg-white/[0.98] rounded-xl w-3/4 py-4 border border-white/20">
-                    <a class="mobile-link hover:text-primary transition-colors" href="/factory-automation.html">Factory Automation</a>
-                    <a class="mobile-link hover:text-primary transition-colors" href="/compact-custom-machinery.html">Compact Custom Machinery</a>
-                    <a class="mobile-link hover:text-primary transition-colors" href="/control-panel-assembly.html">Panel Assembly</a>
-                    <a class="mobile-link hover:text-primary transition-colors" href="/systems-integration.html">Systems Integration</a>
-                    <a class="mobile-link hover:text-primary transition-colors" href="/field-service.html">Field Service</a>
+                    <a class="mobile-link hover:text-primary transition-colors" href="/factory-automation">Factory Automation</a>
+                    <a class="mobile-link hover:text-primary transition-colors" href="/compact-custom-machinery">Compact Custom Machinery</a>
+                    <a class="mobile-link hover:text-primary transition-colors" href="/control-panel-assembly">Panel Assembly</a>
+                    <a class="mobile-link hover:text-primary transition-colors" href="/systems-integration">Systems Integration</a>
+                    <a class="mobile-link hover:text-primary transition-colors" href="/field-service">Field Service</a>
                 </div>
             </div>
-            <a class="mobile-link hover:text-primary transition-colors" href="/videos">Videos</a>
+            <a class="mobile-link hover:text-primary transition-colors" href="/gallery">Gallery</a>
             <a class="mobile-link hover:text-primary transition-colors" href="/projects">Projects</a>
             
             <!-- Mobile Phone & Contact -->

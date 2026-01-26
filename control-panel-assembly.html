@@ -30,67 +30,77 @@
 
     <main>
         <section class="py-32 px-6 max-w-7xl mx-auto pt-48">
-            <div class="mb-16">
-                <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">SERVICES</h2>
-                <h3 class="text-4xl md:text-5xl font-bold tracking-tight">CONTROL PANEL ASSEMBLY</h3>
+            <!-- Split Layout: Text Left, Carousel Right -->
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center mb-24">
+
+                <!-- Left Column: Content -->
+                <div class="lg:col-span-2 pl-4">
+                    <div class="mb-8">
+                        <h2 class="font-mono text-primary text-sm mb-2 tracking-[0.5em] uppercase">SERVICES</h2>
+                        <h3 class="text-4xl md:text-5xl font-extrabold tracking-tighter uppercase leading-[0.9]">
+                            CONTROL PANEL<br>ASSEMBLY
+                        </h3>
+                    </div>
+
+                    <div class="prose prose-slate dark:prose-invert leading-relaxed text-slate-700 dark:text-slate-300">
+                        <p class="font-bold text-lg">
+                            Certified Excellence in Power & Control.
+                        </p>
+                        <p>
+                            A reliable machine starts with a reliable brain. **Absolute Automation Solutions** operates
+                            a
+                            dedicated industrial panel shop. We design and build control enclosures that
+                            are
+                            not only functional but are works of art—cleanly wired, properly labeled, and thermally
+                            managed.
+                        </p>
+                        <p>
+                            From one-off custom prototypes to high-volume OEM panel production, our team scales to meet
+                            your
+                            needs. We utilize automated wire processing and strict QC checklists to ensure every
+                            terminal is
+                            torqued to spec and every I/O point is verified before it leaves our floor.
+                        </p>
+                        <ul class="list-disc pl-4 space-y-1">
+                            <li><strong>Quality Assurance:</strong> Rigorous testing and verification.</li>
+                            <li><strong>Custom Enclosures:</strong> Modified backplates and door cutouts.</li>
+                            <li><strong>Complete Documentation:</strong> Full schematics and BOMs provided.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column: Carousel -->
+                <div class="lg:col-span-3">
+                    <div
+                        class="relative group w-full rounded-2xl shadow-2xl border border-white/10 overflow-hidden h-[500px] -translate-y-24">
+                        <!-- Inner Track (Moves via CSS Transform) -->
+                        <div id="carousel-track" class="flex h-full transition-transform duration-500 ease-in-out">
+                            <img src="/images/control-panel.png" alt="Control Panel Wiring" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                            <img src="/images/control-panel.png" alt="UL Certification" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                            <img src="/images/control-panel.png" alt="Custom Enclosure" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                            <img src="/images/control-panel.png" alt="Testing and QC" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                            <img src="/images/control-panel.png" alt="Schematic Design" style="flex: 0 0 100%"
+                                class="w-full min-w-full h-full object-cover" />
+                        </div>
+
+                        <!-- Prev Button -->
+                        <button id="carousel-prev"
+                            class="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95 opacity-0 group-hover:opacity-100">
+                            <span class="material-icons-round text-3xl">chevron_left</span>
+                        </button>
+
+                        <!-- Next Button -->
+                        <button id="carousel-next"
+                            class="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95 opacity-0 group-hover:opacity-100">
+                            <span class="material-icons-round text-3xl">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-
-            <!-- Image Gallery Carousel Wrapper -->
-            <!-- Carousel Window -->
-            <div
-                class="relative mb-12 group max-w-2xl mx-auto rounded-2xl shadow-2xl border border-white/10 overflow-hidden aspect-video">
-                <!-- Inner Track (Moves via CSS Transform) -->
-                <div id="carousel-track" class="flex h-full transition-transform duration-500 ease-in-out">
-                    <img src="/panel-wiring.png" alt="Control Panel Wiring"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                    <img src="/panel-ul.png" alt="UL Certification" style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                    <img src="/panel-wiring.png" alt="Custom Enclosure"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                    <img src="/panel-ul.png" alt="Testing and QC" style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                    <img src="/panel-wiring.png" alt="Schematic Design"
-                        style="flex: 0 0 100%" class="w-full min-w-full h-full object-cover" />
-                </div>
-
-                <!-- Prev Button -->
-                <button id="carousel-prev"
-                    class="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95">
-                    <span class="material-icons-round text-3xl">chevron_left</span>
-                </button>
-
-                <!-- Next Button -->
-                <button id="carousel-next"
-                    class="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-black/50 hover:bg-black/80 text-white rounded-full backdrop-blur-sm transition-all shadow-lg active:scale-95">
-                    <span class="material-icons-round text-3xl">chevron_right</span>
-                </button>
-            </div>
-
-            <!-- Detailed SEO Content -->
-            <article class="max-w-3xl mx-auto mb-24 text-slate-700 dark:text-slate-300 space-y-8 leading-relaxed">
-                <div>
-                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Certified Excellence in Power &
-                        Control</h3>
-                    <p>
-                        A reliable machine starts with a reliable brain. **Absolute Automation Solutions** operates a
-                        state-of-the-art UL 508A certified panel shop. We design and build control enclosures that are
-                        not only compliant but are works of art—cleanly wired, properly labeled, and thermally managed.
-                    </p>
-                </div>
-
-                <div>
-                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Scalable Production</h3>
-                    <p>
-                        From one-off custom prototypes to high-volume OEM panel production, our team scales to meet your
-                        needs. We utilize automated wire processing and strict QC checklists to ensure every terminal is
-                        torqued to spec and every I/O point is verified before it leaves our floor.
-                    </p>
-                </div>
-
-                <ul class="list-disc pl-6 space-y-2">
-                    <li><strong>UL 508A Certified:</strong> Guaranteed code compliance for inspections.</li>
-                    <li><strong>Custom Enclosures:</strong> Modified backplates and door cutouts.</li>
-                    <li><strong>Complete Documentation:</strong> Full schematics and BOMs provided.</li>
-                </ul>
-            </article>
 
             <!-- Key Features Grid (Previously Bento) -->
             <div class="mb-12">
