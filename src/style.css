@@ -31,19 +31,22 @@
     transition: all 0.3s ease;
   }
 
-  .neon-border:hover {
-    border-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.8);
-    box-shadow: 0 0 25px rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.25);
-  }
-
   .bento-item {
     position: relative;
     overflow: hidden;
     transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   }
 
-  .bento-item:hover {
-    transform: scale(1.02);
+  /* Only apply hover effects on devices with a proper pointer (mouse) */
+  @media (hover: hover) and (pointer: fine) {
+    .neon-border:hover {
+      border-color: rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.8);
+      box-shadow: 0 0 25px rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.25);
+    }
+
+    .bento-item:hover {
+      transform: scale(1.02);
+    }
   }
 
   .gradient-text {
@@ -111,5 +114,22 @@
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
     /* Chrome, Safari and Opera */
+  }
+
+  /* Disable hover animations on touch devices for instant taps */
+  @media (hover: none) {
+
+    /* Disable all group-hover transforms and transitions */
+    .group:hover .group-hover\:translate-y-0,
+    .group:hover .group-hover\:text-black,
+    .group:hover .group-hover\:opacity-80 {
+      transition: none !important;
+    }
+
+    /* Make buttons respond instantly */
+    a,
+    button {
+      -webkit-tap-highlight-color: transparent;
+    }
   }
 }
