@@ -139,7 +139,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.bento-item').forEach(el => {
+document.querySelectorAll('.bento-item:not(.no-reveal)').forEach(el => {
     el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
     observer.observe(el);
 });
