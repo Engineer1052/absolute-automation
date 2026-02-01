@@ -14,7 +14,7 @@ export function loadFooter() {
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
             <div>
                 <div class="flex items-center gap-3 mb-6">
-                    <img src="/absolute-logo.png" alt="Absolute Automation Solutions" class="h-12 md:h-16 w-auto object-contain" />
+                    <img src="/absolute-logo.webp" alt="Absolute Automation Solutions" class="h-12 md:h-16 w-auto object-contain" />
                     <div class="flex flex-col font-mono font-bold tracking-tighter leading-none text-[11px] md:text-xs text-slate-800 justify-center translate-y-[2px]">
                         <span>ABSOLUTE</span>
                         <span>AUTOMATION</span>
