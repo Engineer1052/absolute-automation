@@ -26,7 +26,6 @@ export default defineConfig({
                 about: resolve(__dirname, 'about.html'),
                 services: resolve(__dirname, 'services.html'),
                 gallery: resolve(__dirname, 'gallery.html'),
-                'projects': resolve(__dirname, 'projects.html'),
                 contact: resolve(__dirname, 'contact.html'),
                 'factory-automation': resolve(__dirname, 'factory-automation.html'),
                 'compact-custom-machinery': resolve(__dirname, 'compact-custom-machinery.html'),
