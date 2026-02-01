@@ -5,13 +5,13 @@ import { loadFooter } from './components/Footer.js';
 
 inject();
 import { initNavigation } from './logic/navigation.js';
-import { Modal } from './components/Modal.js';
+import { GalleryModal } from './components/GalleryModal.js';
 
 // Initialize Logic
 loadHeader();
 loadFooter();
 initNavigation();
-new Modal();
+new GalleryModal();
 
 // Reveal body after styles/logic are ready
 window.addEventListener('DOMContentLoaded', () => {

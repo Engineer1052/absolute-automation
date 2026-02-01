@@ -46,7 +46,7 @@ export function loadHeader() {
                 </div>
 
                 <a class="hover:text-primary transition-colors nav-link" href="/gallery">Gallery</a>
-                <a class="hover:text-primary transition-colors nav-link" href="/projects">Projects</a>
+                <a class="hover:text-primary transition-colors nav-link" href="/contact">Contact</a>
             </div>
             
             <!-- Phone Number (Hidden on Mobile) -->
@@ -55,11 +55,6 @@ export function loadHeader() {
                     <span class="material-icons-round text-sm">phone</span>
                     (336) 462-8375
                 </a>
-                
-                <button data-trigger="modal"
-                    class="bg-slate-900 text-white text-xs font-bold px-6 h-10 rounded-full uppercase tracking-widest hover:bg-primary hover:text-white transition-all flex items-center justify-center">
-                    Contact
-                </button>
             </div>
 
             <!-- Mobile Hamburger Button -->
@@ -94,16 +89,12 @@ export function loadHeader() {
                 </div>
             </div>
             <a class="mobile-link hover:text-primary transition-colors" href="/gallery">Gallery</a>
-            <a class="mobile-link hover:text-primary transition-colors" href="/projects">Projects</a>
             
             <!-- Mobile Phone & Contact -->
             <a href="tel:3364628375" class="flex items-center justify-center gap-2 text-white bg-slate-900 border border-slate-800 px-8 h-12 rounded-full mt-4 w-64 shadow-lg active:scale-95 transition-all text-sm font-bold tracking-widest uppercase">
                 <span class="material-icons-round">phone</span>
                 (336) 462-8375
             </a>
-            <button data-trigger="modal" class="mobile-link flex items-center justify-center text-white border border-transparent px-8 h-12 rounded-full mt-4 bg-slate-900 shadow-lg active:scale-95 transition-all w-64 text-sm font-bold tracking-widest uppercase">
-                Contact
-            </button>
         </div>
     </div>
     `;
