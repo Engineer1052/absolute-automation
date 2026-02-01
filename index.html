@@ -16,9 +16,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
 
     <style>
-        body {
-            opacity: 0;
-            transition: opacity 0.4s ease-in-out;
+        /* Only hide on desktop — mobile loads immediately */
+        @media (min-width: 768px) {
+            body {
+                opacity: 0;
+                transition: opacity 0.4s ease-in-out;
+            }
         }
     </style>
 
@@ -69,9 +72,11 @@
             class="relative min-h-[60vh] md:min-h-[100vh] pt-32 md:pt-48 pb-10 md:pb-20 px-6 flex flex-col items-center justify-center overflow-hidden">
             <!-- Background Video -->
             <div class="absolute inset-0 w-full h-full -z-20 overflow-hidden bg-white">
-                <!-- Mobile Background Image -->
-                <img src="/hero-background-image-moble.webp" alt=""
-                    class="md:hidden w-full h-full object-cover opacity-40" loading="eager" fetchpriority="high">
+                <!-- Mobile Video -->
+                <video class="md:hidden w-full h-full object-cover opacity-40 border-none outline-none" autoplay muted
+                    loop playsinline>
+                    <source src="/hero-background-moble.mp4" type="video/mp4">
+                </video>
 
                 <!-- Desktop Video (Vertical usage) -->
                 <video
