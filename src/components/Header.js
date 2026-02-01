@@ -3,7 +3,7 @@ export function loadHeader() {
     <header class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-5xl">
         <nav class="glass flex items-center justify-between px-6 py-4 rounded-full border border-white/10 relative">
             <a href="/" class="group flex items-center gap-3 z-50 relative">
-                <img src="/absolute-logo.webp" alt="Absolute Automation Solutions" class="h-12 md:h-16 w-auto object-contain transition-opacity group-hover:opacity-80" />
+                <img src="/absolute-logo.png" alt="Absolute Automation Solutions" class="h-12 md:h-16 w-auto object-contain transition-opacity group-hover:opacity-80" />
                 <div class="flex flex-col font-mono font-bold tracking-tighter leading-none text-[11px] md:text-xs text-slate-800 dark:text-white group-hover:text-primary transition-colors justify-center translate-y-[2px]">
                     <span>ABSOLUTE</span>
                     <span>AUTOMATION</span>
@@ -58,8 +58,8 @@ export function loadHeader() {
             </div>
 
             <!-- Mobile Hamburger Button -->
-            <button id="mobile-menu-btn" class="md:hidden z-50 text-slate-800 relative w-12 h-12 flex items-center justify-center border border-slate-200/20 rounded-full bg-white/50 backdrop-blur-md active:scale-95 transition-all">
-                <span class="material-icons-round text-3xl">menu</span>
+            <button id="mobile-menu-btn" class="md:hidden z-50 text-slate-800 relative w-10 h-10 flex items-center justify-center border border-slate-200/20 rounded-full bg-white/50 backdrop-blur-md active:scale-95 transition-all">
+                <span class="material-icons-round text-2xl">menu</span>
             </button>
         </nav>
     </header>
@@ -89,7 +89,6 @@ export function loadHeader() {
                 </div>
             </div>
             <a class="mobile-link hover:text-primary transition-colors" href="/gallery">Gallery</a>
-            <a class="mobile-link hover:text-primary transition-colors" href="/contact">Contact</a>
             
             <!-- Mobile Phone & Contact -->
             <a href="tel:3364628375" class="flex items-center justify-center gap-2 text-white bg-slate-900 border border-slate-800 px-8 h-12 rounded-full mt-4 w-64 shadow-lg active:scale-95 transition-all text-sm font-bold tracking-widest uppercase">
