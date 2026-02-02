@@ -10,12 +10,11 @@
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <!-- Fonts are now self-hosted in /fonts and loaded via CSS -->
-    <link rel="preload" href="/fonts/inter-extrabold.woff2" as="font" type="font/woff2" crossorigin>
 
     <style>
         body {
             opacity: 0;
-            transition: opacity 0.1s ease-in-out;
+            transition: opacity 0.4s ease-in-out;
         }
     </style>
 
@@ -68,14 +67,14 @@
             <div class="absolute inset-0 w-full h-full -z-20 overflow-hidden bg-white">
                 <!-- Mobile Video -->
                 <video class="md:hidden w-full h-full object-cover opacity-40 border-none outline-none" autoplay muted
-                    loop playsinline preload="none">
+                    loop playsinline>
                     <source src="/hero-background-moble.mp4" type="video/mp4">
                 </video>
 
                 <!-- Desktop Video (Vertical usage) -->
                 <video
                     class="hidden md:block w-full h-full object-cover object-[50%_46%] opacity-40 border-none outline-none"
-                    autoplay muted loop playsinline preload="none">
+                    autoplay muted loop playsinline>
                     <source src="/hero-background.mp4" type="video/mp4">
                 </video>
 
@@ -92,8 +91,9 @@
 
 
                 <h1
-                    class="relative text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter mb-6 leading-tight gradient-text">
-                    PROVEN RESULTS<br>REGIONALLY FOCUSED
+                    class="relative text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter mb-6 leading-tight">
+                    <span class="gradient-text block">PROVEN RESULTS</span>
+                    <span class="gradient-text block">REGIONALLY FOCUSED</span>
                 </h1>
                 <p class="text-sm md:text-xl text-slate-700 max-w-2xl mx-auto mb-12 font-extralight">
                     Ten years of custom automation excellence rooted in North Carolina. We design, fabricate, and
@@ -441,14 +441,6 @@
     <!-- Footer will be injected by src/components/Footer.js -->
 
     <script type="module" src="/src/main.js"></script>
-    <!-- Immediate reveal script to prevent FOUC but preserve LCP speed -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.body.style.opacity = '1';
-        });
-        // Fallback: If DOMContentLoaded already fired or hangs, show it anyway after a tiny safety delay
-        setTimeout(() => document.body.style.opacity = '1', 50);
-    </script>
 </body>
 
 </html>
