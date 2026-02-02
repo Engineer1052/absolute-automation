@@ -15,6 +15,168 @@
     <link rel="preload" href="/fonts/inter-extrabold.woff2" as="font" type="font/woff2" crossorigin>
 
     <style>
+        /* CRITICAL CSS FOR MOBILE - Allows immediate hero paint */
+        @media (max-width: 767px) {
+            :root {
+                --primary-r: 0;
+                --primary-g: 100;
+                --primary-b: 255;
+            }
+
+            body {
+                background-color: #ffffff;
+                color: #0f172a;
+                overflow-x: hidden;
+                font-family: "Inter", sans-serif;
+                margin: 0;
+            }
+
+            .gradient-text {
+                background: linear-gradient(to right, #000, rgb(0, 100, 255));
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                padding-right: 0.2em;
+            }
+
+            /* Hero section critical layout */
+            main {
+                display: block;
+            }
+
+            section {
+                position: relative;
+            }
+
+            .relative {
+                position: relative;
+            }
+
+            .absolute {
+                position: absolute;
+            }
+
+            .inset-0 {
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+
+            .w-full {
+                width: 100%;
+            }
+
+            .h-full {
+                height: 100%;
+            }
+
+            .z-10 {
+                z-index: 10;
+            }
+
+            .-z-20 {
+                z-index: -20;
+            }
+
+            .overflow-hidden {
+                overflow: hidden;
+            }
+
+            .text-center {
+                text-align: center;
+            }
+
+            .mx-auto {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .max-w-6xl {
+                max-width: 72rem;
+            }
+
+            .max-w-2xl {
+                max-width: 42rem;
+            }
+
+            .px-6 {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+
+            .pt-32 {
+                padding-top: 8rem;
+            }
+
+            .pb-10 {
+                padding-bottom: 2.5rem;
+            }
+
+            .mb-6 {
+                margin-bottom: 1.5rem;
+            }
+
+            .mb-12 {
+                margin-bottom: 3rem;
+            }
+
+            .flex {
+                display: flex;
+            }
+
+            .flex-col {
+                flex-direction: column;
+            }
+
+            .items-center {
+                align-items: center;
+            }
+
+            .justify-center {
+                justify-content: center;
+            }
+
+            .min-h-\[60vh\] {
+                min-height: 60vh;
+            }
+
+            /* Typography */
+            .text-6xl {
+                font-size: 3.75rem;
+                line-height: 1;
+            }
+
+            .text-lg {
+                font-size: 1.125rem;
+                line-height: 1.75rem;
+            }
+
+            .font-extrabold {
+                font-weight: 800;
+            }
+
+            .font-extralight {
+                font-weight: 200;
+            }
+
+            .tracking-tighter {
+                letter-spacing: -0.05em;
+            }
+
+            .leading-tight {
+                line-height: 1.25;
+            }
+
+            .text-slate-700 {
+                color: #334155;
+            }
+
+            .bg-white {
+                background-color: #ffffff;
+            }
+        }
+
         /* Only hide on desktop — mobile loads immediately */
         @media (min-width: 768px) {
             body {
