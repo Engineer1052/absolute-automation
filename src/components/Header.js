@@ -100,7 +100,10 @@ export function loadHeader() {
     </div>
     `;
 
-    document.body.insertAdjacentHTML('afterbegin', headerHTML);
+    // Inject header only if it doesn't already exist (for partial hydration)
+    if (!document.querySelector('header')) {
+        document.body.insertAdjacentHTML('afterbegin', headerHTML);
+    }
 
     // Active Link Highlighting (Desktop)
     const currentPath = window.location.pathname;
