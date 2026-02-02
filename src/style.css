@@ -158,6 +158,13 @@
   .bg-blush {
     background: radial-gradient(circle, rgba(203, 213, 225, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
   }
+
+  .reveal-transition {
+    transition-property: opacity, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 1000ms;
+    will-change: opacity, transform;
+  }
 }
 
 @layer utilities {

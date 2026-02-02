@@ -140,7 +140,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 document.querySelectorAll('.bento-item:not(.no-reveal)').forEach(el => {
-    el.classList.add('will-change-transform', 'transition-[opacity,transform]', 'duration-1000', 'opacity-0', 'translate-y-10');
+    el.classList.add('reveal-transition', 'opacity-0', 'translate-y-10');
     observer.observe(el);
 });
 
