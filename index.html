@@ -9,18 +9,15 @@
     <title>Absolute Automation Solutions</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="/fonts/fonts.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
-
-    <!-- Preload Mobile Hero Poster for LCP -->
-    <link rel="preload" as="image" href="/hero-background-image-moble_rev1.webp" fetchpriority="high"
-        media="(max-width: 767px)">
+    <!-- Fonts are now self-hosted in /fonts and loaded via CSS -->
 
     <style>
-        body {
-            opacity: 0;
-            transition: opacity 0.001s ease-in-out;
+        /* Only hide on desktop — mobile loads immediately */
+        @media (min-width: 768px) {
+            body {
+                opacity: 0;
+                transition: opacity 0.4s ease-in-out;
+            }
         }
     </style>
 
@@ -73,7 +70,7 @@
             <div class="absolute inset-0 w-full h-full -z-20 overflow-hidden bg-white">
                 <!-- Mobile Video -->
                 <video class="md:hidden w-full h-full object-cover opacity-40 border-none outline-none" autoplay muted
-                    loop playsinline poster="/hero-background-image-moble_rev1.webp">
+                    loop playsinline>
                     <source src="/hero-background-moble.mp4" type="video/mp4">
                 </video>
 
@@ -136,7 +133,7 @@
                     class="md:col-span-8 bento-item no-reveal glass p-8 rounded-3xl neon-border flex flex-col justify-start md:justify-between group h-min md:h-full hover:border-primary/50 transition-colors relative overflow-hidden">
                     <!-- Background Image -->
                     <div class="absolute inset-0 z-0">
-                        <img src="/images/project-pharma-vision.webp" alt="Factory Automation Background"
+                        <img src="/images/project-pharma-vision.webp" alt="Factory Automation Background" loading="lazy"
                             class="w-full h-full object-cover opacity-30 group-hover:scale-105 transition-transform duration-700" />
                         <div
                             class="absolute inset-0 bg-gradient-to-t from-background-light/90 via-background-light/50 to-transparent dark:from-background-dark/90 dark:via-background-dark/50">
@@ -154,19 +151,19 @@
 
                 <!-- 2. Compact Custom Machinery -->
                 <a href="/compact-custom-machinery.html"
-                    class="md:col-span-4 bento-item no-reveal bg-blue-100 p-8 rounded-3xl flex flex-col justify-between hover:brightness-105 transition-all relative overflow-hidden group">
+                    class="md:col-span-4 bento-item no-reveal bg-primary p-8 rounded-3xl flex flex-col justify-between hover:brightness-110 transition-all relative overflow-hidden group">
                     <!-- Background Image -->
                     <div class="absolute inset-0 z-0">
-                        <img src="/images/gallery-robotic-gantry.webp" alt="Compact Machinery Background"
+                        <img src="/images/gallery-robotic-gantry.webp" alt="Compact Machinery Background" loading="lazy"
                             class="w-full h-full object-cover opacity-20 group-hover:scale-105 transition-transform duration-700" />
-                        <div class="absolute inset-0 bg-blue-100/80 mix-blend-multiply"></div>
+                        <div class="absolute inset-0 bg-primary/80 mix-blend-multiply"></div>
                     </div>
 
 
                     <div class="relative z-10">
                         <div class="relative z-10">
                             <h4 class="text-2xl font-bold text-slate-900 mb-2">Compact Custom Machinery</h4>
-                            <p class="text-slate-700 text-lg font-medium">Space-saving, custom assembly
+                            <p class="text-slate-900/80 text-lg font-medium">Space-saving, custom assembly
                                 stations using precision rotary indexers and electric actuators. Optimized for medical,
                                 furniture, automotive, and electronics manufacturing.</p>
                         </div>
@@ -337,7 +334,7 @@
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div
                                 class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                                <h4 class="text-white font-bold text-xl">Compact Custom Machine</h4>
+                                <h4 class="text-white font-bold text-xl">Robotic Cells</h4>
                             </div>
                         </div>
 
@@ -348,7 +345,7 @@
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div
                                 class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                                <h4 class="text-white font-bold text-xl">Assembly Automation</h4>
+                                <h4 class="text-white font-bold text-xl">Custom Gantries</h4>
                             </div>
                         </div>
 
@@ -359,7 +356,7 @@
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div
                                 class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                                <h4 class="text-white font-bold text-xl">Hurco CNC Mill</h4>
+                                <h4 class="text-white font-bold text-xl">CNC Machining</h4>
                             </div>
                         </div>
 
@@ -370,7 +367,7 @@
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div
                                 class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                                <h4 class="text-white font-bold text-xl">Control Panel Wiring</h4>
+                                <h4 class="text-white font-bold text-xl">Industrial Enclosures</h4>
                             </div>
                         </div>
 
@@ -381,7 +378,7 @@
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                             <div
                                 class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                                <h4 class="text-white font-bold text-xl">3D Printing Lab</h4>
+                                <h4 class="text-white font-bold text-xl">Additive Lab</h4>
                             </div>
                         </div>
 
