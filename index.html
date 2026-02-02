@@ -13,12 +13,9 @@
     <link rel="preload" href="/fonts/inter-extrabold.woff2" as="font" type="font/woff2" crossorigin>
 
     <style>
-        /* Only hide on desktop — mobile loads immediately for better LCP */
-        @media (min-width: 768px) {
-            body {
-                opacity: 0;
-                transition: opacity 0.4s ease-in-out;
-            }
+        body {
+            opacity: 0;
+            transition: opacity 0.1s ease-in-out;
         }
     </style>
 
@@ -444,6 +441,14 @@
     <!-- Footer will be injected by src/components/Footer.js -->
 
     <script type="module" src="/src/main.js"></script>
+    <!-- Immediate reveal script to prevent FOUC but preserve LCP speed -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.opacity = '1';
+        });
+        // Fallback: If DOMContentLoaded already fired or hangs, show it anyway after a tiny safety delay
+        setTimeout(() => document.body.style.opacity = '1', 50);
+    </script>
 </body>
 
 </html>
