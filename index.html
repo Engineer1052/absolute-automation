@@ -11,10 +11,12 @@
 
     <!-- Fonts are now self-hosted in /fonts and loaded via CSS -->
     <link rel="preload" href="/fonts/inter-extrabold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/material-icons-round.woff2" as="font" type="font/woff2" crossorigin>
 
     <style>
-        /* Manual opacity hack removed - relying on font-display: block */
+        body {
+            opacity: 0;
+            transition: opacity 0.1s ease-in-out;
+        }
     </style>
 
     <script type="application/ld+json">
@@ -93,7 +95,7 @@
                     class="relative text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter mb-6 leading-tight gradient-text">
                     PROVEN RESULTS<br>REGIONALLY FOCUSED
                 </h1>
-                <p class="text-sm md:text-xl text-slate-800 max-w-2xl mx-auto mb-12 font-extralight">
+                <p class="text-sm md:text-xl text-slate-700 max-w-2xl mx-auto mb-12 font-extralight">
                     Ten years of custom automation excellence rooted in North Carolina. We design, fabricate, and
                     integrate value manufacturing solutions in the heart of the Piedmont Triad.
                 </p>
@@ -439,7 +441,14 @@
     <!-- Footer will be injected by src/components/Footer.js -->
 
     <script type="module" src="/src/main.js"></script>
-    <!-- Immediate reveal script removed in favor of font-display: block strategy -->
+    <!-- Immediate reveal script to prevent FOUC but preserve LCP speed -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.opacity = '1';
+        });
+        // Fallback: If DOMContentLoaded already fired or hangs, show it anyway after a tiny safety delay
+        setTimeout(() => document.body.style.opacity = '1', 50);
+    </script>
 </body>
 
 </html>
