@@ -9,12 +9,22 @@
     <title>Absolute Automation Solutions</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
+    <!-- LCP Optimization: Preload critical resources -->
+    <link rel="preload" href="/hero-background-moble.mp4" as="video" type="video/mp4">
+    <link rel="preload" href="/fonts/inter-extralight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-extrabold.woff2" as="font" type="font/woff2" crossorigin>
+
     <!-- Fonts are now self-hosted in /fonts and loaded via CSS -->
 
     <style>
         body {
             opacity: 0;
             transition: opacity 0.1s ease-in-out;
+        }
+
+        /* LCP: Hero text appears immediately, no fade */
+        .hero-text-instant {
+            opacity: 1 !important;
         }
     </style>
 
@@ -87,7 +97,7 @@
                 class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-blush blur-3xl -z-10 pointer-events-none">
             </div>
 
-            <div class="relative text-center z-10 max-w-6xl mx-auto">
+            <div class="relative text-center z-10 max-w-6xl mx-auto hero-text-instant">
 
 
                 <h1
