@@ -1,5 +1,5 @@
 import { inject } from '@vercel/analytics';
-import './style.css'
+
 import { loadHeader } from './components/Header.js';
 import { loadFooter } from './components/Footer.js';
 
