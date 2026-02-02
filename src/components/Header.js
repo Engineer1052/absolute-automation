@@ -3,7 +3,7 @@ export function loadHeader() {
     <header class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-5xl">
         <nav class="glass flex items-center justify-between px-6 py-4 rounded-full border border-white/10 relative">
             <a href="/" class="group flex items-center gap-3 z-50 relative">
-                <img src="/absolute-logo.webp" alt="Absolute Automation Solutions" class="h-12 md:h-16 w-auto object-contain transition-opacity group-hover:opacity-80" />
+                <img src="/absolute-logo.webp" alt="Absolute Automation Solutions" fetchpriority="high" class="h-12 md:h-16 w-auto object-contain transition-opacity group-hover:opacity-80" />
                 <div class="flex flex-col font-mono font-bold tracking-tighter leading-none text-[11px] md:text-xs text-slate-800 dark:text-white group-hover:text-primary transition-colors justify-center translate-y-[2px]">
                     <span>ABSOLUTE</span>
                     <span>AUTOMATION</span>
