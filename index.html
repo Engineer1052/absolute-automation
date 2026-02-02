@@ -10,173 +10,8 @@
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <!-- Fonts are now self-hosted in /fonts and loaded via CSS -->
-    <link rel="stylesheet" href="/src/style.css">
-    <link rel="preload" href="/fonts/inter-extralight.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/inter-extrabold.woff2" as="font" type="font/woff2" crossorigin>
 
     <style>
-        /* CRITICAL CSS FOR MOBILE - Allows immediate hero paint */
-        @media (max-width: 767px) {
-            :root {
-                --primary-r: 0;
-                --primary-g: 100;
-                --primary-b: 255;
-            }
-
-            body {
-                background-color: #ffffff;
-                color: #0f172a;
-                overflow-x: hidden;
-                font-family: "Inter", sans-serif;
-                margin: 0;
-            }
-
-            .gradient-text {
-                background: linear-gradient(to right, #000, rgb(0, 100, 255));
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-                padding-right: 0.2em;
-            }
-
-            /* Hero section critical layout */
-            main {
-                display: block;
-            }
-
-            section {
-                position: relative;
-            }
-
-            .relative {
-                position: relative;
-            }
-
-            .absolute {
-                position: absolute;
-            }
-
-            .inset-0 {
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-            }
-
-            .w-full {
-                width: 100%;
-            }
-
-            .h-full {
-                height: 100%;
-            }
-
-            .z-10 {
-                z-index: 10;
-            }
-
-            .-z-20 {
-                z-index: -20;
-            }
-
-            .overflow-hidden {
-                overflow: hidden;
-            }
-
-            .text-center {
-                text-align: center;
-            }
-
-            .mx-auto {
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .max-w-6xl {
-                max-width: 72rem;
-            }
-
-            .max-w-2xl {
-                max-width: 42rem;
-            }
-
-            .px-6 {
-                padding-left: 1.5rem;
-                padding-right: 1.5rem;
-            }
-
-            .pt-32 {
-                padding-top: 8rem;
-            }
-
-            .pb-10 {
-                padding-bottom: 2.5rem;
-            }
-
-            .mb-6 {
-                margin-bottom: 1.5rem;
-            }
-
-            .mb-12 {
-                margin-bottom: 3rem;
-            }
-
-            .flex {
-                display: flex;
-            }
-
-            .flex-col {
-                flex-direction: column;
-            }
-
-            .items-center {
-                align-items: center;
-            }
-
-            .justify-center {
-                justify-content: center;
-            }
-
-            .min-h-\[60vh\] {
-                min-height: 60vh;
-            }
-
-            /* Typography */
-            .text-6xl {
-                font-size: 3.75rem;
-                line-height: 1;
-            }
-
-            .text-lg {
-                font-size: 1.125rem;
-                line-height: 1.75rem;
-            }
-
-            .font-extrabold {
-                font-weight: 800;
-            }
-
-            .font-extralight {
-                font-weight: 200;
-            }
-
-            .tracking-tighter {
-                letter-spacing: -0.05em;
-            }
-
-            .leading-tight {
-                line-height: 1.25;
-            }
-
-            .text-slate-700 {
-                color: #334155;
-            }
-
-            .bg-white {
-                background-color: #ffffff;
-            }
-        }
-
         /* Only hide on desktop — mobile loads immediately */
         @media (min-width: 768px) {
             body {
@@ -234,9 +69,8 @@
             <!-- Background Video -->
             <div class="absolute inset-0 w-full h-full -z-20 overflow-hidden bg-white">
                 <!-- Mobile Video -->
-                <video id="mobile-hero-video"
-                    class="md:hidden w-full h-full object-cover opacity-40 border-none outline-none" autoplay muted loop
-                    playsinline>
+                <video class="md:hidden w-full h-full object-cover opacity-40 border-none outline-none" autoplay muted
+                    loop playsinline>
                     <source src="/hero-background-moble.mp4" type="video/mp4">
                 </video>
 
@@ -260,8 +94,9 @@
 
 
                 <h1
-                    class="gradient-text relative text-6xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter mb-6 leading-tight">
-                    PROVEN RESULTS<br class="sm:hidden"> REGIONALLY FOCUSED
+                    class="relative text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter mb-6 leading-tight">
+                    <span class="gradient-text block sm:inline whitespace-nowrap">PROVEN RESULTS</span>
+                    <span class="gradient-text block sm:inline whitespace-nowrap">REGIONALLY FOCUSED</span>
                 </h1>
                 <p class="text-lg md:text-xl text-slate-700 max-w-2xl mx-auto mb-12 font-extralight">
                     Ten years of custom automation excellence rooted in North Carolina. We design, fabricate, and
@@ -295,7 +130,7 @@
             <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:auto-rows-[300px]">
                 <!-- 1. Factory Automation -->
                 <a href="/factory-automation.html"
-                    class="md:col-span-8 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-start md:justify-between group h-min md:h-full hover:border-primary/50 transition-colors relative overflow-hidden">
+                    class="md:col-span-8 bento-item no-reveal glass p-8 rounded-3xl neon-border flex flex-col justify-start md:justify-between group h-min md:h-full hover:border-primary/50 transition-colors relative overflow-hidden">
                     <!-- Background Image -->
                     <div class="absolute inset-0 z-0">
                         <img src="/images/project-pharma-vision.webp" alt="Factory Automation Background" loading="lazy"
@@ -316,7 +151,7 @@
 
                 <!-- 2. Compact Custom Machinery -->
                 <a href="/compact-custom-machinery.html"
-                    class="md:col-span-4 bento-item bg-primary p-8 rounded-3xl flex flex-col justify-between hover:brightness-110 transition-all relative overflow-hidden group">
+                    class="md:col-span-4 bento-item no-reveal bg-primary p-8 rounded-3xl flex flex-col justify-between hover:brightness-110 transition-all relative overflow-hidden group">
                     <!-- Background Image -->
                     <div class="absolute inset-0 z-0">
                         <img src="/images/gallery-robotic-gantry.webp" alt="Compact Machinery Background" loading="lazy"
@@ -337,7 +172,7 @@
 
                 <!-- 3. Control Panel Assembly -->
                 <a href="/control-panel-assembly.html"
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group relative overflow-hidden">
+                    class="md:col-span-4 bento-item no-reveal glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group relative overflow-hidden">
                     <!-- Background Image -->
                     <div class="absolute inset-0 z-0">
                         <img src="/images/field-service.webp" alt="Control Panel Background" loading="lazy"
@@ -358,7 +193,7 @@
 
                 <!-- 4. Control Systems Integration -->
                 <a href="/systems-integration.html"
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group relative overflow-hidden">
+                    class="md:col-span-4 bento-item no-reveal glass p-8 rounded-3xl neon-border flex flex-col justify-between hover:border-primary/50 transition-colors group relative overflow-hidden">
                     <!-- Background Image -->
                     <div class="absolute inset-0 z-0">
                         <img src="/images/systems-integration.webp" alt="Integration Background" loading="lazy"
@@ -378,7 +213,7 @@
 
                 <!-- 5. Field Service -->
                 <a href="/field-service.html"
-                    class="md:col-span-4 bento-item glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent hover:border-primary/50 transition-colors group relative overflow-hidden">
+                    class="md:col-span-4 bento-item no-reveal glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between bg-gradient-to-br from-white/5 to-transparent hover:border-primary/50 transition-colors group relative overflow-hidden">
                     <!-- Background Image -->
                     <div class="absolute inset-0 z-0">
                         <img src="/images/gallery-pcb-cards.webp" alt="Field Service Background" loading="lazy"
