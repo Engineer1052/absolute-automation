@@ -229,5 +229,14 @@
     button {
       -webkit-tap-highlight-color: transparent;
     }
+
+    /* Add tactile feedback for touch */
+    a:active,
+    button:active,
+    .bento-item:active {
+      transform: scale(0.98);
+      opacity: 0.9;
+      transition: transform 0.05s ease-out, opacity 0.05s ease-out !important;
+    }
   }
 }
